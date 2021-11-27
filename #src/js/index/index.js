@@ -41,39 +41,15 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
 });
 
 
-
-// var timeout, timeover;
-// document.onmouseover = function(){
-//     clearTimeout(timeover);
-//     timeover = setTimeout(function(){
-//         $('.ind-header__info-description').addClass('opacity')
-//         $('.ind-header__info-tabs').addClass('opacity')
-//         $('.ind-header__info-line').addClass('opacity')
-//     }, 2000);
-// }
-// document.mousemove = function(){
-//     clearTimeout(timeout);
-//     timeout = setTimeout(function(){
-//         $('.ind-header__info-description').removeClass('opacity')
-//         $('.ind-header__info-tabs').removeClass('opacity')
-//         $('.ind-header__info-line').removeClass('opacity')
-//     }, 0);
-// }
-
-// $('body').onmouseover(function() {
-//     $('.ind-header__info-description').addClass('opacity')
-//     $('.ind-header__info-tabs').addClass('opacity')
-//     $('.ind-header__info-line').addClass('opacity')
-// })
-
+//! Авто-скрытие блока 
 
 var items_1 = $('.ind-header__info-description'),
     items_2 = $('.ind-header__info-tabs'),
     items_3 = $('.ind-header__info-line'),
     timeout,
-    wait = 2000; // ms, сколько можно не двигать мышь
+    wait = 2000;
 
-function alive(){ // убрать напоминалку и выставить таймер
+function alive(){ 
     clearTimeout(timeout);
     items_1.css('opacity', '1')
     items_2.css('opacity', '1')
@@ -87,7 +63,6 @@ function remind(){
     items_3.css('opacity', '0')
 }
 
-// поехали!
 items_1.css('opacity', '1')
 items_2.css('opacity', '1')
 items_3.css('opacity', '1')
