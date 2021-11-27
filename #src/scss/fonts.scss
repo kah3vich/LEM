@@ -1,0 +1,856 @@
+//! Robot
+
+@include font("Roboto", "Roboto-ExtraBold", "800", "italic");
+@include font("Roboto", "Roboto-Bold", "bold", "normal");
+@include font("Roboto", "Roboto-Thin", "100", "normal");
+@include font("Roboto", "Roboto-Regular", "normal", "normal");
+@include font("Roboto", "Roboto-ThinItalic", "100", "italic");
+@include font("Roboto", "Roboto-Italic", "normal", "italic");
+@include font("Roboto", "Roboto-Heavy", "900", "normal");
+@include font("Roboto", "Roboto-Light", "300", "normal");
+@include font("Roboto", "Roboto-BlackItalic", "900", "italic");
+@include font("Roboto", "Roboto-ExtraLight", "200", "normal");
+@include font("Roboto", "Roboto-LightItalic", "300", "italic");
+@include font("Roboto", "Roboto-ExtraLightItalic", "200", "normal");
+@include font("Roboto", "Roboto-BoldItalic", "bold", "italic");
+@include font("Roboto", "Roboto-Medium", "500", "normal");
+@include font("Roboto", "Roboto-Black", "900", "normal");
+@include font("Roboto", "Roboto-MediumItalic", "500", "italic");
+@include font("Roboto", "Roboto-HeavyItalic", "900", "italic");
+@include font("Roboto", "Roboto-ExtraBold", "800", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! TTNorms;
+
+@include font("TT Norms", "TTNorms-ExtraBold", "800", "italic");
+@include font("TT Norms", "TTNorms-Bold", "bold", "normal");
+@include font("TT Norms", "TTNorms-Thin", "100", "normal");
+@include font("TT Norms", "TTNorms-Regular", "normal", "normal");
+@include font("TT Norms", "TTNorms-ThinItalic", "100", "italic");
+@include font("TT Norms", "TTNorms-Italic", "normal", "italic");
+@include font("TT Norms", "TTNorms-Heavy", "900", "normal");
+@include font("TT Norms", "TTNorms-Light", "300", "normal");
+@include font("TT Norms", "TTNorms-BlackItalic", "900", "italic");
+@include font("TT Norms", "TTNorms-ExtraLight", "200", "normal");
+@include font("TT Norms", "TTNorms-LightItalic", "300", "italic");
+@include font("TT Norms", "TTNorms-ExtraLightItalic", "200", "normal");
+@include font("TT Norms", "TTNorms-BoldItalic", "bold", "italic");
+@include font("TT Norms", "TTNorms-Medium", "500", "normal");
+@include font("TT Norms", "TTNorms-Black", "900", "normal");
+@include font("TT Norms", "TTNorms-MediumItalic", "500", "italic");
+@include font("TT Norms", "TTNorms-HeavyItalic", "900", "italic");
+@include font("TT Norms", "TTNorms-ExtraBold", "800", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Circle
+
+@include font("Circe", "Circe", "400", "normal");
+@include font("Circe", "Circe-Thin", "100", "thin");
+@include font("Circe", "Circe-Light", "300", "light");
+@include font("Circe", "Circe-Extralight", "200", "ultralight");
+@include font("Circe", "Circe-ExtraBold", "800", "extrabold");
+@include font("Circe", "Circe-Bold", "700", "bold"); 
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Lorin
+
+@include font("Lorin", "Lorin-Bold", "bold", "normal");
+@include font("Lorin", "Lorin-ExtraBold", "800", "normal");
+@include font("Lorin", "Lorin-Light", "300", "normal");
+@include font("Lorin", "Lorin-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Poppins 
+
+@include font("Poppins", "Popping-Light", "300", "normal");
+@include font("Poppins", "Popping-Regular", "400", "normal");
+@include font("Poppins", "Popping-BoldSemiBold", "300", "normal");
+@include font("Poppins", "Popping-Thin", "100", "normal");
+@include font("Poppins", "Popping-Italic", "400", "italic");
+@include font("Poppins", "Popping-MediumItalic", "500", "italic");
+@include font("Poppins", "Popping-ExtraLightItalic", "200", "italic");
+@include font("Poppins", "Popping-ExtraBoldItalic", "800", "italic");
+@include font("Poppins", "Popping-ExtraBold", "800", "normal");
+@include font("Poppins", "Popping-LightItalic", "300", "italic");
+@include font("Poppins", "Popping-Black", "900", "normal");
+@include font("Poppins", "Popping-ThinItalic", "100", "italic");
+@include font("Poppins", "Popping-Medium", "500", "normal");
+@include font("Poppins", "Popping-ExtraLight", "200", "normal");
+@include font("Poppins", "Popping-BoldItalic", "700", "italic");
+@include font("Poppins", "Popping-SemiBoldItalic", "600", "italic");
+@include font("Poppins", "Popping-Bold", "700", "normal");
+@include font("Poppins", "Popping-BlackItalic", "900", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! FuturaBookC 
+
+@include font("FuturaBookC", "FuturaBookC", "", "normal"); 
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Larsseit 
+
+@include font("Larsseit", "Larsseit-MediumItalic", "500", "italic");
+@include font("Larsseit", "Larsseit-Thin", "100", "normal");
+@include font("Larsseit", "Larsseit-LightItalic", "300", "italic");
+@include font("Larsseit", "Larsseit", "normal", "normal");
+@include font("Larsseit", "Larsseit-ExtraBold", "800", "normal");
+@include font("Larsseit", "Larsseit-BoldItalic", "bold", "italic");
+@include font("Larsseit", "Larsseit-Light", "300", "normal");
+@include font("Larsseit", "Larsseit-Bold", "bold", "normal");
+@include font("Larsseit", "Larsseit-Italic", "normal", "italic");
+@include font("Larsseit", "Larsseit-Medium", "500", "normal");
+@include font("Larsseit", "Larsseit-ExtraBoldItalic", "800", "italic");
+@include font("Larsseit", "Larsseit-ThinItalic", "100", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Gilroy 
+
+@include font("Gilroy", "Gilroy-ExtraBold", "800", "normal");
+@include font("Gilroy", "Gilroy-Heavy", "900", "normal");
+@include font("Gilroy", "Gilroy-LightItalic", "300", "italic");
+@include font("Gilroy", "Gilroy-ThinItalic", "100", "italic");
+@include font("Gilroy", "Gilroy-BlackItalic", "900", "italic");
+@include font("Gilroy", "Gilroy-BoldItalic", "bold", "italic");
+@include font("Gilroy", "Gilroy-SemiBold", "600", "normal");
+@include font("Gilroy", "Gilroy-UltraLightItalic", "200", "italic");
+@include font("Gilroy", "Gilroy-SemiBoldItalic", "600", "italic");
+@include font("Gilroy", "Gilroy-Light", "300", "normal");
+@include font("Gilroy", "Gilroy-MediumItalic", "500", "italic");
+@include font("Gilroy", "Gilroy-ExtraBoldItalic", "800", "italic");
+@include font("Gilroy", "Gilroy-Regular", "normal", "normal");
+@include font("Gilroy", "Gilroy-HeavyItalic", "900", "italic");
+@include font("Gilroy", "Gilroy-Medium", "500", "normal");
+@include font("Gilroy", "Gilroy-RegularItalic", "normal", "italic");
+@include font("Gilroy", "Gilroy-UltraLight", "200", "normal");
+@include font("Gilroy", "Gilroy-UltraLight", "200", "normal");
+@include font("Gilroy", "Gilroy-Bold", "bold", "normal");
+@include font("Gilroy", "Gilroy-Thin", "100", "normal");
+@include font("Gilroy", "Gilroy-Black", "900", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Rubik 
+
+@include font("Rubik", "Rubik-ExtraBold", "800", "normal");
+@include font("Rubik", "Rubik-LightItalic", "300", "italic");
+@include font("Rubik", "Rubik-BlackItalic", "900", "italic");
+@include font("Rubik", "Rubik-BoldItalic", "bold", "italic");
+@include font("Rubik", "Rubik-SemiBold", "600", "normal");
+@include font("Rubik", "Rubik-SemiBoldItalic", "600", "italic");
+@include font("Rubik", "Rubik-Light", "300", "normal");
+@include font("Rubik", "Rubik-MediumItalic", "500", "italic");
+@include font("Rubik", "Rubik-ExtraBoldItalic", "800", "italic");
+@include font("Rubik", "Rubik-Medium", "500", "normal");
+@include font("Rubik", "Rubik-Bold", "bold", "normal");
+@include font("Rubik", "Rubik-Black", "900", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Arial 
+
+@include font("Arial", "Arial", "normal", "normal"); 
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Arial Narrow 
+
+@include font("Arial Narrow", "ArialNarrow", "normal", "normal");
+@include font("Arial Narrow", "ArialNarrow-Bold", "500", "normal");
+@include font("Arial Narrow", "ArialNarrow-Italic", "normal", "italic");
+@include font("Arial Narrow", "ArialNarrow-BoldItalic", "500", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Times 
+
+@include font("Times", "Times", "normal", "normal"); 
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Times New Roman 
+
+@include font("Times New Roman", "Times-New-Roman", "normal", "normal"); 
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Helvetica
+
+@include font("Helvetica", "Helvetica-Black", "800", "normal"); 
+@include font("Helvetica", "Helvetica-BlackItalic", "800", "italic"); 
+@include font("Helvetica", "Helvetica-Bold", "700", "normal"); 
+@include font("Helvetica", "Helvetica-BoldItalic", "700", "italic"); 
+@include font("Helvetica", "Helvetica-Heavy", "900", "normal"); 
+@include font("Helvetica", "Helvetica-HeavyItalic", "900", "italic"); 
+@include font("Helvetica", "Helvetica-Italic", "400", "italic"); 
+@include font("Helvetica", "Helvetica-Light", "300", "normal"); 
+@include font("Helvetica", "Helvetica-LightItalic", "300", "italic"); 
+@include font("Helvetica", "Helvetica-Medium", "500", "normal"); 
+@include font("Helvetica", "Helvetica-MediumItalic", "500", "italic"); 
+@include font("Helvetica", "Helvetica-Regular", "400", "normal"); 
+@include font("Helvetica", "Helvetica-Thin", "100", "normal"); 
+@include font("Helvetica", "Helvetica-ThinItalic", "100", "italic"); 
+@include font("Helvetica", "Helvetica-UltraLight", "200", "normal"); 
+@include font("Helvetica", "Helvetica-UltraLightItalic", "200", "italic"); 
+
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Courier 
+
+@include font("Courier", "Courier", "normal", "normal"); 
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Courier New
+
+@include font("Courier New", "CourierNew", "normal", "normal"); 
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Verdana
+
+@include font("Verdana", "Verdana", "normal", "normal"); 
+@include font("Verdana", "Verdana-Italic", "normal", "italic"); 
+@include font("Verdana", "Verdana-Bold", "700", "normal"); 
+@include font("Verdana", "Verdana-BoldItalic", "700", "italic"); 
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Candara
+
+@include font("Candara", "Candara", "normal", "normal");  
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Geneva
+
+@include font("Geneva", "Geneva", "normal", "normal");  
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Geneva
+
+@include font("Alegreya", "Alegreya-Black", "900", "normal");
+@include font("Alegreya", "Alegreya-BlackItalic", "900", "italic");
+@include font("Alegreya", "Alegreya-Bold", "700", "normal");
+@include font("Alegreya", "Alegreya-BoldItalic", "700", "italic");
+@include font("Alegreya", "Alegreya-ExtraBold", "800", "normal");
+@include font("Alegreya", "Alegreya-ExtraBoldItalic", "800", "italic");
+@include font("Alegreya", "Alegreya-Italic", "400", "italic");
+@include font("Alegreya", "Alegreya-Regular", "400", "normal");
+@include font("Alegreya", "Alegreya-Medium", "500", "normal");
+@include font("Alegreya", "Alegreya-MediumItalic", "500", "italic");
+@include font("Alegreya", "Alegreya-SemiBold", "600", "normal");
+@include font("Alegreya", "Alegreya-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! B612
+
+@include font("B612", "B612-Regular", "normal", "normal");
+@include font("B612", "B612-Italic", "normal", "italic");
+@include font("B612", "B612-Bold", "700", "normal");
+@include font("B612", "B612-BoldItalic", "700", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! BioRhyme
+
+@include font("BioRhyme", "BioRhyme-Regular", "normal", "normal");
+@include font("BioRhyme", "BioRhyme-Light", "300", "normal");
+@include font("BioRhyme", "BioRhyme-Bold", "700", "normal");
+@include font("BioRhyme", "BioRhyme-ExtraBold", "800", "normal");
+@include font("BioRhyme", "BioRhyme-ExtraLight", "200", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! BioRhyme
+
+@include font("BioRhyme", "BioRhyme-Regular", "normal", "normal");
+@include font("BioRhyme", "BioRhyme-Light", "300", "normal");
+@include font("BioRhyme", "BioRhyme-Bold", "700", "normal");
+@include font("BioRhyme", "BioRhyme-ExtraBold", "800", "normal");
+@include font("BioRhyme", "BioRhyme-ExtraLight", "200", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Brush Script
+
+@include font("Brush Script", "BrushScript-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Cairo
+
+@include font("Cairo", "Cairo-Regular", "normal", "normal");
+@include font("Cairo", "Cairo-Black", "900", "normal");
+@include font("Cairo", "Cairo-Bold", "700", "normal");
+@include font("Cairo", "Cairo-ExtraBold", "800", "normal");
+@include font("Cairo", "Cairo-ExtraLight", "200", "normal");
+@include font("Cairo", "Cairo-Light", "300", "normal");
+@include font("Cairo", "Cairo-Medium", "500", "normal");
+@include font("Cairo", "Cairo-SemiBold", "600", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Calibri
+
+@include font("Calibri", "Calibri-Bold", "700", "normal");
+@include font("Calibri", "Calibri-BoldItalic", "700", "italic");
+@include font("Calibri", "Calibri-Italic", "normal", "italic");
+@include font("Calibri", "Calibri-Light", "300", "normal");
+@include font("Calibri", "Calibri-LightItalic", "300", "italic");
+@include font("Calibri", "Calibri-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Cambria
+
+@include font("Cambria", "Cambria", "normal", "normal");
+@include font("Cambria", "Cambria-BoldItalic", "700", "italic");
+@include font("Cambria", "Cambria-Bold", "700", "normal");
+@include font("Cambria", "Cambria-Italic", "normal", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Copperplate
+
+@include font("Copperplate", "Copperplate-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Crimson Text
+
+@include font("Crimson Text", "CrimsonText-Regular", "normal", "normal");
+@include font("Crimson Text", "CrimsonText-Bold", "700", "normal");
+@include font("Crimson Text", "CrimsonText-BoldItalic", "700", "italic");
+@include font("Crimson Text", "CrimsonText-Italic", "normal", "italic");
+@include font("Crimson Text", "CrimsonText-SemiBold", "600", "normal");
+@include font("Crimson Text", "CrimsonText-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Didot
+
+@include font("Didot", "Didot-Regular", "normal", "normal");
+@include font("Didot", "Didot-Italic", "normal", "italic");
+@include font("Didot", "Didot-Bold", "700", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Frank Ruhl Libre
+
+@include font("Frank Ruhl Libre", "FrankRuhlLibre-Black", "900", "normal");
+@include font("Frank Ruhl Libre", "FrankRuhlLibre-Bold", "700", "normal");
+@include font("Frank Ruhl Libre", "FrankRuhlLibre-Light", "300", "normal");
+@include font("Frank Ruhl Libre", "FrankRuhlLibre-Medium", "500", "normal");
+@include font("Frank Ruhl Libre", "FrankRuhlLibre-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! IBM Plex Sans
+
+@include font("IBM Plex Sans", "IBMPlexSans-Regular", "normal", "normal");
+@include font("IBM Plex Sans", "IBMPlexSans-Bold", "700", "normal");
+@include font("IBM Plex Sans", "IBMPlexSans-BoldItalic", "700", "italic");
+@include font("IBM Plex Sans", "IBMPlexSans-ExtraLight", "200", "normal");
+@include font("IBM Plex Sans", "IBMPlexSans-ExtraLightItalic", "200", "italic");
+@include font("IBM Plex Sans", "IBMPlexSans-Italic", "normal", "italic");
+@include font("IBM Plex Sans", "IBMPlexSans-Light", "300", "normal");
+@include font("IBM Plex Sans", "IBMPlexSans-LightItalic", "300", "italic");
+@include font("IBM Plex Sans", "IBMPlexSans-Medium", "500", "normal");
+@include font("IBM Plex Sans", "IBMPlexSans-MediumItalic", "500", "italic");
+@include font("IBM Plex Sans", "IBMPlexSans-SemiBold", "600", "normal");
+@include font("IBM Plex Sans", "IBMPlexSans-SemiBoldItalic", "600", "italic");
+@include font("IBM Plex Sans", "IBMPlexSans-Thin", "normal", "100");
+@include font("IBM Plex Sans", "IBMPlexSans-ThinItalic", "100", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Karla
+
+@include font("Karla", "Karla-Bold", "700", "normal");
+@include font("Karla", "Karla-BoldItalic", "700", "italic");
+@include font("Karla", "Karla-ExtraBold", "800", "normal");
+@include font("Karla", "Karla-ExtraBoldItalic", "800", "italic");
+@include font("Karla", "Karla-ExtraLight", "200", "normal");
+@include font("Karla", "Karla-ExtraLightItalic", "200", "italic");
+@include font("Karla", "Karla-Italic", "normal", "italic");
+@include font("Karla", "Karla-Light", "300", "normal");
+@include font("Karla", "Karla-LightItalic", "300", "italic");
+@include font("Karla", "Karla-Medium", "500", "normal");
+@include font("Karla", "Karla-MediumItalic", "500", "italic");
+@include font("Karla", "Karla-Regular", "normal", "normal");
+@include font("Karla", "Karla-SemiBold", "600", "normal");
+@include font("Karla", "Karla-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Lara
+
+@include font("Lara", "Lara-Italic", "normal", "italic");
+@include font("Lara", "Lara-Light", "300", "normal");
+@include font("Lara", "Lara-LightItalic", "300", "italic");
+@include font("Lara", "Lara-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Lucida Bright
+
+@include font("Lucida Bright", "LucidaBright-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Monaco
+
+@include font("Monaco", "Monaco-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Muli
+
+@include font("Muli", "Muli-Bold", "700", "normal");
+@include font("Muli", "Muli-BoldItalic", "700", "italic");
+@include font("Muli", "Muli-ExtraLight", "200", "normal");
+@include font("Muli", "Muli-ExtraLightItalic", "200", "italic");
+@include font("Muli", "Muli-Italic", "normal", "italic");
+@include font("Muli", "Muli-Light", "300", "normal");
+@include font("Muli", "Muli-LightItalic", "300", "italic");
+@include font("Muli", "Muli-SemiBold", "600", "normal");
+@include font("Muli", "Muli-SemiBoldItalic", "600", "italic");
+@include font("Muli", "Muli-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Optimal Pro
+
+@include font("Optimal Pro", "OptimalPro-Black", "900", "normal");
+@include font("Optimal Pro", "OptimalPro-BlackItalic", "900", "italic");
+@include font("Optimal Pro", "OptimalPro-Bold", "normal", "700");
+@include font("Optimal Pro", "OptimalPro-BoldItalic", "700", "italic");
+@include font("Optimal Pro", "OptimalPro-DemiBold", "800", "normal");
+@include font("Optimal Pro", "OptimalPro-DemiBoldItalic", "800", "italic");
+@include font("Optimal Pro", "OptimalPro-ExtraBlack", "200", "normal");
+@include font("Optimal Pro", "OptimalPro-ExtraBlackItalic", "200", "italic");
+@include font("Optimal Pro", "OptimalPro-Italic", "normal", "italic");
+@include font("Optimal Pro", "OptimalPro-Medium", "500", "normal");
+@include font("Optimal Pro", "OptimalPro-MediumItalic", "500", "italic");
+@include font("Optimal Pro", "OptimalPro-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Perpetua
+
+@include font("Perpetua", "Perpetua-Regular", "normal", "normal");
+@include font("Perpetua", "Perpetua-Italic", "normal", "italic");
+@include font("Perpetua", "Perpetua-BoldItalic", "700", "italic");
+@include font("Perpetua", "Perpetua-Bold", "700", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Titillium Web
+
+@include font("Titillium Web", "TitilliumWeb-Black", "900", "normal");
+@include font("Titillium Web", "TitilliumWeb-Bold", "700", "normal");
+@include font("Titillium Web", "TitilliumWeb-BoldItalic", "700", "italic");
+@include font("Titillium Web", "TitilliumWeb-ExtraLight", "200", "normal");
+@include font("Titillium Web", "TitilliumWeb-ExtraLightItalic", "200", "italic");
+@include font("Titillium Web", "TitilliumWeb-Italic", "normal", "italic");
+@include font("Titillium Web", "TitilliumWeb-Light", "300", "normal");
+@include font("Titillium Web", "TitilliumWeb-LightItalic", "300", "italic");
+@include font("Titillium Web", "TitilliumWeb-Regular", "normal", "normal");
+@include font("Titillium Web", "TitilliumWeb-SemiBold", "600", "normal");
+@include font("Titillium Web", "TitilliumWeb-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Varela
+
+@include font("Varela", "Varela-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Abril Fatface
+
+@include font("Abril Fatface", "AbrilFatface-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Arvo
+
+@include font("Arvo", "Arvo-Regular", "normal", "normal");
+@include font("Arvo", "Arvo-Italic", "normal", "italic");
+@include font("Arvo", "Arvo-Bold", "700", "normal");
+@include font("Arvo", "Arvo-BoldItalic", "700", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Berlin
+
+@include font("Berlin", "Berlin-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Cardo
+
+@include font("Cardo", "Cardo-Regular", "normal", "normal");
+@include font("Cardo", "Cardo-Italic", "normal", "italic");
+@include font("Cardo", "Cardo-Bold", "700", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Concert One
+
+@include font("Concert One", "ConcertOne-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Cormorant
+
+@include font("Cormorant", "Cormorant-Bold", "700", "normal");
+@include font("Cormorant", "Cormorant-BoldItalic", "700", "italic");
+@include font("Cormorant", "Cormorant-Italic", "normal", "italic");
+@include font("Cormorant", "Cormorant-Light", "300", "normal");
+@include font("Cormorant", "Cormorant-LightItalic", "300", "italic");
+@include font("Cormorant", "Cormorant-Medium", "500", "normal");
+@include font("Cormorant", "Cormorant-MediumItalic", "500", "italic");
+@include font("Cormorant", "Cormorant-Regular", "normal", "normal");
+@include font("Cormorant", "Cormorant-SemiBold", "600", "normal");
+@include font("Cormorant", "Cormorant-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Exo 2
+
+@include font("Exo 2", "Exo 2-Black", "normal", "normal");
+@include font("Exo 2", "Exo 2-BlackItalic", "normal", "italic");
+@include font("Exo 2", "Exo 2-Bold", "normal", "normal");
+@include font("Exo 2", "Exo 2-BoldItalic", "normal", "italic");
+@include font("Exo 2", "Exo 2-ExtraBold", "normal", "normal");
+@include font("Exo 2", "Exo 2-ExtraBoldItalic", "normal", "italic");
+@include font("Exo 2", "Exo 2-ExtraLight", "normal", "normal");
+@include font("Exo 2", "Exo 2-ExtraLightItalic", "normal", "italic");
+@include font("Exo 2", "Exo 2-Italic", "normal", "italic");
+@include font("Exo 2", "Exo 2-Light", "normal", "normal");
+@include font("Exo 2", "Exo 2-LightItalic", "normal", "italic");
+@include font("Exo 2", "Exo 2-Medium", "normal", "normal");
+@include font("Exo 2", "Exo 2-MediumItalic", "normal", "italic");
+@include font("Exo 2", "Exo 2-Regular", "normal", "normal");
+@include font("Exo 2", "Exo 2-SemiBold", "normal", "normal");
+@include font("Exo 2", "Exo 2-SemiBoldItalic", "normal", "italic");
+@include font("Exo 2", "Exo 2-Thin", "normal", "normal");
+@include font("Exo 2", "Exo 2-ThinItalic", "normal", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Felix Titling
+
+@include font("Felix Titling", "FelixTitling-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Fira Sans
+
+@include font("Fira Sans", "FiraSans-Black", "900", "normal");
+@include font("Fira Sans", "FiraSans-BlackItalic", "900", "italic");
+@include font("Fira Sans", "FiraSans-Bold", "700", "normal");
+@include font("Fira Sans", "FiraSans-BoldItalic", "700", "italic");
+@include font("Fira Sans", "FiraSans-ExtraBold", "800", "italic");
+@include font("Fira Sans", "FiraSans-ExtraBoldItalic", "800", "normal");
+@include font("Fira Sans", "FiraSans-ExtraLight", "200", "normal");
+@include font("Fira Sans", "FiraSans-ExtraLightItalic", "200", "italic");
+@include font("Fira Sans", "FiraSans-Italic", "normal", "italic");
+@include font("Fira Sans", "FiraSans-Light", "300", "normal");
+@include font("Fira Sans", "FiraSans-LightItalic", "300", "italic");
+@include font("Fira Sans", "FiraSans-Medium", "500", "normal");
+@include font("Fira Sans", "FiraSans-MediumItalic", "500", "italic");
+@include font("Fira Sans", "FiraSans-Regular", "normal", "normal");
+@include font("Fira Sans", "FiraSans-SemiBold", "600", "normal");
+@include font("Fira Sans", "FiraSans-SemiBoldItalic", "600", "italic");
+@include font("Fira Sans", "FiraSans-Thin", "100", "normal");
+@include font("Fira Sans", "FiraSans-ThinItalic", "100", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Fjalla One
+
+@include font("Fjalla One", "FjallaOne-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Lato
+
+@include font("Lato", "Lato-Black", "900", "normal");
+@include font("Lato", "Lato-BlackItalic", "900", "italic");
+@include font("Lato", "Lato-Bold", "700", "normal");
+@include font("Lato", "Lato-BoldItalic", "700", "italic");
+@include font("Lato", "Lato-Italic", "normal", "normal");
+@include font("Lato", "Lato-Light", "300", "normal");
+@include font("Lato", "Lato-LightItalic", "300", "italic");
+@include font("Lato", "Lato-Regular", "normal", "normal");
+@include font("Lato", "Lato-Thin", "100", "normal");
+@include font("Lato", "Lato-ThinItalic", "100", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Merriweather
+
+@include font("Merriweather", "Merriweather-Black", "900", "normal");
+@include font("Merriweather", "Merriweather-BlackItalic", "900", "italic");
+@include font("Merriweather", "Merriweather-Bold", "700", "normal");
+@include font("Merriweather", "Merriweather-BoldItalic", "700", "italic");
+@include font("Merriweather", "Merriweather-Italic", "normal", "italic");
+@include font("Merriweather", "Merriweather-Light", "300", "normal");
+@include font("Merriweather", "Merriweather-LightItalic", "300", "italic");
+@include font("Merriweather", "Merriweather-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Montserrat
+
+@include font("Montserrat", "Montserrat-Black", "900", "normal");
+@include font("Montserrat", "Montserrat-BlackItalic", "900", "italic");
+@include font("Montserrat", "Montserrat-Bold", "700", "normal");
+@include font("Montserrat", "Montserrat-BoldItalic", "700", "italic");
+@include font("Montserrat", "Montserrat-ExtraBold", "800", "normal");
+@include font("Montserrat", "Montserrat-ExtraBoldItalic", "800", "italic");
+@include font("Montserrat", "Montserrat-ExtraLight", "200", "normal");
+@include font("Montserrat", "Montserrat-ExtraLightItalic", "200", "italic");
+@include font("Montserrat", "Montserrat-Italic", "normal", "italic");
+@include font("Montserrat", "Montserrat-Light", "300", "normal");
+@include font("Montserrat", "Montserrat-LightItalic", "300", "italic");
+@include font("Montserrat", "Montserrat-Medium", "500", "normal");
+@include font("Montserrat", "Montserrat-MediumItalic", "500", "italic");
+@include font("Montserrat", "Montserrat-Regular", "normal", "normal");
+@include font("Montserrat", "Montserrat-SemiBold", "600", "normal");
+@include font("Montserrat", "Montserrat-SemiBoldItalic", "600", "italic");
+@include font("Montserrat", "Montserrat-Thin", "normal", "100");
+@include font("Montserrat", "Montserrat-ThinItalic", "100", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Noto Sans
+
+@include font("Noto Sans", "NotoSans-Regular", "normal", "normal");
+@include font("Noto Sans", "NotoSans-Italic", "normal", "italic");
+@include font("Noto Sans", "NotoSans-Bold", "700", "normal");
+@include font("Noto Sans", "NotoSans-BoldItalic", "700", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Nunito
+
+@include font("Nunito", "Nunito-Black", "900", "normal");
+@include font("Nunito", "Nunito-BlackItalic", "900", "italic");
+@include font("Nunito", "Nunito-Bold", "normal", "700");
+@include font("Nunito", "Nunito-BoldItalic", "700", "italic");
+@include font("Nunito", "Nunito-ExtraBold", "800", "normal");
+@include font("Nunito", "Nunito-ExtraBoldItalic", "800", "italic");
+@include font("Nunito", "Nunito-ExtraLight", "200", "normal");
+@include font("Nunito", "Nunito-ExtraLightItalic", "200", "italic");
+@include font("Nunito", "Nunito-Italic", "normal", "italic");
+@include font("Nunito", "Nunito-Regular", "normal", "normal");
+@include font("Nunito", "Nunito-Light", "300", "normal");
+@include font("Nunito", "Nunito-LightItalic", "300", "italic");
+@include font("Nunito", "Nunito-SemiBold", "600", "normal");
+@include font("Nunito", "Nunito-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Open Sans
+
+@include font("Open Sans", "OpenSans-Bold", "700", "normal");
+@include font("Open Sans", "OpenSans-BoldItalic", "700", "italic");
+@include font("Open Sans", "OpenSans-ExtraBold", "800", "normal");
+@include font("Open Sans", "OpenSans-ExtraBoldItalic", "800", "italic");
+@include font("Open Sans", "OpenSans-Italic", "normal", "italic");
+@include font("Open Sans", "OpenSans-Light", "300", "normal");
+@include font("Open Sans", "OpenSans-LightItalic", "300", "italic");
+@include font("Open Sans", "OpenSans-Medium", "500", "normal");
+@include font("Open Sans", "OpenSans-MediumItalic", "500", "italic");
+@include font("Open Sans", "OpenSans-Regular", "normal", "normal");
+@include font("Open Sans", "OpenSans-SemiBold", "600", "normal");
+@include font("Open Sans", "OpenSans-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Oxygen
+
+@include font("Oxygen", "Oxygen-Regular", "normal", "normal");
+@include font("Oxygen", "Oxygen-Light", "300", "normal");
+@include font("Oxygen", "Oxygen-Bold", "700", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Playfair Display
+
+@include font("Playfair Display", "PlayfairDisplay-Black", "900", "normal");
+@include font("Playfair Display", "PlayfairDisplay-BlackItalic", "900", "italic");
+@include font("Playfair Display", "PlayfairDisplay-Bold", "700", "normal");
+@include font("Playfair Display", "PlayfairDisplay-BoldItalic", "700", "italic");
+@include font("Playfair Display", "PlayfairDisplay-ExtraBold", "800", "normal");
+@include font("Playfair Display", "PlayfairDisplay-ExtraBoldItalic", "800", "italic");
+@include font("Playfair Display", "PlayfairDisplay-Italic", "normal", "italic");
+@include font("Playfair Display", "PlayfairDisplay-Medium", "500", "normal");
+@include font("Playfair Display", "PlayfairDisplay-MediumItalic", "500", "italic");
+@include font("Playfair Display", "PlayfairDisplay-Regular", "normal", "normal");
+@include font("Playfair Display", "PlayfairDisplay-SemiBold", "600", "normal");
+@include font("Playfair Display", "PlayfairDisplay-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! PT Serif
+
+@include font("PT Serif", "PTSerif-Regular", "normal", "normal");
+@include font("PT Serif", "PTSerif-Bold", "700", "normal");
+@include font("PT Serif", "PTSerif-BoldItalic", "700", "italic");
+@include font("PT Serif", "PTSerif-Italic", "normal", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Rakkas
+
+@include font("Rakkas", "Rakkas-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Source Sans Pro
+
+@include font("Source Sans Pro", "SourceSansPro-Black", "900", "normal");
+@include font("Source Sans Pro", "SourceSansPro-BlackItalic", "900", "italic");
+@include font("Source Sans Pro", "SourceSansPro-Bold", "700", "normal");
+@include font("Source Sans Pro", "SourceSansPro-BoldItalic", "700", "italic");
+@include font("Source Sans Pro", "SourceSansPro-ExtraLight", "200", "normal");
+@include font("Source Sans Pro", "SourceSansPro-ExtraLightItalic", "200", "italic");
+@include font("Source Sans Pro", "SourceSansPro-Italic", "normal", "italic");
+@include font("Source Sans Pro", "SourceSansPro-Light", "300", "normal");
+@include font("Source Sans Pro", "SourceSansPro-LightItalic", "300", "italic");
+@include font("Source Sans Pro", "SourceSansPro-Regular", "normal", "normal");
+@include font("Source Sans Pro", "SourceSansPro-SemiBold", "600", "normal");
+@include font("Source Sans Pro", "SourceSansPro-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Spectral
+
+@include font("Spectral", "Spectral-Bold", "700", "normal");
+@include font("Spectral", "Spectral-BoldItalic", "700", "italic");
+@include font("Spectral", "Spectral-ExtraBold", "800", "normal");
+@include font("Spectral", "Spectral-ExtraBoldItalic", "800", "italic");
+@include font("Spectral", "Spectral-ExtraLight", "200", "normal");
+@include font("Spectral", "Spectral-ExtraLightItalic", "200", "italic");
+@include font("Spectral", "Spectral-Italic", "normal", "italic");
+@include font("Spectral", "Spectral-Light", "300", "normal");
+@include font("Spectral", "Spectral-LightItalic", "300", "italic");
+@include font("Spectral", "Spectral-Medium,", "500", "normal");
+@include font("Spectral", "Spectral-MediumItalic", "500", "italic");
+@include font("Spectral", "Spectral-Regular", "normal", "normal");
+@include font("Spectral", "Spectral-SemiBold", "600", "normal");
+@include font("Spectral", "Spectral-SemiBoldItalic", "600", "italic");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Ubuntu
+
+@include font("Ubuntu", "Ubuntu-Bold", "700", "normal");
+@include font("Ubuntu", "Ubuntu-BoldItalic", "700", "italic");
+@include font("Ubuntu", "Ubuntu-Italic", "normal", "italic");
+@include font("Ubuntu", "Ubuntu-Light", "300", "normal");
+@include font("Ubuntu", "Ubuntu-LightItalic", "300", "italic");
+@include font("Ubuntu", "Ubuntu-Medium", "500", "normal");
+@include font("Ubuntu", "Ubuntu-MediumItalic", "500", "italic");
+@include font("Ubuntu", "Ubuntu-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Work Sans
+
+@include font("Work Sans", "WorkSans-Black", "900", "normal");
+@include font("Work Sans", "WorkSans-Bold", "700", "normal");
+@include font("Work Sans", "WorkSans-ExtraBold", "800", "normal");
+@include font("Work Sans", "WorkSans-ExtraLight", "200", "normal");
+@include font("Work Sans", "WorkSans-Light", "300", "normal");
+@include font("Work Sans", "WorkSans-Medium", "500", "normal");
+@include font("Work Sans", "WorkSans-SemiBold", "600", "normal");
+@include font("Work Sans", "WorkSans-Thin", "100", "normal");
+@include font("Work Sans", "WorkSans-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------
+
+
+//! Yatra One
+
+@include font("Yatra One", "YatraOne-Regular", "normal", "normal");
+
+//! ----------------------------------------------------------------------------------------------------------------------

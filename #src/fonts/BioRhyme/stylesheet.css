@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'BioRhyme';
+    src: url('BioRhyme-Bold.eot');
+    src: local('BioRhyme Bold'), local('BioRhyme-Bold'),
+        url('BioRhyme-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BioRhyme-Bold.woff2') format('woff2'),
+        url('BioRhyme-Bold.woff') format('woff'),
+        url('BioRhyme-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BioRhyme';
+    src: url('BioRhyme-ExtraLight.eot');
+    src: local('BioRhyme-ExtraLight'),
+        url('BioRhyme-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('BioRhyme-ExtraLight.woff2') format('woff2'),
+        url('BioRhyme-ExtraLight.woff') format('woff'),
+        url('BioRhyme-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BioRhyme';
+    src: url('BioRhyme-Regular.eot');
+    src: local('BioRhyme-Regular'),
+        url('BioRhyme-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BioRhyme-Regular.woff2') format('woff2'),
+        url('BioRhyme-Regular.woff') format('woff'),
+        url('BioRhyme-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BioRhyme';
+    src: url('BioRhyme-ExtraBold.eot');
+    src: local('BioRhyme-ExtraBold'),
+        url('BioRhyme-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('BioRhyme-ExtraBold.woff2') format('woff2'),
+        url('BioRhyme-ExtraBold.woff') format('woff'),
+        url('BioRhyme-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BioRhyme';
+    src: url('BioRhyme-Light.eot');
+    src: local('BioRhyme-Light'),
+        url('BioRhyme-Light.eot?#iefix') format('embedded-opentype'),
+        url('BioRhyme-Light.woff2') format('woff2'),
+        url('BioRhyme-Light.woff') format('woff'),
+        url('BioRhyme-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
