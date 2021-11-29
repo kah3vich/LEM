@@ -56,7 +56,7 @@ block variables
                             p рублей
                             .ind-header__info-description-add-slider-prev
                                 <svg width="10" height="21" viewBox="0 0 10 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="1" d="M0.172608 10.5L9.19988 0.540707L9.19988 20.4593L0.172608 10.5Z" fill="#002C5B"/>
+                                    <path d="M0.172608 10.5L9.19988 0.540707L9.19988 20.4593L0.172608 10.5Z" fill="#002C5B"/>
                                 </svg>
                             .ind-header__info-description-add-slider-next
                                 <svg width="10" height="21" viewBox="0 0 10 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@ block variables
                             </svg>
                 .ind-header__info-tabs 
                     ul.ind-header__info-tabs-list
-                        li.ind-header__info-tabs-items.ind-header__info-tabs-items-active
+                        li.ind-header__info-tabs-items#indexHeaderTabsButton-1.ind-header__info-tabs-items-active
                             .ind-header__info-tabs-items-icons 
                                 <svg width="45" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.06201 42.1796C9.6474 42.1796 9.6474 36.5356 13.2328 36.5356C16.8182 36.5356 16.8213 42.1796 20.4067 42.1796C23.9921 42.1796 23.9921 36.5356 27.5807 36.5356C31.1692 36.5356 31.1661 42.1796 34.7514 42.1796C38.3368 42.1796 38.34 36.5356 41.9254 36.5356" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,7 +82,7 @@ block variables
                                     <path d="M40.3668 21.6387H14.304V31.4951H40.3668V21.6387Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             .ind-header__info-tabs-items-title Годовой оборот
-                        li.ind-header__info-tabs-items 
+                        li.ind-header__info-tabs-items#indexHeaderTabsButton-2
                             .ind-header__info-tabs-items-icons 
                                 <svg width="49" height="43" viewBox="0 0 49 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M42.1889 36.3019H12.3993L1.39087 9.87473H31.1805L42.1889 36.3019Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -94,7 +94,7 @@ block variables
                                     <path d="M42.571 12.7016C45.8221 12.7016 48.4576 10.0821 48.4576 6.85081C48.4576 3.6195 45.8221 1 42.571 1C39.3199 1 36.6843 3.6195 36.6843 6.85081C36.6843 10.0821 39.3199 12.7016 42.571 12.7016Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             .ind-header__info-tabs-items-title Годовой оборот
-                        li.ind-header__info-tabs-items 
+                        li.ind-header__info-tabs-items#indexHeaderTabsButton-3
                             .ind-header__info-tabs-items-icons 
                                 <svg width="55" height="43" viewBox="0 0 55 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M45.5314 41.9884H0.623047C17.5253 19.8626 9.3146 1 9.3146 1H36.8398C36.8398 1 35.3104 4.51116 34.9163 10.2896C34.4314 17.8906 35.9253 29.412 45.5314 41.9884Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -105,7 +105,7 @@ block variables
                                     <path d="M18.799 37.0566C16.7497 36.1474 15.0522 34.5973 13.9625 32.6401C12.8758 30.694 12.4603 28.445 12.7799 26.2397L18.9291 27.1215C18.8043 28.0075 18.9728 28.9101 19.409 29.6917C19.8452 30.4733 20.5251 31.0912 21.3454 31.4514L18.799 37.0566Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             .ind-header__info-tabs-items-title Годовой оборот
-                        li.ind-header__info-tabs-items 
+                        li.ind-header__info-tabs-items#indexHeaderTabsButton-4
                             .ind-header__info-tabs-items-icons 
                                 <svg width="62" height="44" viewBox="0 0 62 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16.8555 42.5069C16.777 42.2763 18.4165 37.7521 20.4901 32.204C21.5985 29.2478 22.8223 26.001 23.9815 22.9802C25.1407 19.9595 26.2075 17.1416 27.025 14.9971" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -123,18 +123,44 @@ block variables
                 .ind-header__info-line
                     .ind-header__info-line-wrapper
                         .ind-header__info-line-text 
-                            h3 Портал Vesti.ru
-                            p "Светнаш": энергомост через Керченский пролив прорвал энергоблокаду Крыма
-                            h3 Портал Vesti.ru
-                            p "Светнаш": энергомост через Керченский пролив прорвал энергоблокаду Крыма
-                            h3 Портал Vesti.ru
-                            p "Светнаш": энергомост через Керченский пролив прорвал энергоблокаду Крыма
+                            p
+                                span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Портал Vesti.ru &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                | "Светнаш": энергомост через Керченский пролив прорвал энергоблокаду Крыма
+                                span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Портал Vesti.ru &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                | "Светнаш": энергомост через Керченский пролив прорвал энергоблокаду Крыма
+                                span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Портал Vesti.ru &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                | "Светнаш": энергомост через Керченский пролив прорвал энергоблокаду Крыма
                 .ind-header__info-play 
                     .ind-header__info-play-icons 
                         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.6428C0 7.45124 7.46204 0 16.6667 0C25.8713 0 33.3333 7.45124 33.3333 16.6428C33.3333 25.8344 25.8713 33.2856 16.6667 33.2856C7.46204 33.2856 0 25.8344 0 16.6428ZM14.0938 22.7259L22.4271 17.525C22.7315 17.3346 22.9167 17.0014 22.9167 16.6428C22.9167 16.2843 22.7315 15.9511 22.4271 15.7606L14.0938 10.5598C13.7726 10.3591 13.3677 10.3479 13.0366 10.5323C12.7055 10.7157 12.5 11.0636 12.5 11.442V21.8437C12.5 22.2221 12.7055 22.57 13.0366 22.7534C13.194 22.8407 13.368 22.8839 13.5417 22.8839C13.7334 22.8839 13.9251 22.831 14.0938 22.7259Z" fill="white"/>
                         </svg>
                     .ind-header__info-play-title Воспроизвезти видео
+
+    section.ind-slider 
+        .containers 
+            .ind-slider__wrapper 
+                .ind-slider__wrapper-info 
+                    .ind-slider__wrapper-info-text «Модернизация электросетевого хозяйства страны – стратегическое направление деятельности нашей компании.»
+                    .ind-slider__wrapper-info-photo 
+                    .ind-slider__wrapper-info-description 
+                        h3 Мураткин Александр Михайлович
+                        p Генеральный директор ООО «ЛЭМ»
+                .ind-slider__wrapper-slide 
+                    .ind-slider__wrapper-slide-arrow
+                        .ind-slider__wrapper-slide-count 
+                            p 01
+                            span /04
+                        .ind-slider__wrapper-slide-prev#SliderButtonPrev
+                            <svg width="58" height="16" viewBox="0 0 58 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM57 9C57.5523 9 58 8.55229 58 8C58 7.44772 57.5523 7 57 7L57 9ZM1 9L57 9L57 7L1 7L1 9Z" fill="#003169"/>
+                            </svg>
+                        .ind-slider__wrapper-slide-next#SliderButtonNext
+                            <svg width="58" height="16" viewBox="0 0 58 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM57.7071 8.70711C58.0976 8.31659 58.0976 7.68342 57.7071 7.2929L51.3431 0.928937C50.9526 0.538412 50.3195 0.538412 49.9289 0.928936C49.5384 1.31946 49.5384 1.95263 49.9289 2.34315L55.5858 8L49.9289 13.6569C49.5384 14.0474 49.5384 14.6805 49.9289 15.0711C50.3195 15.4616 50.9526 15.4616 51.3431 15.0711L57.7071 8.70711ZM1 9L57 9L57 7L1 7L1 9Z" fill="#003169"/>
+                            </svg>
+                    .ind-slider__wrapper-slide-content 
+                        img(src="./img/index/slider.png", alt="img")
 
     section.ind-description 
         .containers 
@@ -192,6 +218,21 @@ block variables
                                     img(src="./img/index/desc-2.png", alt="img")
                                     .ind-description__block-slider-items-text 
                                         p Трансформаторные подстанции 10-750 кВ
+                            .swiper-slide 
+                                .ind-description__block-slider-items 
+                                    img(src="./img/index/desc-3.png", alt="img")
+                                    .ind-description__block-slider-items-text 
+                                        p Трансформаторные подстанции 10-750 кВ
+                            .swiper-slide 
+                                .ind-description__block-slider-items 
+                                    img(src="./img/index/desc-4.png", alt="img")
+                                    .ind-description__block-slider-items-text 
+                                        p Трансформаторные подстанции 10-750 кВ
+                            .swiper-slide 
+                                .ind-description__block-slider-items 
+                                    img(src="./img/index/desc-1.png", alt="img")
+                                    .ind-description__block-slider-items-text 
+                                        p Трансформаторные подстанции 10-750 кВ
                     .swiper-controls 
                         .swiper-button-next
                             <svg width="58" height="16" viewBox="0 0 58 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,35 +243,128 @@ block variables
                                 <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM57 9C57.5523 9 58 8.55229 58 8C58 7.44772 57.5523 7 57 7L57 9ZM1 9L57 9L57 7L1 7L1 9Z" fill="white"/>
                             </svg>
                         .swiper-pagination
+                        .swiper-scrollbar
 
     section.ind-object 
-        .containers 
-            .ind-object__block 
+        .ind-object__block 
+            .containers 
                 .ind-object__block-title Наши объекты
+            .containers 
                 .ind-object__block-line
-                .ind-object__block-img 
-                    .ind-object__block-img-1 
-                        img(src="./img/index/obj-1.png", alt="img")
-                    .ind-object__block-img-2 
-                        img(src="./img/index/obj-2.png", alt="img")
-                    .ind-object__block-img-3 
-                        img(src="./img/index/obj-3.png", alt="img")
+            .ind-object__block-img 
+                .ind-object__block-img-1 
+                    img(src="./img/index/obj-1.png", alt="img")
+                .ind-object__block-img-2 
+                    img(src="./img/index/obj-2.png", alt="img")
+                .ind-object__block-img-3 
+                    img(src="./img/index/obj-3.png", alt="img")
 
     section.ind-process
         .containers 
             .ind-process__block 
                 .ind-process__block-title ПРеСС-ЦЕНТР
                 ul.ind-process__block-tabs
-                    li.ind-process__block-tabs-items.ind-process__block-tabs-active
+                    li.ind-process__block-tabs-items#indexProcessTabs-1.ind-process__block-tabs-active
                         p Все публикации
-                    li.ind-process__block-tabs-items 
+                    li.ind-process__block-tabs-items#indexProcessTabs-2
                         p Новости
-                    li.ind-process__block-tabs-items 
+                    li.ind-process__block-tabs-items#indexProcessTabs-3
                         p Пресс релизы
-                    li.ind-process__block-tabs-items 
+                    li.ind-process__block-tabs-items#indexProcessTabs-4
                         p СМИ о нас
                 .ind-process__block-line 
-                ul.ind-process__block-list 
+                ul.ind-process__block-list#indexProcessTabsList-1
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-1.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title Завершено выполнение комплекса работ
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-2.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title АО "СО ЕЭС" завершило испытания  для включения в работу ВЛ 500 кВ Донская
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-3.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title Успешно и в поставленные сроки завершен комплекс работ по выполнению СМР
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                ul.ind-process__block-list.display-n#indexProcessTabsList-2
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-1.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title Завершено выполнение комплекса работ
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-2.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title АО "СО ЕЭС" завершило испытания  для включения в работу ВЛ 500 кВ Донская
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-3.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title Успешно и в поставленные сроки завершен комплекс работ по выполнению СМР
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                ul.ind-process__block-list.display-n#indexProcessTabsList-3
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-1.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title Завершено выполнение комплекса работ
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-2.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title АО "СО ЕЭС" завершило испытания  для включения в работу ВЛ 500 кВ Донская
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-3.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title Успешно и в поставленные сроки завершен комплекс работ по выполнению СМР
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-3.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title Успешно и в поставленные сроки завершен комплекс работ по выполнению СМР
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                    li.ind-process__block-list-items
+                        .ind-process__block-list-items-img 
+                            img(src="./img/index/process-3.png", alt="img")
+                        .ind-process__block-list-items-text
+                            .ind-process__block-list-items-text-title Успешно и в поставленные сроки завершен комплекс работ по выполнению СМР
+                            .ind-process__block-list-items-text-add 
+                                h3 11 декабря 2021
+                                p Новости
+                ul.ind-process__block-list.display-n#indexProcessTabsList-4
                     li.ind-process__block-list-items
                         .ind-process__block-list-items-img 
                             img(src="./img/index/process-1.png", alt="img")
