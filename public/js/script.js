@@ -22,6 +22,24 @@ var indexSliderReward = new Swiper(".indexSliderReward", {
     keyboard: true,
     slidesPerView: 4,
     spaceBetween: 29,
+    breakpoints: {
+        1300: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        1000: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 
 
@@ -43,40 +61,58 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
     scrollbar: {
         el: ".ind-description__block-slider .swiper-scrollbar"
     },
+    breakpoints: {
+        1380: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        1000: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        700: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 
 
 //! Авто-скрытие блока 
 
-var items_1 = $('.ind-header__info-description'),
-    items_2 = $('.ind-header__info-tabs'),
-    // items_3 = $('.ind-header__info-line'),
-    timeout,
-    wait = 2000;
+// var items_1 = $('.ind-header__info-description'),
+//     items_2 = $('.ind-header__info-tabs'),
+//     // items_3 = $('.ind-header__info-line'),
+//     timeout,
+//     wait = 2000;
 
-function alive(){ 
-    clearTimeout(timeout);
-    items_1.css('opacity', '1')
-    items_2.css('opacity', '1')
-    timeout = setTimeout(remind, wait);
-}
+// function alive(){ 
+//     clearTimeout(timeout);
+//     items_1.css('opacity', '1')
+//     items_2.css('opacity', '1')
+//     timeout = setTimeout(remind, wait);
+// }
 
-function remind(){
-    items_1.css('opacity', '0')
-    items_2.css('opacity', '0')
-}
+// function remind(){
+//     items_1.css('opacity', '0')
+//     items_2.css('opacity', '0')
+// }
 
-items_1.css('opacity', '1')
-items_2.css('opacity', '1')
-document.addEventListener( 'mousemove', alive);
-timeout = setTimeout(remind, wait);
+// items_1.css('opacity', '1')
+// items_2.css('opacity', '1')
+// document.addEventListener( 'mousemove', alive);
+// timeout = setTimeout(remind, wait);
 
 
-$('body').on("mousemove", function() {
-    $('.ind-header__info-description').removeClass('opacity')
-    $('.ind-header__info-tabs').removeClass('opacity')
-    $('.ind-header__info-line').removeClass('opacity')
-})
+// $('body').on("mousemove", function() {
+//     $('.ind-header__info-description').removeClass('opacity')
+//     $('.ind-header__info-tabs').removeClass('opacity')
+//     $('.ind-header__info-line').removeClass('opacity')
+// })
 
 
 
