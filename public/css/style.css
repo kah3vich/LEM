@@ -286,6 +286,134 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-Black.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-BlackItalic.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-Bold.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-BoldItalic.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-Italic.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-Light.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-LightItalic.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-Regular.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-SemiBold.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-SemiBoldItalic.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-Thin.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-ThinItalic.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-UltraBold.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-UltraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-UltraBoldItalic.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-UltraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-UltraLight.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-UltraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-display: swap;
+  src: url("../fonts/RF Dewi/RFDewi-UltraLightItalic.woff") format("woff"),url("../fonts/RF Dewi/RFDewi-UltraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
 *,
 *::before,
 *::after {
@@ -1059,6 +1187,7 @@ h6 {
 }
 
 .ind-object__block-title {
+  font-family: "RF Dewi";
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -1171,6 +1300,7 @@ h6 {
 }
 
 .ind-reward__block-title {
+  font-family: "RF Dewi";
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -1272,6 +1402,7 @@ h6 {
 }
 
 .ind-process__block-title {
+  font-family: "RF Dewi";
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -1421,6 +1552,7 @@ h6 {
 }
 
 .ind-process__block-list-items-text {
+  font-family: "RF Dewi";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1504,6 +1636,7 @@ h6 {
 }
 
 .ind-process__add-banner-title {
+  font-family: "RF Dewi";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1530,6 +1663,7 @@ h6 {
 }
 
 .ind-process__add-banners-title {
+  font-family: "RF Dewi";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1977,6 +2111,589 @@ h6 {
   cursor: pointer;
 }
 
+.def-header {
+  position: relative;
+  width: 100%;
+  padding: 0 0 85px 0;
+}
+
+.def-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #002045;
+  z-index: -5;
+}
+
+.def-header .containers {
+  padding: 0 90px;
+  z-index: 10;
+}
+
+.def-header__banners {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.def-header__banners-items {
+  position: absolute;
+  overflow: hidden;
+}
+
+.def-header__banners-items:nth-child(1) {
+  width: 808px;
+  height: 714px;
+  top: 90px;
+  right: 0;
+  z-index: 3;
+}
+
+.def-header__banners-items:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,49,105,.5);
+}
+
+.def-header__banners-items:nth-child(2) {
+  width: 808px;
+  height: 481px;
+  right: 0;
+  z-index: 5;
+  top: 393px;
+}
+
+.def-header__banners-items:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 986px;
+  background: #003169;
+  z-index: 1;
+}
+
+.def-header__banners-items img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.def-header__block {
+  padding: 213px 0 0 0;
+  z-index: 6;
+}
+
+.def-header__block-title {
+  width: 262px;
+  font-family: RF Dewi;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 43px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-header__block-description {
+  width: 437px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 64px 0 0 0;
+}
+
+.def-header__block-list {
+  margin: 180px 0 0 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.def-header__block-items {
+  height: 391px;
+  width: 391px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.def-header__block-items-photo {
+  width: 100%;
+  height: 279px;
+  position: relative;
+}
+
+.def-header__block-items-photo:hover {
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.def-header__block-items-photo:hover svg {
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.def-header__block-items-photo:hover::after {
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.def-header__block-items-photo svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 5;
+}
+
+.def-header__block-items-photo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,49,105,.7);
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.def-header__block-items-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.def-header__block-items-text {
+  height: 116px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.def-header__block-items-text p {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #004a9f;
+  width: 314px;
+}
+
+.def-header__block-text {
+  margin: 151px 0 0 0;
+  width: 606px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-header__block-add {
+  margin: 79px 0 0 0;
+  font-family: RF Dewi;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 43px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-list {
+  width: 100%;
+  background: #002045;
+}
+
+.def-list__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.def-list__block-items {
+  width: 100%;
+  height: 464px;
+  background: #003169;
+  padding: 61px 0 0 85px;
+  position: relative;
+}
+
+.def-list__block-items:nth-child(2) {
+  background: #004a9f;
+}
+
+.def-list__block-items-circle {
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 0 65px 0;
+}
+
+.def-list__block-items-text {
+  width: 358px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-list__block-items-bg {
+  position: absolute;
+  top: 54px;
+  right: 45px;
+  opacity: .3;
+}
+
+.def-delivery {
+  padding: 177px 0 0 0;
+  position: relative;
+}
+
+.def-delivery::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #002045;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+.def-delivery .containers {
+  padding: 0 90px;
+}
+
+.def-delivery__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.def-delivery__block-banner {
+  width: 100%;
+  height: 505px;
+  position: relative;
+  background: url(../img/deflation/banner-3.png) no-repeat;
+  background-size: cover;
+}
+
+.def-delivery__block-title {
+  font-family: RF Dewi;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 43px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.def-delivery__block-line {
+  margin: 46px 0 67px 0;
+  width: 100%;
+  height: 0px;
+  position: relative;
+}
+
+.def-delivery__block-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 1264px;
+  border-top: 1px solid #0057b6;
+}
+
+.def-delivery__block-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 86px 0 0 0;
+}
+
+.def-delivery__block-items {
+  height: 338px;
+  width: 391px;
+  background: #004a9f;
+}
+
+.def-delivery__block-items-photo {
+  width: 391px;
+  height: 173px;
+  overflow: hidden;
+}
+
+.def-delivery__block-items-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.def-delivery__block-items-text {
+  width: 100%;
+  height: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.def-delivery__block-items-text p {
+  width: 328px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-delivery__block-titles {
+  margin: 95px 0 0 0;
+  font-family: RF Dewi;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 43px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-delivery__block-text {
+  margin: 46px 0 0 0;
+  width: 606px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-delivery__block-add {
+  margin: 111px 0 0 0;
+  width: 606px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-delivery__block::after {
+  content: "";
+  position: absolute;
+  top: 660px;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 505px;
+  background: url(../img/deflation/banner-4.png) no-repeat;
+  background-size: cover;
+}
+
+.def-delivery__block::before {
+  content: "";
+  position: absolute;
+  top: 660px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 505px;
+  background: rgba(0,49,105,.7);
+}
+
+.def-service {
+  background: #002045;
+  padding: 177px 0 0 0;
+  position: relative;
+}
+
+.def-service__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.def-service__block-banner {
+  width: 100%;
+  height: 505px;
+  position: relative;
+  background: url(../img/deflation/banner-5.png) no-repeat;
+  background-size: cover;
+}
+
+.def-service__block-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,49,105,.7);
+  width: 100%;
+  height: 100%;
+}
+
+.def-service__block-banner-text {
+  z-index: 8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 606px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def-service__block-title {
+  font-family: RF Dewi;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 43px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.def-service__block-line {
+  margin: 46px 0 67px 0;
+  width: 100%;
+  height: 0px;
+  position: relative;
+}
+
+.def-service__block-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 1264px;
+  border-top: 1px solid #0057b6;
+}
+
 .header__nav {
   width: 100%;
   height: 90px;
@@ -2071,10 +2788,6 @@ h6 {
   transition: all .5s ease;
 }
 
-.header__nav-list-items:nth-child(2) {
-  opacity: 1;
-}
-
 .header__nav-list-items:hover {
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -2109,6 +2822,7 @@ h6 {
 }
 
 .footer__block-title {
+  font-family: "RF Dewi";
   width: 615px;
   font-style: normal;
   font-weight: bold;

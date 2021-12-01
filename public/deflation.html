@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Направления деятельности</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css">
+  <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header"> 
+    <div class="header__nav">
+      <div class="header__nav-wrapper"> 
+        <div class="header__nav-burger">
+           <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="17" x2="15" y2="17" stroke="#002C5B" stroke-width="2"/>
+<line y1="9" x2="15" y2="9" stroke="#002C5B" stroke-width="2"/>
+<line x1="7" y1="1" x2="15" y2="1" stroke="#002C5B" stroke-width="2"/>
+</svg>
+        </div>
+        <div class="header__nav-logo">
+           <svg width="121" height="47" viewBox="0 0 121 47" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_95_1843" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="121" height="47">
+<rect y="0.656738" width="121" height="45.925" fill="url(#pattern0)"/>
+</mask>
+<g mask="url(#mask0_95_1843)">
+<rect x="-17.8752" y="-19.6933" width="169.95" height="89.925" fill="white"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_95_1843" transform="scale(0.00227273 0.00598802)"/>
+</pattern>
+<image id="image0_95_1843" width="440" height="167" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-list-items">О компании</li>
+          <li class="header__nav-list-items">Направление  деятельности</li>
+          <li class="header__nav-list-items">Наши объекты</li>
+          <li class="header__nav-list-items">КОНТАКТЫ</li>
+          <li class="header__nav-list-items">ПРЕСС-ЦЕНТР</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="def-header">
+    <div class="def-header__banners"> 
+      <div class="def-header__banners-items"><img src="./img/deflation/banner-1.png" alt="banner"></div>
+      <div class="def-header__banners-items"><img src="./img/deflation/banner-2.png" alt="banner"></div>
+      <div class="def-header__banners-items"></div>
+    </div>
+    <div class="containers">
+      <div class="def-header__block"> 
+        <div class="def-header__block-title">Направления деятельности</div>
+        <div class="def-header__block-description">ООО «ЛЭМ» осуществляет собственными силами и силами привлечённых субподрядчиков строительство и реконструкцию следующих типов объектов:</div>
+        <ul class="def-header__block-list">
+          <li class="def-header__block-items"> 
+            <div class="def-header__block-items-photo"> <img src="./img/deflation/header-1.png" alt="img"><svg width="110" height="105" viewBox="0 0 110 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.1859 103.542C22.1016 103.542 22.1016 89.4878 31.0172 89.4878C39.9328 89.4878 39.9407 103.542 48.8564 103.542C57.772 103.542 57.772 89.4878 66.6955 89.4878C75.619 89.4878 75.6111 103.542 84.5268 103.542C93.4424 103.542 93.4503 89.4878 102.366 89.4878" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90.791 48.0411L108.024 26.6924" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.2667 34.1294H55.9371V52.3935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.4299 52.3928L72.265 1H82.5499L90.7809 50.7718" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8657V52.3939" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8644L44.2326 50.7715V34.4039L4.80075 10.2065L1 15.8644Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.5954 101.858V77.7H93.744V96.0663" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7958 99.2848V77.7H55.9365V99.2769" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M98.5003 52.3923H33.6907V76.9359H98.5003V52.3923Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <div class="def-header__block-items-text"> 
+              <p>Трансформаторные подстанции 10-750 кВ</p>
+            </div>
+          </li>
+          <li class="def-header__block-items"> 
+            <div class="def-header__block-items-photo"> <img src="./img/deflation/header-2.png" alt="img"><svg width="110" height="105" viewBox="0 0 110 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.1859 103.542C22.1016 103.542 22.1016 89.4878 31.0172 89.4878C39.9328 89.4878 39.9407 103.542 48.8564 103.542C57.772 103.542 57.772 89.4878 66.6955 89.4878C75.619 89.4878 75.6111 103.542 84.5268 103.542C93.4424 103.542 93.4503 89.4878 102.366 89.4878" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90.791 48.0411L108.024 26.6924" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.2667 34.1294H55.9371V52.3935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.4299 52.3928L72.265 1H82.5499L90.7809 50.7718" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8657V52.3939" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8644L44.2326 50.7715V34.4039L4.80075 10.2065L1 15.8644Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.5954 101.858V77.7H93.744V96.0663" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7958 99.2848V77.7H55.9365V99.2769" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M98.5003 52.3923H33.6907V76.9359H98.5003V52.3923Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <div class="def-header__block-items-text"> 
+              <p>Трансформаторные подстанции 10-750 кВ</p>
+            </div>
+          </li>
+          <li class="def-header__block-items"> 
+            <div class="def-header__block-items-photo"> <img src="./img/deflation/header-3.png" alt="img"><svg width="110" height="105" viewBox="0 0 110 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.1859 103.542C22.1016 103.542 22.1016 89.4878 31.0172 89.4878C39.9328 89.4878 39.9407 103.542 48.8564 103.542C57.772 103.542 57.772 89.4878 66.6955 89.4878C75.619 89.4878 75.6111 103.542 84.5268 103.542C93.4424 103.542 93.4503 89.4878 102.366 89.4878" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90.791 48.0411L108.024 26.6924" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.2667 34.1294H55.9371V52.3935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.4299 52.3928L72.265 1H82.5499L90.7809 50.7718" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8657V52.3939" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8644L44.2326 50.7715V34.4039L4.80075 10.2065L1 15.8644Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.5954 101.858V77.7H93.744V96.0663" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7958 99.2848V77.7H55.9365V99.2769" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M98.5003 52.3923H33.6907V76.9359H98.5003V52.3923Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <div class="def-header__block-items-text"> 
+              <p>Трансформаторные подстанции 10-750 кВ</p>
+            </div>
+          </li>
+          <li class="def-header__block-items"> 
+            <div class="def-header__block-items-photo"> <img src="./img/deflation/header-4.png" alt="img"><svg width="110" height="105" viewBox="0 0 110 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.1859 103.542C22.1016 103.542 22.1016 89.4878 31.0172 89.4878C39.9328 89.4878 39.9407 103.542 48.8564 103.542C57.772 103.542 57.772 89.4878 66.6955 89.4878C75.619 89.4878 75.6111 103.542 84.5268 103.542C93.4424 103.542 93.4503 89.4878 102.366 89.4878" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90.791 48.0411L108.024 26.6924" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.2667 34.1294H55.9371V52.3935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.4299 52.3928L72.265 1H82.5499L90.7809 50.7718" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8657V52.3939" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8644L44.2326 50.7715V34.4039L4.80075 10.2065L1 15.8644Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.5954 101.858V77.7H93.744V96.0663" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7958 99.2848V77.7H55.9365V99.2769" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M98.5003 52.3923H33.6907V76.9359H98.5003V52.3923Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <div class="def-header__block-items-text"> 
+              <p>Трансформаторные подстанции 10-750 кВ</p>
+            </div>
+          </li>
+          <li class="def-header__block-items"> 
+            <div class="def-header__block-items-photo"> <img src="./img/deflation/header-5.png" alt="img"><svg width="110" height="105" viewBox="0 0 110 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.1859 103.542C22.1016 103.542 22.1016 89.4878 31.0172 89.4878C39.9328 89.4878 39.9407 103.542 48.8564 103.542C57.772 103.542 57.772 89.4878 66.6955 89.4878C75.619 89.4878 75.6111 103.542 84.5268 103.542C93.4424 103.542 93.4503 89.4878 102.366 89.4878" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90.791 48.0411L108.024 26.6924" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.2667 34.1294H55.9371V52.3935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.4299 52.3928L72.265 1H82.5499L90.7809 50.7718" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8657V52.3939" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8644L44.2326 50.7715V34.4039L4.80075 10.2065L1 15.8644Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.5954 101.858V77.7H93.744V96.0663" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7958 99.2848V77.7H55.9365V99.2769" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M98.5003 52.3923H33.6907V76.9359H98.5003V52.3923Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <div class="def-header__block-items-text"> 
+              <p>Трансформаторные подстанции 10-750 кВ</p>
+            </div>
+          </li>
+          <li class="def-header__block-items"> 
+            <div class="def-header__block-items-photo"> <img src="./img/deflation/header-6.png" alt="img"><svg width="110" height="105" viewBox="0 0 110 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.1859 103.542C22.1016 103.542 22.1016 89.4878 31.0172 89.4878C39.9328 89.4878 39.9407 103.542 48.8564 103.542C57.772 103.542 57.772 89.4878 66.6955 89.4878C75.619 89.4878 75.6111 103.542 84.5268 103.542C93.4424 103.542 93.4503 89.4878 102.366 89.4878" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90.791 48.0411L108.024 26.6924" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.2667 34.1294H55.9371V52.3935" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60.4299 52.3928L72.265 1H82.5499L90.7809 50.7718" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8657V52.3939" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 15.8644L44.2326 50.7715V34.4039L4.80075 10.2065L1 15.8644Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.5954 101.858V77.7H93.744V96.0663" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.7958 99.2848V77.7H55.9365V99.2769" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M98.5003 52.3923H33.6907V76.9359H98.5003V52.3923Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <div class="def-header__block-items-text"> 
+              <p>Трансформаторные подстанции 10-750 кВ</p>
+            </div>
+          </li>
+        </ul>
+        <div class="def-header__block-text">Виды работ, выполняемые подразделениями Ленэлектромонтаж, а так же силами привлечённых субподрядчиков, при строительстве электросетевых объектов:</div>
+        <div class="def-header__block-add">Проектирование</div>
+      </div>
+    </div>
+  </section>
+  <section class="def-list"> 
+    <div class="containers"> 
+      <div class="def-list__block"> 
+        <div class="def-list__block-items"> 
+          <div class="def-list__block-items-circle"> </div>
+          <div class="def-list__block-items-text">Разработка проектной документации, в том числе технико-экономические обоснования, изыскательские работы, согласование в государственных и надзорных органах</div>
+          <div class="def-list__block-items-bg">
+             <svg width="233" height="224" viewBox="0 0 233 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.2992 222.302C46.5406 222.302 46.5406 191.971 65.782 191.971C85.0234 191.971 85.0404 222.302 104.282 222.302C123.523 222.302 123.523 191.971 142.782 191.971C162.04 191.971 162.023 222.302 181.264 222.302C200.506 222.302 200.523 191.971 219.764 191.971" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M194.784 102.522L231.976 56.4482" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96.5348 72.4984H119.563V111.915" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M129.26 111.914L154.802 1H176.998L194.762 108.416" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 33.0827V111.916" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 33.0801L94.303 108.415V73.0913L9.20265 20.8695L1 33.0801Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M170.622 218.668V166.531H201.157V206.169" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M89.044 213.115V166.531H119.562V213.098" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M211.421 111.913H71.5519V164.882H211.421V111.913Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </div>
+        </div>
+        <div class="def-list__block-items"> 
+          <div class="def-list__block-items-circle"> </div>
+          <div class="def-list__block-items-text">Разработка рабочей документации, включая разделы: общестроительные решения, основные электротехнические решения, РЗА, ПА, АСУ ТП, ВОЛС, ВЧ-связь</div>
+          <div class="def-list__block-items-bg">
+             <svg width="233" height="224" viewBox="0 0 233 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.2992 222.302C46.5406 222.302 46.5406 191.971 65.782 191.971C85.0234 191.971 85.0404 222.302 104.282 222.302C123.523 222.302 123.523 191.971 142.782 191.971C162.04 191.971 162.023 222.302 181.264 222.302C200.506 222.302 200.523 191.971 219.764 191.971" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M194.784 102.522L231.976 56.4482" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96.5348 72.4984H119.563V111.915" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M129.26 111.914L154.802 1H176.998L194.762 108.416" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 33.0827V111.916" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 33.0801L94.303 108.415V73.0913L9.20265 20.8695L1 33.0801Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M170.622 218.668V166.531H201.157V206.169" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M89.044 213.115V166.531H119.562V213.098" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M211.421 111.913H71.5519V164.882H211.421V111.913Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </div>
+        </div>
+        <div class="def-list__block-items"> 
+          <div class="def-list__block-items-circle"> </div>
+          <div class="def-list__block-items-text">Услуги по техническому сопровождению проектов</div>
+          <div class="def-list__block-items-bg">
+             <svg width="233" height="224" viewBox="0 0 233 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.2992 222.302C46.5406 222.302 46.5406 191.971 65.782 191.971C85.0234 191.971 85.0404 222.302 104.282 222.302C123.523 222.302 123.523 191.971 142.782 191.971C162.04 191.971 162.023 222.302 181.264 222.302C200.506 222.302 200.523 191.971 219.764 191.971" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M194.784 102.522L231.976 56.4482" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96.5348 72.4984H119.563V111.915" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M129.26 111.914L154.802 1H176.998L194.762 108.416" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 33.0827V111.916" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 33.0801L94.303 108.415V73.0913L9.20265 20.8695L1 33.0801Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M170.622 218.668V166.531H201.157V206.169" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M89.044 213.115V166.531H119.562V213.098" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M211.421 111.913H71.5519V164.882H211.421V111.913Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="def-delivery"> 
+    <div class="def-delivery__block"> 
+      <div class="def-delivery__block-title">Поставка оборудования и комплектация объектов материалами</div>
+      <div class="def-delivery__block-line"> </div>
+      <div class="def-delivery__block-banner"></div>
+      <div class="containers"> 
+        <div class="def-delivery__block-titles">Строительство</div>
+        <div class="def-delivery__block-text">Работы по строительству подстанций и распределительных устройств с выполнением:</div>
+        <ul class="def-delivery__block-list"> 
+          <li class="def-delivery__block-items"> 
+            <div class="def-delivery__block-items-photo"> <img src="./img/deflation/delivery-1.png" alt="img"></div>
+            <div class="def-delivery__block-items-text"> 
+              <p>общестроительных работ</p>
+            </div>
+          </li>
+          <li class="def-delivery__block-items"> 
+            <div class="def-delivery__block-items-photo"> <img src="./img/deflation/delivery-2.png" alt="img"></div>
+            <div class="def-delivery__block-items-text"> 
+              <p>работ по монтажу основного и вторичного оборудования (РЗА, ПА, АСУ ТП, ) и его пусконаладке</p>
+            </div>
+          </li>
+          <li class="def-delivery__block-items"> 
+            <div class="def-delivery__block-items-photo"> <img src="./img/deflation/delivery-3.png" alt="img"></div>
+            <div class="def-delivery__block-items-text"> 
+              <p>работ по созданию на объекте ЦСПИ , внутриобъектовой и ВЧ связи</p>
+            </div>
+          </li>
+        </ul>
+        <div class="def-delivery__block-add">Полный комплекс работ по строительству кабельных сетей и воздушных линий электропередач, а так же волоконно оптических линий связи</div>
+      </div>
+    </div>
+  </section>
+  <section class="def-service"> 
+    <div class="def-service__block"> 
+      <div class="def-service__block-title">Оказание инжиниринговых услуг</div>
+      <div class="def-service__block-line"> </div>
+      <div class="def-service__block-banner"> 
+        <div class="def-service__block-banner-text">Управление строительством как отдельных подстанционных и распределительных электросетевых объектов, так и крупных комплексных проектов, состоящих из набора разных типов объектов</div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"> 
+    <div class="containers"> 
+      <div class="footer__block"> 
+        <div class="footer__block-title">ООО «ЛЭМ» - Энергия будущего в настоящем!</div>
+        <div class="footer__block-btns"> 
+          <button class="footer__block-btn"> <a href="#">О компании</a></button>
+          <button class="footer__block-button"><a href="#">Написать нам</a></button>
+        </div>
+      </div>
+      <div class="footer__wrapper"> 
+        <div class="footer__wrapper-lists"> 
+          <ul class="footer__wrapper-list">
+            <div class="footer__wrapper-list-title">Навигация</div>
+            <li class="footer__wrapper-list-items">Главная</li>
+            <li class="footer__wrapper-list-items">О компании</li>
+            <li class="footer__wrapper-list-items">Направления деятельности</li>
+            <li class="footer__wrapper-list-items">Наши объекты</li>
+            <li class="footer__wrapper-list-items">Пресс-центр</li>
+            <li class="footer__wrapper-list-items">Контакты</li>
+          </ul>
+          <ul class="footer__wrapper-list">
+            <div class="footer__wrapper-list-title">Навигация</div>
+            <li class="footer__wrapper-list-items">Пресс-центр</li>
+            <li class="footer__wrapper-list-items">Контакты</li>
+          </ul>
+          <ul class="footer__wrapper-list">
+            <div class="footer__wrapper-list-title">Навигация</div>
+            <li class="footer__wrapper-list-item">info@lem-ltd.ru <br>+7 (499) 684-00-16</li>
+            <li class="footer__wrapper-list-item">г. Москва, поселение Московский Киевское шоссе, 22-й км., домовладение 4, строение 1, блок А, офисный подъезд 9, этаж 9 (Бизнес парк Румянцево).</li>
+          </ul>
+          <ul class="footer__wrapper-list">
+            <div class="footer__wrapper-list-title">Документы</div>
+            <li class="footer__wrapper-list-items">Реквизиты</li>
+            <li class="footer__wrapper-list-items">Документация</li>
+            <li class="footer__wrapper-list-items">Вакансии</li>
+          </ul>
+        </div>
+        <div class="footer__wrapper-line"> </div>
+        <div class="footer__wrapper-add"> 
+          <div class="footer__wrapper-add-logo">
+             <svg width="121" height="46" viewBox="0 0 121 46" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_95_1846" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="121" height="46">
+<rect width="121" height="45.925" fill="url(#pattern0)"/>
+</mask>
+<g mask="url(#mask0_95_1846)">
+<rect x="-17.8752" y="-20.3501" width="169.95" height="89.925" fill="#003169"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_95_1846" transform="scale(0.00227273 0.00598802)"/>
+</pattern>
+<image id="image0_95_1846" width="440" height="167" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+          </div>
+          <div class="footer__wrapper-add-rights">© 2021 ООО «ЛЭМ». Все права защищены. </div>
+          <div class="footer__wrapper-add-create"><a href="https://bpump.ru/">Сайт разработан компанией <span>Bussines Pump </span></a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="js/script.min.js"></script>
