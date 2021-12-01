@@ -374,6 +374,30 @@
                 }
             }
         }
+        &-media {
+            width: 100%;
+            background: #003169;
+            height: 48px;
+            cursor: pointer;
+            display: none;
+            &-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &-title {
+                margin: 0 59px;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 46px;
+                color: #FFFFFF;
+            }
+            &-arrow {
+                transition: all 0.5s ease;
+            }
+        }
         &-play {
             position: absolute;
             right: -250px;
@@ -655,6 +679,24 @@
                     width: 635px;
                     height: 100%;
                     overflow: hidden;
+                    position: relative;
+                    &:hover {
+                        transition: all 0.5s ease;
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 49, 105, 0.5);
+                        opacity: 0;
+                        transition: all 0.5s ease;
+                    }
                     & img {
                         width: 100%;
                         height: 100%;
