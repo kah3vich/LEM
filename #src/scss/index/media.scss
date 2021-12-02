@@ -12,7 +12,7 @@
     .ind-header__info-description-add-arrow {
         position: static;
         transform: none;
-        margin: 35px 0 0 0;
+        margin: 55px 0 -6px 0;
         transition: all 0.5 ease;
     }
     .ind-header__info-tabs {
@@ -461,9 +461,6 @@
     }
     .ind-process__block-tabs {
         gap: 55px 0;
-    }
-    .ind-header__info-line-text {
-        width: 600%;
     }
     .ind-process__add-banner {
         background-position: 50% 0;

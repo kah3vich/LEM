@@ -458,13 +458,14 @@ h6
     width: 100%;height: 100%;
 }.ind-header__info-line-text
 {
-    position: absolute                                                                                                                                                                                ;position: absolute;z-index: 5;z-index: 5;top: 50%;left: 0;left: -20%;display: -webkit-box;display: -ms-flexbox;display: flex;display: flex;width: 420%;-webkit-transform: translate(0,-50%);-ms-transform: translate(0,-50%);transform: translate(0,-50%);-webkit-animation: line 50s infinite linear;animation: line 50s infinite linear;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;
-}.ind-header__info-line-text p
+    position: absolute                                                                                                                                                                                ;position: absolute;z-index: 5;z-index: 5;top: 50%;left: 0;left: 0;display: -webkit-box;display: -ms-flexbox;display: flex;display: flex;width: 100%;-webkit-transform: translate(0,-50%);-ms-transform: translate(0,-50%);transform: translate(0,-50%);-webkit-animation: line 50s infinite linear;animation: line 50s infinite linear;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;
+}.ind-header__info-line-text marquee
 {
-    font-family: TT Norms;font-size: 14px;font-weight: 400;font-style: normal;line-height: 19px;width: 420%;color: #fff;
-}.ind-header__info-line-text p span
-{
-    font-family: TT Norms;font-size: 18px;font-weight: 400;font-style: normal;line-height: 26px;width: 10%;letter-spacing: -.5px;color: #fff;
+    font-family: TT Norms;font-size: 18px;font-weight: 400;font-style: normal;line-height: 26px;display: -webkit-box;display: -ms-flexbox;display: flex;width: 10%;width: 100%;letter-spacing: -.5px;color: #fff;
+}.ind-header__info-line-text marquee span
+{font-family: TT Norms;font-size: 14px;font-weight: 400;font-style: normal;line-height: 19px;
+
+    width: 100%;color: #fff;
 }.ind-header__info-media
 {display: none;
 
@@ -511,30 +512,6 @@ h6
     }100%
     {
         -webkit-transform: scale(1.1)                                                                ;transform: scale(1.1);opacity: 0;
-    }
-}@-webkit-keyframes line
-{
-    0%
-    {
-        left: -20%;
-    }50%
-    {
-        left: -200%;
-    }100%
-    {
-        left: -20%;
-    }
-}@keyframes line
-{
-    0%
-    {
-        left: -20%;
-    }50%
-    {
-        left: -200%;
-    }100%
-    {
-        left: -20%;
     }
 }.ind-object
 {
@@ -2097,9 +2074,6 @@ h6
     }.ind-process__block-tabs
     {
         gap: 55px 0;
-    }.ind-header__info-line-text
-    {
-        width: 600%;
     }.ind-process__add-banner
     {
         background-position: 50% 0;
@@ -2172,7 +2146,7 @@ h6
         height: 100%;-webkit-transition: all .5 ease;-o-transition: all .5 ease;transition: all .5 ease;
     }.ind-header__info-description-add-arrow
     {
-        position: static;margin: 35px 0 0 0;-webkit-transition: all .5 ease;-o-transition: all .5 ease;transition: all .5 ease;-webkit-transform: none;-ms-transform: none;transform: none;
+        position: static;margin: 55px 0 -6px 0;-webkit-transition: all .5 ease;-o-transition: all .5 ease;transition: all .5 ease;-webkit-transform: none;-ms-transform: none;transform: none;
     }.ind-header__info-tabs
     {
         height: 100%;
