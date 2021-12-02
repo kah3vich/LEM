@@ -1,0 +1,115 @@
+@media (max-width: 1400px) {
+    .def-header__block-list {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        justify-items: center;
+    }
+    .def-header__block-items {
+        width: 100%;
+    }
+    .def-list__block {
+        flex-direction: column;
+    }
+    .def-list__block-items-text {
+        width: 90%;
+    }
+}
+@media (max-width: 1350px) {
+    .def-delivery__block-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px 0;
+    }
+    .def-service__block-line::after {
+        width: 90%;
+    }
+    .def-service__block-banner-text {
+        width: 90%;
+    }
+    .def-delivery__block-add {
+        width: 100%;
+    }
+    .def-delivery__block-text {
+        width: 100%;
+    }
+    .def-delivery__block-line::after {
+        width: 90%;
+    }
+    .def-header__block-text {
+        width: 100%;
+    }
+    .def-header__block-description {
+        width: 100%;
+    }
+    .def-delivery__block-title {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 1050px) {
+    .def-service__block-title {
+        padding: 0 30px;
+    }
+    .def-delivery .containers {
+        padding: 0 30px;
+    }
+    .def-delivery__block-line::after {
+        width: 90%;
+    }
+    .def-service__block-line::after {
+        width: 90%;
+    }
+    .def-header .containers {
+        padding: 0 30px;
+    }
+    .def-list__block-items {
+        position: relative;
+        width: 100%;
+        height: 464px;
+        padding: 61px 0 0 35px;
+        background: #003169;
+    }
+}
+@media (max-width: 900px) {
+    .def-header__block-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .def-header__block-items-text p {
+        width: 90%;
+    }
+}
+@media (max-width: 500px) {
+    .def-header__banners-items:nth-child(2) {
+        z-index: 5;
+        top: 625px;
+        right: 0;
+        width: 808px;
+        height: 481px;
+    }
+    .def-header__block-list {
+        margin: 350px 0 0 0;
+    }
+    .def-delivery__block-banner {
+        background-position: 50% 0;
+    }
+    .def-delivery__block-titles,
+    .def-delivery__block-text {
+        display: none;
+    }
+    .def-delivery__block-list {
+        margin: 230px 0 0 0;
+    }
+    .def-delivery__block::after {
+        background-position: 50% 0;
+    }
+}
+@media (max-width: 450px) {
+    .def-delivery__block-items {
+        width: 100%;
+    }
+    .def-delivery__block-items-photo {
+        width: 100%;
+    }
+    .def-delivery__block-items-text p {
+        font-size: 16px;
+    }
+}

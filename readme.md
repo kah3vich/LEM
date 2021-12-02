@@ -2,4 +2,7 @@
 <br>
 
 ## Deflation : [click me](https://kah3vich.github.io/LEM/public/deflation.html)
-
+## New : [click me](https://kah3vich.github.io/LEM/public/new.html)
+## Detail : [click me](https://kah3vich.github.io/LEM/public/detail.html)
+## Contact : [click me](https://kah3vich.github.io/LEM/public/contact.html)
+## Objects : [click me](https://kah3vich.github.io/LEM/public/objects.html)

@@ -92,6 +92,35 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
 
 //! Авто-скрытие блока 
 
+
+// .ind-header__info-description-block
+// .ind-header__info-description-add
+// .ind-header__info-tabs
+
+// $('.ind-header__info-description-block').on('mouseover', function() {
+//     $(this).css('opacity', '1')
+// });
+// $('.ind-header__info-description-add').on('mouseover', function() {
+//     $(this).css('opacity', '1')
+// });
+// $('.ind-header__info-tabs').on('mouseover', function() {
+//     $(this).css('opacity', '1')
+// });
+// // $('.ind-header__info').hover(function() {
+// //     setTimeout(function() {
+// //         $('.ind-header__info-tabs').css('opacity', '01')
+// //         $('.ind-header__info-description-add').css('opacity', '0')
+// //         $('.ind-header__info-description-block').css('opacity', '0')
+// //     }, 1000)
+// // });
+// $(function() {
+//     setTimeout(function() {
+//         $('.ind-header__info-tabs').css('opacity', '0')
+//         $('.ind-header__info-description-add').css('opacity', '0')
+//         $('.ind-header__info-description-block').css('opacity', '0')
+//     }, 1000)
+// })
+
 var items_1 = $('.ind-header__info-description'),
     items_2 = $('.ind-header__info-tabs'),
     // items_3 = $('.ind-header__info-line'),
@@ -122,11 +151,11 @@ document.addEventListener( 'mousemove', alive);
 timeout = setTimeout(remind, wait);
 
 
-$('body').on("mousemove", function() {
-    $('.ind-header__info-description').removeClass('opacity')
-    $('.ind-header__info-tabs').removeClass('opacity')
-    $('.ind-header__info-line').removeClass('opacity')
-})
+// $('body').on("mousemove", function() {
+//     $('.ind-header__info-description').removeClass('opacity')
+//     $('.ind-header__info-tabs').removeClass('opacity')
+//     $('.ind-header__info-line').removeClass('opacity')
+// })
 
 
 
@@ -344,3 +373,43 @@ $('.ind-header__info-media-wrapper').on('click', function() {
     $('.ind-header__info-description-add').toggleClass('opacity')
     $('.ind-header__info-play').toggleClass('display-n')
 });
+$('#newProcessTabs-1').on('click', function() {
+    $(this).addClass('new-process__block-tabs-active')
+    $('#newProcessTabs-2').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabs-3').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabs-4').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabsList-1').removeClass('display-n')
+    $('#newProcessTabsList-2').addClass('display-n')
+    $('#newProcessTabsList-3').addClass('display-n')
+    $('#newProcessTabsList-4').addClass('display-n')
+})
+$('#newProcessTabs-2').on('click', function() {
+    $(this).addClass('new-process__block-tabs-active')
+    $('#newProcessTabs-1').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabs-3').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabs-4').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabsList-2').removeClass('display-n')
+    $('#newProcessTabsList-1').addClass('display-n')
+    $('#newProcessTabsList-3').addClass('display-n')
+    $('#newProcessTabsList-4').addClass('display-n')
+})
+$('#newProcessTabs-3').on('click', function() {
+    $(this).addClass('new-process__block-tabs-active')
+    $('#newProcessTabs-1').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabs-2').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabs-4').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabsList-3').removeClass('display-n')
+    $('#newProcessTabsList-1').addClass('display-n')
+    $('#newProcessTabsList-2').addClass('display-n')
+    $('#newProcessTabsList-4').addClass('display-n')
+})
+$('#newProcessTabs-4').on('click', function() {
+    $(this).addClass('new-process__block-tabs-active')
+    $('#newProcessTabs-1').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabs-3').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabs-2').removeClass('new-process__block-tabs-active')
+    $('#newProcessTabsList-4').removeClass('display-n')
+    $('#newProcessTabsList-1').addClass('display-n')
+    $('#newProcessTabsList-3').addClass('display-n')
+    $('#newProcessTabsList-2').addClass('display-n')
+})
