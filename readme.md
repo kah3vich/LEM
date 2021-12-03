@@ -6,3 +6,5 @@
 ## Detail : [click me](https://kah3vich.github.io/LEM/public/detail.html)
 ## Contact : [click me](https://kah3vich.github.io/LEM/public/contact.html)
 ## Objects : [click me](https://kah3vich.github.io/LEM/public/objects.html)
+## Object : [click me](https://kah3vich.github.io/LEM/public/object.html)
+## Company : [click me](https://kah3vich.github.io/LEM/public/company.html)

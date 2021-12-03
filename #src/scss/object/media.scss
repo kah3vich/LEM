@@ -1,0 +1,122 @@
+@media (max-width: 1210px) {
+    .obj-arrow__block-prev-text p::after {
+        content: "Пред.";
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        width: 100%;
+    }
+    .obj-arrow__block-prev-text p span {
+        display: none;
+    }
+    .obj-arrow__block-prev-text p {
+        text-align: center;
+        width: 100%;
+    }
+    .obj-arrow__block-next-text p::after {
+        content: "Cлед.";
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        
+    }
+    .obj-arrow__block-next-text p {
+        text-align: center;
+        width: 100%;
+    }
+    .obj-arrow__block-next-text p span {
+        display: none;
+    }
+    .obj-content__block-description-icons {
+        display: none;
+    }
+    .obj-content__block-description {
+        position: relative;
+        &::after {
+            content: url(../../img/object/homes.png);
+            position: absolute;
+            top: -55px;
+            left: 90px;
+        }
+    }
+    .obj-header {
+        position: relative;
+        padding: 153px 0 75px 0;
+    }
+}
+@media (max-width: 1050px) {
+    .obj-content__block-description {
+        position: relative;
+        &::after {
+            content: url(../../img/object/homes.png);
+            position: absolute;
+            top: -55px;
+            left: 30px;
+        }
+    }
+    .obj-header .containers {
+        padding: 0 30px;
+    }
+    .obj-content__block-description-text {
+        padding: 0 30px;
+    }
+    .obj-content__block-descriptions-wrapper {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 950px) {
+    .obj-header__block-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .obj-header__block-description-text {
+        margin: 35px 0 0 0;
+    }
+    .obj-header__block-description {
+        margin: 60px 0 0 0;
+    }
+    .obj-content__block-description-items {
+        width: 100%;
+    }
+    .obj-content__block-descriptions-wrapper p {
+        width: 100%;
+    }
+    .obj-content__block-photos {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            'objectPhotos-1'
+            'objectPhotos-2'
+            'objectPhotos-3';
+        &-items {
+            height: 589px;
+            &:nth-child(1) {
+                height: 589px;
+            }
+            &:nth-child(2) {
+                height: 589px;
+            }
+            &:nth-child(3) {
+                height: 589px;
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .obj-arrow__block-prev,
+    .obj-arrow__block-next {
+        height: 100%;
+    }
+}

@@ -1,0 +1,72 @@
+block variables
+    - var title = 'Объекты'
+
+@@include('components/_head.pug')
+
+    @@include('components/_header.pug')
+
+    section.obj-header 
+        .obj-header__banner
+            img(src="./img/object/banner-1.png", alt="img")
+        .containers 
+            .obj-header__block
+                .obj-header__block-name 
+                    .obj-header__block-name-prev наши объекты
+                    .obj-header__block-name-line  /
+                    .obj-header__block-name-next объект
+                .obj-header__block-title ПС 500 кВ "Арзамасская"
+                .obj-header__block-description 
+                    .obj-header__block-description-customer Заказчик:
+                    .obj-header__block-description-text ПАО «ФСК ЕЭС» Дирекция по строительству в Средне-Волжском регионе
+
+    section.obj-content 
+        .obj-content__block 
+            .obj-content__block-description
+                .obj-content__block-description-text 
+                    .obj-content__block-description-items Успешно и в поставленные сроки завершен комплекс работ по выполнению СМР, ПНР, поставку МТРиО, строительство нового захода ВЛ 500 кВ Ростовская Ростовская АЭС –Шахты в ячейку №17 ОРУ 500 кВ Ростовская АЭС по титулу: титулу «ВЛ 500 кВ Ростовская АЭС – Ростовская с расширением ПС 500 кВ Ростовская (одна линейная ячейка 500 кВ)» (1-й пусковой комплекс) для нужд филиала ПАО «ФСК ЕЭС» - МЭС Юга. 
+                    .obj-content__block-description-icons   
+                        img(src="./img/object/home.png", alt="img")
+            .obj-content__block-photo 
+                img(src="./img/object/banner-3.png", alt="img")
+            .obj-content__block-descriptions 
+                .obj-content__block-descriptions-wrapper
+                    p Успешно и в поставленные сроки завершен комплекс работ по выполнению СМР, ПНР, поставку МТРиО, строительство нового захода ВЛ 500 кВ Ростовская Ростовская АЭС –Шахты в ячейку №17 ОРУ 500 кВ Ростовская АЭС по титулу: титулу «ВЛ 500 кВ Ростовская АЭС – Ростовская с расширением ПС 500 кВ Ростовская (одна линейная ячейка 500 кВ)» (1-й пусковой комплекс) для нужд филиала ПАО «ФСК ЕЭС» - МЭС Юга. 
+            .obj-content__block-video 
+                .obj-content__block-video-play 
+                    <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 45.2685C0 20.2674 20.2968 0 45.3333 0C70.3699 0 90.6667 20.2674 90.6667 45.2685C90.6667 70.2696 70.3699 90.537 45.3333 90.537C20.2968 90.537 0 70.2696 0 45.2685ZM38.335 61.8147L61.0017 47.6683C61.8297 47.1503 62.3333 46.2439 62.3333 45.2687C62.3333 44.2935 61.8297 43.3872 61.0017 42.8691L38.335 28.7227C37.4614 28.177 36.3602 28.1466 35.4595 28.6481C34.5589 29.1468 34 30.0931 34 31.1223V59.4151C34 60.4442 34.5589 61.3906 35.4595 61.8893C35.8877 62.127 36.3609 62.2444 36.8333 62.2444C37.3548 62.2444 37.8764 62.1006 38.335 61.8147Z" fill="white"/>
+                    </svg>
+                img(src="./img/object/banner-4.png", alt="img")
+            .obj-content__block-descriptions 
+                .obj-content__block-descriptions-wrapper
+                    p Успешно и в поставленные сроки завершен комплекс работ по выполнению СМР, ПНР, поставку МТРиО, строительство нового захода ВЛ 500 кВ Ростовская Ростовская АЭС –Шахты в ячейку №17 ОРУ 500 кВ Ростовская АЭС по титулу: титулу «ВЛ 500 кВ Ростовская АЭС – Ростовская с расширением ПС 500 кВ Ростовская (одна линейная ячейка 500 кВ)» (1-й пусковой комплекс) для нужд филиала ПАО «ФСК ЕЭС» - МЭС Юга. 
+            .obj-content__block-photos 
+                .obj-content__block-photos-items 
+                    img(src="./img/object/banner-4.png", alt="img")
+                .obj-content__block-photos-items 
+                    img(src="./img/object/banner-5.png", alt="img")
+                .obj-content__block-photos-items 
+                    img(src="./img/object/banner-6.png", alt="img")
+
+    section.obj-arrow 
+        .obj-arrow__block 
+            .obj-arrow__block-prev 
+                img(src="./img/object/banner-7.png", alt="img")
+                .obj-arrow__block-prev-text 
+                    <svg width="45" height="24" viewBox="0 0 45 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.939339 13.0607C0.353554 12.4749 0.353554 11.5251 0.939339 10.9393L10.4853 1.3934C11.0711 0.807614 12.0208 0.807614 12.6066 1.3934C13.1924 1.97919 13.1924 2.92893 12.6066 3.51472L4.12132 12L12.6066 20.4853C13.1924 21.0711 13.1924 22.0208 12.6066 22.6066C12.0208 23.1924 11.0711 23.1924 10.4853 22.6066L0.939339 13.0607ZM45 13.5L2 13.5L2 10.5L45 10.5L45 13.5Z" fill="white"/>
+                    </svg>
+                    p 
+                        span ВЛ 500 кВ "Усть-Илимская ГЭС - Усть-Кут" (300 км)
+            .obj-arrow__block-next 
+                img(src="./img/object/banner-8.png", alt="img")
+                .obj-arrow__block-next-text 
+                    p 
+                        span ВЛ 220 кВ Шахты-Донецкая
+                    <svg width="45" height="24" viewBox="0 0 45 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M44.0607 13.0607C44.6464 12.4749 44.6464 11.5251 44.0607 10.9393L34.5147 1.3934C33.9289 0.807614 32.9792 0.807614 32.3934 1.3934C31.8076 1.97919 31.8076 2.92893 32.3934 3.51472L40.8787 12L32.3934 20.4853C31.8076 21.0711 31.8076 22.0208 32.3934 22.6066C32.9792 23.1924 33.9289 23.1924 34.5147 22.6066L44.0607 13.0607ZM-1.31134e-07 13.5L43 13.5L43 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z" fill="white"/>
+                    </svg>
+
+    @@include('components/_footer.pug')
+
+@@include('components/_script.pug')

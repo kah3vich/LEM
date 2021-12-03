@@ -148,19 +148,19 @@
     .ind-description__block-slider-items-text {
         width: 100%;
     }
-    .ind-process__block-list-items {
+    .process__block-list-items {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
-    .ind-process__block-list-items-img {
+    .process__block-list-items-img {
         width: 100%;
     }
-    .ind-process__block-list-items-text {
+    .process__block-list-items-text {
         width: 100%;
         margin: 35px 0 0 0;
     }
-    .ind-process__block-list-items-text-title {
+    .process__block-list-items-text-title {
         width: 100%;
     }
 }
@@ -189,7 +189,7 @@
         border-left: 1px solid #003169;
         top: 8%;
     }
-    .ind-process__block-list {
+    .process__block-list {
         padding: 0;
     }
     .ind-slider__wrapper-info {
@@ -265,7 +265,7 @@
         top: 8px;
         left: -35px;
     }
-    .ind-process .containers {
+    .process .containers {
         padding: 0 20px;
     }
     .footer .containers {
@@ -310,14 +310,14 @@
     }
 }
 @media (max-width: 1050px) {
-    .ind-process__block-tabs {
+    .process__block-tabs {
         grid-template-columns: repeat(4, 1fr);
         gap: 55px 15px;
     }
-    .ind-process__block-tabs-items {
+    .process__block-tabs-items {
         height: 62px;
     }
-    .ind-process__block-list-items {
+    .process__block-list-items {
         position: relative;
     }
 }
@@ -363,42 +363,42 @@
     .footer__wrapper-line::after {
         opacity: 1;
     }
-    .ind-process__block-list-items-text-title {
+    .process__block-list-items-text-title {
         font-size: 23px;
     }
 }
 @media (max-width: 750px) {
-    .ind-process__block-tabs {
+    .process__block-tabs {
         grid-template-columns: repeat(2, 1fr);
     }
-    .ind-process__block-tabs-items {
+    .process__block-tabs-items {
         height: 55px;
     }
 }
 @media (max-width: 700px) {
-    .ind-process__block-list-items-text-add {
+    .process__block-list-items-text-add {
         position: absolute;
         top: 170px;
     }
-    .ind-process .containers {
+    .process .containers {
         padding: 0;
     }
-    .ind-process__block-title {
+    .process__block-title {
         padding: 0 30px;
     }
-    .ind-process__block-list-items-img {
+    .process__block-list-items-img {
         height: 250px;
     }
-    .ind-process__block-list-items-text-title {
+    .process__block-list-items-text-title {
         padding: 0 30px;
     }
-    .ind-process__block-list-items-text-add {
+    .process__block-list-items-text-add {
         left: 30px;
     }
-    .ind-process__block-list-items-img::after {
+    .process__block-list-items-img::after {
         opacity: 1;
     }
-    .ind-process__block-list-items-img:hover::after {
+    .process__block-list-items-img:hover::after {
         opacity: 0;
     }
 }
@@ -420,10 +420,10 @@
     .ind-header {
         background-position: 50% 0;
     }
-    .ind-process__add-banner-title {
+    .process__add-banner-title {
         width: 100%;
     }
-    .ind-process__add-banners-title {
+    .process__add-banners-title {
         width: 100%;
     }
 }
@@ -451,32 +451,32 @@
     }
 }
 @media (max-width: 500px) {
-    .ind-process__block-tabs-active {
+    .process__block-tabs-active {
         font-size: 15px;
         width: 166px;
         height: 55px;
     }
-    .ind-process__block-tabs-items p {
+    .process__block-tabs-items p {
         font-size: 15px;
     }
-    .ind-process__block-tabs {
+    .process__block-tabs {
         gap: 55px 0;
     }
-    .ind-process__add-banner {
+    .process__add-banner {
         background-position: 50% 0;
     }
-    .ind-process__add-banners {
+    .process__add-banners {
         background-position: 50% 0;
     }
-    .ind-process .containers {
+    .process .containers {
         max-width: unset;
         padding: 0;
     }
-    .ind-process__block-list-items-img {
+    .process__block-list-items-img {
         width: 100%;
         height: 250px;
     }
-    .ind-process__block-title {
+    .process__block-title {
         padding: 0 0 0 20px;
     }
 }
