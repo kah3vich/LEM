@@ -1,9 +1,180 @@
 block variables
-    - var title = 'Объекты'
+    - var title = 'О компании'
 
 @@include('components/_head.pug')
 
     @@include('components/_header.pug')
+
+    section.comp-header 
+        .comp-header__block 
+            .containers 
+                .comp-header__block-title Текст о компании Две строки
+            .comp-header__block-banner 
+                img(src="./img/company/banner-2.png", alt="img")
+
+    section.comp-slider 
+        .containers 
+            .comp-slider__block 
+                .comp-slider__block-controls 
+                    .comp-slider__block-controls-add О компании
+                    .comp-slider__block-controls-title Текст о достоинствах и цифрах компании 3 строка
+                    .comp-slider__block-controls-arrow 
+                        .comp-slider__block-controls-arrow-next
+                            <svg width="58" height="16" viewBox="0 0 58 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM57.7071 8.70711C58.0976 8.31659 58.0976 7.68342 57.7071 7.2929L51.3431 0.928937C50.9526 0.538412 50.3195 0.538412 49.9289 0.928936C49.5384 1.31946 49.5384 1.95263 49.9289 2.34315L55.5858 8L49.9289 13.6569C49.5384 14.0474 49.5384 14.6805 49.9289 15.0711C50.3195 15.4616 50.9526 15.4616 51.3431 15.0711L57.7071 8.70711ZM1 9L57 9L57 7L1 7L1 9Z" fill="white"/>
+                            </svg>
+                        .comp-slider__block-controls-arrow-prev
+                            <svg width="58" height="16" viewBox="0 0 58 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM57 9C57.5523 9 58 8.55229 58 8C58 7.44772 57.5523 7 57 7L57 9ZM1 9L57 9L57 7L1 7L1 9Z" fill="white"/>
+                            </svg>
+                    button.comp-slider__block-controls-btn Написать нам
+                .comp-slider__block-sliders 
+                    .swiper.companySliders
+                        .swiper-wrapper
+                            .swiper-slide
+                                .comp-slider__block-sliders-items 
+                                    .comp-slider__block-sliders-items-bg 
+                                        img(src="./img/company/slider-1.png", alt="img")
+                                    .comp-slider__block-sliders-items-circle 
+                                        p 15
+                                    .comp-slider__block-sliders-items-text 
+                                        h3 Годовой оборот
+                                        p свыше млрд ₽
+                            .swiper-slide
+                                .comp-slider__block-sliders-items 
+                                    .comp-slider__block-sliders-items-bg 
+                                        img(src="./img/company/slider-1.png", alt="img")
+                                    .comp-slider__block-sliders-items-circle 
+                                        p 23
+                                    .comp-slider__block-sliders-items-text 
+                                        h3 Годовой оборот
+                                        p свыше млрд ₽
+                            .swiper-slide
+                                .comp-slider__block-sliders-items 
+                                    .comp-slider__block-sliders-items-bg 
+                                        img(src="./img/company/slider-1.png", alt="img")
+                                    .comp-slider__block-sliders-items-circle 
+                                        p 14
+                                    .comp-slider__block-sliders-items-text 
+                                        h3 Годовой оборот
+                                        p свыше млрд ₽
+                            .swiper-slide
+                                .comp-slider__block-sliders-items 
+                                    .comp-slider__block-sliders-items-bg 
+                                        img(src="./img/company/slider-1.png", alt="img")
+                                    .comp-slider__block-sliders-items-circle 
+                                        p 11
+                                    .comp-slider__block-sliders-items-text 
+                                        h3 Годовой оборот
+                                        p свыше млрд ₽
+                    .swiper-controls 
+                        .swiper-pagination
+    
+    section.comp-banner
+            .comp-banner__block
+                img(src="./img/company/banner-3.png", alt="img")
+
+    section.comp-report 
+        .containers 
+            .comp-report__block 
+                .comp-report__block-title ГОЛОВНОЕ ПОДРАЗДЕЛЕНИЕ (г. МОСКВА)
+                .comp-report__block-content 
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3
+                        p Строительно-монтажные работы на ПС 10-750 кВ;
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3
+                        p Строительно-монтажные работы на ПС 10-750 кВ;
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3 780
+                        p Строительно-монтажные
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3
+                        p Строительно-монтажные работы на ПС 10-750 кВ;
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3
+                        p Строительно-монтажные работы на ПС 10-750 кВ;
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3 780
+                        p Строительно-монтажные
+            .comp-report__block 
+                .comp-report__block-title ГОЛОВНОЕ ПОДРАЗДЕЛЕНИЕ (г. МОСКВА)
+                .comp-report__block-content 
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3
+                        p Строительно-монтажные работы на ПС 10-750 кВ;
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3
+                        p Строительно-монтажные работы на ПС 10-750 кВ;
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3 780
+                        p Строительно-монтажные
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3
+                        p Строительно-монтажные работы на ПС 10-750 кВ;
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3
+                        p Строительно-монтажные работы на ПС 10-750 кВ;
+                    .comp-report__block-items 
+                        .comp-report__block-items-icons 
+                            img(src="./img/company/icons-1.png", alt="img")
+                        h3 780
+                        p Строительно-монтажные
+            .comp-report__wrapper 
+                .comp-report__wrapper-title ПРОКТНОЕ ПОДРАЗДЕЛЕНИЕ ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ РАБОТЫ
+                .comp-report__wrapper-content 
+                    .comp-report__wrapper-items 
+                        .comp-report__wrapper-items-titles ФИЛИАЛ (г. ЧЕБОКСАРЫ)
+                        .comp-report__wrapper-items-circle 
+                            p 33
+                        .comp-report__wrapper-items-text 
+                            img(src="./img/company/icons-2.png", alt="img")
+                            p человек инженерно-технический персонал
+                    .comp-report__wrapper-items 
+                        .comp-report__wrapper-items-titles ФИЛИАЛ (г. ЧЕБОКСАРЫ)
+                        .comp-report__wrapper-items-circle 
+                            p 33
+                        .comp-report__wrapper-items-text 
+                            img(src="./img/company/icons-2.png", alt="img")
+                            p человек инженерно-технический персонал
+                    .comp-report__wrapper-items 
+                        .comp-report__wrapper-items-titles ФИЛИАЛ (г. ЧЕБОКСАРЫ)
+                        .comp-report__wrapper-items-circle 
+                            p 33
+                        .comp-report__wrapper-items-text 
+                            img(src="./img/company/icons-2.png", alt="img")
+                            p человек инженерно-технический персонал
+        .comp-report__add 
+            .comp-report__add-content 
+                .comp-report__add-items 
+                    img(src="./img/company/banner-4.png", alt="img")
+                .comp-report__add-items 
+                    img(src="./img/company/banner-5.png", alt="img")
+            .comp-report__add-text 
+                img(src="./img/company/banner-6.png", alt="img")
+                p ВЛ 220 кВ Шахты-Донецкая
 
     section.comp-secret 
         .comp-secret__title 
@@ -14,7 +185,69 @@ block variables
         .comp-secret__slider 
             .containers 
                 .comp-secret__slider-block 
-                
+                    .swiper.companySecretSlider
+                        .swiper-wrapper
+                            .swiper-slide 
+                                .comp-secret__slider-item
+                                    .comp-secret__slider-items 
+                                        .comp-secret__slider-items-photo 
+                                            img(src="./img/company/blag.png", alt="img")
+                                        .comp-secret__slider-items-text 
+                                            .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
+                                            .comp-secret__slider-items-text-description Правительство Российской Федерации
+                                    .comp-secret__slider-items 
+                                        .comp-secret__slider-items-photo 
+                                            img(src="./img/company/blag.png", alt="img")
+                                        .comp-secret__slider-items-text 
+                                            .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
+                                            .comp-secret__slider-items-text-description Правительство Российской Федерации
+                            .swiper-slide 
+                                .comp-secret__slider-item
+                                    .comp-secret__slider-items 
+                                        .comp-secret__slider-items-photo 
+                                            img(src="./img/company/blag.png", alt="img")
+                                        .comp-secret__slider-items-text 
+                                            .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
+                                            .comp-secret__slider-items-text-description Правительство Российской Федерации
+                                    .comp-secret__slider-items 
+                                        .comp-secret__slider-items-photo 
+                                            img(src="./img/company/blag.png", alt="img")
+                                        .comp-secret__slider-items-text 
+                                            .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
+                                            .comp-secret__slider-items-text-description Правительство Российской Федерации
+                            .swiper-slide 
+                                .comp-secret__slider-item
+                                    .comp-secret__slider-items 
+                                        .comp-secret__slider-items-photo 
+                                            img(src="./img/company/blag.png", alt="img")
+                                        .comp-secret__slider-items-text 
+                                            .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
+                                            .comp-secret__slider-items-text-description Правительство Российской Федерации
+                                    .comp-secret__slider-items 
+                                        .comp-secret__slider-items-photo 
+                                            img(src="./img/company/blag.png", alt="img")
+                                        .comp-secret__slider-items-text 
+                                            .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
+                                            .comp-secret__slider-items-text-description Правительство Российской Федерации
+                            .swiper-slide 
+                                .comp-secret__slider-item
+                                    .comp-secret__slider-items 
+                                        .comp-secret__slider-items-photo 
+                                            img(src="./img/company/blag.png", alt="img")
+                                        .comp-secret__slider-items-text 
+                                            .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
+                                            .comp-secret__slider-items-text-description Правительство Российской Федерации
+                                    .comp-secret__slider-items 
+                                        .comp-secret__slider-items-photo 
+                                            img(src="./img/company/blag.png", alt="img")
+                                        .comp-secret__slider-items-text 
+                                            .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
+                                            .comp-secret__slider-items-text-description Правительство Российской Федерации
+                            
+                    .swiper-controls 
+                        .swiper-button-next.display-n
+                        .swiper-button-prev.display-n
+                        .swiper-pagination
         .comp-secret__gos 
             .containers 
                 .comp-secret__gos-title В нашем послужном списке
@@ -132,7 +365,52 @@ block variables
                             a(href="#") Сводная ведомость 1
                         .comp-files__block-content-icons 
                             img(src="./img/company/pdf.png", alt="img")
-                    
+
+    section.comp-career
+        .containers 
+            .comp-career__block 
+                .comp-career__block-add О компании
+                .comp-career__block-title КАрьера в ЛЭМ
+                .comp-career__block-description Коллектив ООО «ЛЭМ» всегда рад приветствовать в свой состав трудолюбивых и ответственных работников перечисленных ниже специальностей.
+                .comp-career__block-text
+                    .comp-career__block-text-add Сегодня в компании трудятся 4000 человек и более 1500 – офисных сотрудников. Все они – грамотные специалисты и профессионалы своего дела.
+                    .comp-career__block-text-address Контактное лицо в Москве (Московская дирекция по строительству) Зотов Сергей Сергеевич, тел. +7 (499) 684-0016 доб. 138, +7 (903) 257-92-55,
+                        br
+                        br
+                        | ssz@lem-ltd.ru
+                    .comp-career__block-text-info Контактное лицо в Санкт-Петербурге (Санкт-Петербургский филиал) Ишутин Михаил Юрьевич, тел. +7 (812) 336-1996 доб. 634, +7 (905) 218-6640,
+                        br
+                        br
+                        | myuishutin@lem-ltd.ru
+                        br
+                        br
+                        span Работа вахтовым методом. Конкурентная заработная плата. Социальный пакет. Оплата проезда и проживания.
+            .comp-career__content 
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+                .comp-career__content-items 
+                    p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
+            .comp-career__line
 
     @@include('components/_footer.pug')
 

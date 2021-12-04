@@ -8,3 +8,4 @@
 ## Objects : [click me](https://kah3vich.github.io/LEM/public/objects.html)
 ## Object : [click me](https://kah3vich.github.io/LEM/public/object.html)
 ## Company : [click me](https://kah3vich.github.io/LEM/public/company.html)
+## Details : [click me](https://kah3vich.github.io/LEM/public/details.html)
