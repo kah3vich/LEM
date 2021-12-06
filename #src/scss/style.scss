@@ -118,7 +118,7 @@ p {
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             z-index: 10;
@@ -147,19 +147,22 @@ p {
             margin: 0 auto 0 0;
             z-index: 5;
             &-items {
-                font-family: TT Norms;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 10px;
-                line-height: 12px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                opacity: 0.6;
                 cursor: pointer;
-                transition: all 0.5s ease;
-                &:hover {
+                & a {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 12px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    opacity: 0.6;
+                    cursor: pointer;
                     transition: all 0.5s ease;
-                    opacity: 1;
+                    &:hover {
+                        transition: all 0.5s ease;
+                        opacity: 1;
+                    }
                 }
             }
         }

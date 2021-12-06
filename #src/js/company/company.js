@@ -35,7 +35,7 @@ var companySliders = new Swiper(".companySliders", {
     breakpoints: {
         1: {
             slidesPerView: 3,
-            spaceBetweenSlides: 0
+            spaceBetweenSlides: 40
         },
         0: {
             slidesPerView: 3,
