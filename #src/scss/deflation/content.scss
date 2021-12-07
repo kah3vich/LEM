@@ -493,6 +493,7 @@
                 width: 100%;
                 height: 100%;
                 position: absolute;
+                object-fit: cover;
                 top: 0;
                 left: 0;
                 z-index: 1;
@@ -550,6 +551,7 @@
                     position: absolute;
                     top: 50px;
                     right: 50px;
+                    object-fit: cover;
                     opacity: 0.5;
                     z-index: 1;
                 }
@@ -566,12 +568,12 @@
             }
         }
         &-lists {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
             width: 100%;
             &-items {
-                width: 380px;
+                width: 100%;
                 height: 100%;
                 padding: 220px 28px 20px 28px;
                 position: relative;
@@ -595,6 +597,7 @@
                     position: absolute;
                     top: 50px;
                     right: 50px;
+                    object-fit: cover;
                     opacity: 0.5;
                     z-index: 1;
                 }

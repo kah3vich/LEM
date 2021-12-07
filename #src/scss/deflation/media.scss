@@ -1,3 +1,8 @@
+@media (max-width: 1440px) {
+    .def-delivery__block-items-photo {
+        width: 100%;
+    }
+}
 @media (max-width: 1400px) {
     .def-header__block-list {
         grid-template-columns: repeat(2, 1fr);
@@ -12,6 +17,30 @@
     }
     .def-list__block-items-text {
         width: 90%;
+    }
+    .def-content__block-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .def-content__block-lists {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .def-content__block-list-items {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 90px 28px 90px 28px;
+    }
+    .def-content__block-lists-items {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 90px 28px 90px 28px;
+    }
+    .def-content__block-lists-items p {
+        width: 80%;
+    }
+    .def-content__block-list-items p {
+        width: 80%;
     }
 }
 @media (max-width: 1350px) {
@@ -45,6 +74,11 @@
         padding: 0 30px;
     }
 }
+@media (max-width: 1200px) {
+    .def-content__block-description {
+        width: 100%;
+    }
+}
 @media (max-width: 1050px) {
     .def-service__block-title {
         padding: 0 30px;
@@ -67,6 +101,31 @@
         height: 464px;
         padding: 61px 0 0 35px;
         background: #003169;
+    }
+    .def-content .containers {
+        padding: 0;
+    }
+    .def-content__block-text {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .def-content__block-description {
+        padding: 0 30px;
+        width: 100%;
+    }
+    .def-content__block-banners p {
+        width: 90%;
+    }
+    .def-service .containers {
+        padding: 0;
+    }
+    .def-service__block-text {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .def-service__block-titles {
+        width: 100%;
+        padding: 0 30px;
     }
 }
 @media (max-width: 900px) {
@@ -100,6 +159,25 @@
     }
     .def-delivery__block::after {
         background-position: 50% 0;
+    }
+    .def-service__block-text {
+        font-size: 18px;
+    }
+    .def-service__block-titles {
+        font-family: RF Dewi;
+        font-size: 21px;
+    }
+    .def-content__block-banners p {
+        font-size: 15px;
+    }
+    .def-content__block-description {
+        font-size: 19px;
+    }
+    .def-content__block-text {
+        font-size: 19px;
+    }
+    .def-header__block-text {
+        font-size: 18px;
     }
 }
 @media (max-width: 450px) {
