@@ -121,34 +121,34 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
 //     }, 1000)
 // })
 
-var items_1 = $('.ind-header__info-description'),
-    items_2 = $('.ind-header__info-tabs'),
-    // items_3 = $('.ind-header__info-line'),
-    timeout,
-    wait = 2000;
+// var items_1 = $('.ind-header__info-description'),
+//     items_2 = $('.ind-header__info-tabs'),
+//     // items_3 = $('.ind-header__info-line'),
+//     timeout,
+//     wait = 2000;
 
-function alive(){ 
-    clearTimeout(timeout);
-    if(window.innerWidth >= 1100) {
-        items_1.css('opacity', '1')
-        items_2.css('opacity', '1')
-    }
-    timeout = setTimeout(remind, wait);
-}
+// function alive(){ 
+//     clearTimeout(timeout);
+//     if(window.innerWidth >= 1100) {
+//         items_1.css('opacity', '1')
+//         items_2.css('opacity', '1')
+//     }
+//     timeout = setTimeout(remind, wait);
+// }
 
-function remind(){
-    if(window.innerWidth >= 1100) {
-        items_1.css('opacity', '0')
-        items_2.css('opacity', '0')
-    }
-}
+// function remind(){
+//     if(window.innerWidth >= 1100) {
+//         items_1.css('opacity', '0')
+//         items_2.css('opacity', '0')
+//     }
+// }
 
-if(window.innerWidth >= 1100) {
-    items_1.css('opacity', '1')
-    items_2.css('opacity', '1')
-}
-document.addEventListener( 'mousemove', alive);
-timeout = setTimeout(remind, wait);
+// if(window.innerWidth >= 1100) {
+//     items_1.css('opacity', '1')
+//     items_2.css('opacity', '1')
+// }
+// document.addEventListener( 'mousemove', alive);
+// timeout = setTimeout(remind, wait);
 
 
 // $('body').on("mousemove", function() {
@@ -157,6 +157,41 @@ timeout = setTimeout(remind, wait);
 //     $('.ind-header__info-line').removeClass('opacity')
 // })
 
+$('.ind-header__info-description-add').css('opacity', '0')
+$('.ind-header__info-tabs').css('opacity', '0')
+$('.ind-header__info-description-block').css('opacity', '0')
+
+
+$('.ind-header__info').hover(function() {
+    $('.ind-header__info-description-add').on('mouseover', function() {
+        $(this).css('opacity', '1')
+    });
+    $('.ind-header__info-tabs').on('mouseover', function() {
+        $(this).css('opacity', '1')
+    });
+    $('.ind-header__info-description-block').on('mouseover', function() {
+        $(this).css('opacity', '1')
+    });
+});
+// $('.ind-header__info').on('mouseout', function() {
+//     console.log(countElementHover)
+//     setTimeout(function() {
+//         $('.ind-header__info-description-add').css('opacity', '0')
+//     }, 10000)
+// })
+
+$('body').on('mousemove', function() {
+    $(".ind-header__info").hover(function() {
+        $(this).data("hovered", true);
+    }, function() {
+        $(this).data("hovered", false);
+        setTimeout(function() {
+            $('.ind-header__info-description-add').css('opacity', '0')
+            $('.ind-header__info-tabs').css('opacity', '0')
+            $('.ind-header__info-description-block').css('opacity', '0')
+        }, 10000)
+    });
+});
 
 
 //! Слайдер - slider
