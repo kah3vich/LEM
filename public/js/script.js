@@ -157,11 +157,6 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
 //     $('.ind-header__info-line').removeClass('opacity')
 // })
 
-$('.ind-header__info-description-add').css('opacity', '0')
-$('.ind-header__info-tabs').css('opacity', '0')
-$('.ind-header__info-description-block').css('opacity', '0')
-
-
 $('.ind-header__info').hover(function() {
     $('.ind-header__info-description-add').on('mouseover', function() {
         $(this).css('opacity', '1')
@@ -185,13 +180,19 @@ $('body').on('mousemove', function() {
         $(this).data("hovered", true);
     }, function() {
         $(this).data("hovered", false);
-        setTimeout(function() {
-            $('.ind-header__info-description-add').css('opacity', '0')
-            $('.ind-header__info-tabs').css('opacity', '0')
-            $('.ind-header__info-description-block').css('opacity', '0')
-        }, 10000)
+        startAnimation()
     });
 });
+
+function startAnimation() {
+    setTimeout(function() {
+        $('.ind-header__info-description-add').css('opacity', '0')
+        $('.ind-header__info-tabs').css('opacity', '0')
+        $('.ind-header__info-description-block').css('opacity', '0')
+    }, 10000)
+}
+
+startAnimation()
 
 
 //! Слайдер - slider
