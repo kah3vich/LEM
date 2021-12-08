@@ -28,11 +28,11 @@ var indexSliderReward = new Swiper(".indexSliderReward", {
         prevEl: ".ind-reward__block-slider .swiper-controls .swiper-button-prev",
     },
     keyboard: true,
-    slidesPerView: 4,
-    spaceBetween: 29,
+    slidesPerView: 5,
+    spaceBetween: 0,
     breakpoints: {
         1300: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetweenSlides: 0
         },
         1000: {
@@ -96,28 +96,28 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
 var items_1 = $('.ind-header__info-description'),
     items_2 = $('.ind-header__info-tabs'),
     timeout,
-    wait = 10000;
+    wait = 5000;
 
 function alive(){ 
-    clearTimeout(timeout);
     if(window.innerWidth >= 1100) {
         items_1.css('opacity', '1')
         items_2.css('opacity', '1')
     }
-    timeout = setTimeout(remind, wait);
+    // timeout = setTimeout(remind, wait);
 }
 
 function remind(){
     if(window.innerWidth >= 1100) {
+        console.log('wow')
         items_1.css('opacity', '0')
         items_2.css('opacity', '0')
     }
 }
 
-if(window.innerWidth >= 1100) {
-    items_1.css('opacity', '1')
-    items_2.css('opacity', '1')
-}
+// if(window.innerWidth >= 1100) {
+//     items_1.css('opacity', '1')
+//     items_2.css('opacity', '1')
+// }
 // document.addEventListener( 'mousemove', alive);
 
 // $('.ind-header__info-description').hover(function() {
@@ -127,7 +127,32 @@ if(window.innerWidth >= 1100) {
 //     alive()
 // })
 
-// timeout = setTimeout(remind, wait);
+// $('body').on('mousemove', function() {
+//     if($('.ind-header__info').is(':hover')) {
+//         console.log('1')
+//         clearTimeout(timeout)
+//         timeout = null;
+//         alive()
+//         // timeout = setTimeout(remind, wait)
+//     } else {
+//         console.log('2')
+//         timeout = setTimeout(remind, wait)
+//     }
+// });
+
+$('.ind-header__info').on({
+    mouseenter: function () {
+        console.log(1)
+        clearTimeout(timeout)
+        timeout = null;
+        alive()
+    }, 
+    mouseleave: function () {
+        console.log(2)
+        timeout = setTimeout(remind, wait)
+    }
+});
+
 
 
 
@@ -531,3 +556,24 @@ var menuSliders = new Swiper(".menuSliders", {
         }
     }
 });
+
+
+var indexObjectsSlider = new Swiper(".indexObjectsSlider", {
+    navigation: {
+        nextEl: ".ind-objects__slider .swiper-controls .swiper-button-next",
+        prevEl: ".ind-objects__slider .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".ind-objects__slider .swiper-controls .swiper-pagination",
+    },
+    keyboard: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
+
+
+
+
+
