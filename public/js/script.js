@@ -93,106 +93,43 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
 //! Авто-скрытие блока 
 
 
-// .ind-header__info-description-block
-// .ind-header__info-description-add
-// .ind-header__info-tabs
+var items_1 = $('.ind-header__info-description'),
+    items_2 = $('.ind-header__info-tabs'),
+    timeout,
+    wait = 10000;
 
-// $('.ind-header__info-description-block').on('mouseover', function() {
-//     $(this).css('opacity', '1')
-// });
-// $('.ind-header__info-description-add').on('mouseover', function() {
-//     $(this).css('opacity', '1')
-// });
-// $('.ind-header__info-tabs').on('mouseover', function() {
-//     $(this).css('opacity', '1')
-// });
-// // $('.ind-header__info').hover(function() {
-// //     setTimeout(function() {
-// //         $('.ind-header__info-tabs').css('opacity', '01')
-// //         $('.ind-header__info-description-add').css('opacity', '0')
-// //         $('.ind-header__info-description-block').css('opacity', '0')
-// //     }, 1000)
-// // });
-// $(function() {
-//     setTimeout(function() {
-//         $('.ind-header__info-tabs').css('opacity', '0')
-//         $('.ind-header__info-description-add').css('opacity', '0')
-//         $('.ind-header__info-description-block').css('opacity', '0')
-//     }, 1000)
+function alive(){ 
+    clearTimeout(timeout);
+    if(window.innerWidth >= 1100) {
+        items_1.css('opacity', '1')
+        items_2.css('opacity', '1')
+    }
+    timeout = setTimeout(remind, wait);
+}
+
+function remind(){
+    if(window.innerWidth >= 1100) {
+        items_1.css('opacity', '0')
+        items_2.css('opacity', '0')
+    }
+}
+
+if(window.innerWidth >= 1100) {
+    items_1.css('opacity', '1')
+    items_2.css('opacity', '1')
+}
+// document.addEventListener( 'mousemove', alive);
+
+// $('.ind-header__info-description').hover(function() {
+//     alive()
+// })
+// $('.ind-header__info-tabs').hover(function() {
+//     alive()
 // })
 
-// var items_1 = $('.ind-header__info-description'),
-//     items_2 = $('.ind-header__info-tabs'),
-//     // items_3 = $('.ind-header__info-line'),
-//     timeout,
-//     wait = 2000;
-
-// function alive(){ 
-//     clearTimeout(timeout);
-//     if(window.innerWidth >= 1100) {
-//         items_1.css('opacity', '1')
-//         items_2.css('opacity', '1')
-//     }
-//     timeout = setTimeout(remind, wait);
-// }
-
-// function remind(){
-//     if(window.innerWidth >= 1100) {
-//         items_1.css('opacity', '0')
-//         items_2.css('opacity', '0')
-//     }
-// }
-
-// if(window.innerWidth >= 1100) {
-//     items_1.css('opacity', '1')
-//     items_2.css('opacity', '1')
-// }
-// document.addEventListener( 'mousemove', alive);
 // timeout = setTimeout(remind, wait);
 
 
-// $('body').on("mousemove", function() {
-//     $('.ind-header__info-description').removeClass('opacity')
-//     $('.ind-header__info-tabs').removeClass('opacity')
-//     $('.ind-header__info-line').removeClass('opacity')
-// })
-
-$('.ind-header__info').hover(function() {
-    $('.ind-header__info-description-add').on('mouseover', function() {
-        $(this).css('opacity', '1')
-    });
-    $('.ind-header__info-tabs').on('mouseover', function() {
-        $(this).css('opacity', '1')
-    });
-    $('.ind-header__info-description-block').on('mouseover', function() {
-        $(this).css('opacity', '1')
-    });
-});
-// $('.ind-header__info').on('mouseout', function() {
-//     console.log(countElementHover)
-//     setTimeout(function() {
-//         $('.ind-header__info-description-add').css('opacity', '0')
-//     }, 10000)
-// })
-
-$('body').on('mousemove', function() {
-    $(".ind-header__info").hover(function() {
-        $(this).data("hovered", true);
-    }, function() {
-        $(this).data("hovered", false);
-        startAnimation()
-    });
-});
-
-function startAnimation() {
-    setTimeout(function() {
-        $('.ind-header__info-description-add').css('opacity', '0')
-        $('.ind-header__info-tabs').css('opacity', '0')
-        $('.ind-header__info-description-block').css('opacity', '0')
-    }, 10000)
-}
-
-startAnimation()
 
 
 //! Слайдер - slider
@@ -294,32 +231,84 @@ function indexHeaderSlider(id) {
         $('#indexHeaderTabsButton-2').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-3').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-4').removeClass('ind-header__info-tabs-items-active')
-        $('.ind-header__info-description-add-banner').html(15)
-        $('.ind-header__info-description-add-title').html('Годовой оборот')
+
+        $('#indexHeaderSliderTitle-1').removeClass('display-n')
+        $('#indexHeaderSliderTitle-2').addClass('display-n')
+        $('#indexHeaderSliderTitle-3').addClass('display-n')
+        $('#indexHeaderSliderTitle-4').addClass('display-n')
+
+        $('#indexHeaderSliderCount-1').removeClass('display-n')
+        $('#indexHeaderSliderCount-2').addClass('display-n')
+        $('#indexHeaderSliderCount-3').addClass('display-n')
+        $('#indexHeaderSliderCount-4').addClass('display-n')
+
+        $('#indexHeaderSliderText-1').removeClass('display-n')
+        $('#indexHeaderSliderText-2').addClass('display-n')
+        $('#indexHeaderSliderText-3').addClass('display-n')
+        $('#indexHeaderSliderText-4').addClass('display-n')
     }
     if(indexHeaderActiveSlider == 1) {
         $('#indexHeaderTabsButton-2').addClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-1').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-3').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-4').removeClass('ind-header__info-tabs-items-active')
-        $('.ind-header__info-description-add-banner').html(7.5)
-        $('.ind-header__info-description-add-title').html('Месячный оборот')
+
+        $('#indexHeaderSliderTitle-2').removeClass('display-n')
+        $('#indexHeaderSliderTitle-1').addClass('display-n')
+        $('#indexHeaderSliderTitle-3').addClass('display-n')
+        $('#indexHeaderSliderTitle-4').addClass('display-n')
+
+        $('#indexHeaderSliderCount-2').removeClass('display-n')
+        $('#indexHeaderSliderCount-1').addClass('display-n')
+        $('#indexHeaderSliderCount-3').addClass('display-n')
+        $('#indexHeaderSliderCount-4').addClass('display-n')
+
+        $('#indexHeaderSliderText-2').removeClass('display-n')
+        $('#indexHeaderSliderText-1').addClass('display-n')
+        $('#indexHeaderSliderText-3').addClass('display-n')
+        $('#indexHeaderSliderText-4').addClass('display-n')
     }
     if(indexHeaderActiveSlider == 2) {
         $('#indexHeaderTabsButton-3').addClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-1').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-2').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-4').removeClass('ind-header__info-tabs-items-active')
-        $('.ind-header__info-description-add-banner').html(21)
-        $('.ind-header__info-description-add-title').html('Месячный оборот')
+
+        $('#indexHeaderSliderTitle-3').removeClass('display-n')
+        $('#indexHeaderSliderTitle-2').addClass('display-n')
+        $('#indexHeaderSliderTitle-1').addClass('display-n')
+        $('#indexHeaderSliderTitle-4').addClass('display-n')
+
+        $('#indexHeaderSliderCount-3').removeClass('display-n')
+        $('#indexHeaderSliderCount-2').addClass('display-n')
+        $('#indexHeaderSliderCount-1').addClass('display-n')
+        $('#indexHeaderSliderCount-4').addClass('display-n')
+
+        $('#indexHeaderSliderText-3').removeClass('display-n')
+        $('#indexHeaderSliderText-2').addClass('display-n')
+        $('#indexHeaderSliderText-1').addClass('display-n')
+        $('#indexHeaderSliderText-4').addClass('display-n')
     }
     if(indexHeaderActiveSlider == 3) {
         $('#indexHeaderTabsButton-4').addClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-1').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-2').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-3').removeClass('ind-header__info-tabs-items-active')
-        $('.ind-header__info-description-add-banner').html(33)
-        $('.ind-header__info-description-add-title').html('Месячный оборот')
+        
+        $('#indexHeaderSliderTitle-4').removeClass('display-n')
+        $('#indexHeaderSliderTitle-2').addClass('display-n')
+        $('#indexHeaderSliderTitle-3').addClass('display-n')
+        $('#indexHeaderSliderTitle-1').addClass('display-n')
+
+        $('#indexHeaderSliderCount-4').removeClass('display-n')
+        $('#indexHeaderSliderCount-2').addClass('display-n')
+        $('#indexHeaderSliderCount-3').addClass('display-n')
+        $('#indexHeaderSliderCount-1').addClass('display-n')
+
+        $('#indexHeaderSliderText-4').removeClass('display-n')
+        $('#indexHeaderSliderText-2').addClass('display-n')
+        $('#indexHeaderSliderText-3').addClass('display-n')
+        $('#indexHeaderSliderText-1').addClass('display-n')
     }
     if(id == 0) {
         indexHeaderActiveSlider = 0
@@ -327,8 +316,21 @@ function indexHeaderSlider(id) {
         $('#indexHeaderTabsButton-2').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-3').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-4').removeClass('ind-header__info-tabs-items-active')
-        $('.ind-header__info-description-add-banner').html(15)
-        $('.ind-header__info-description-add-title').html('Годовой оборот')
+        
+        $('#indexHeaderSliderTitle-1').removeClass('display-n')
+        $('#indexHeaderSliderTitle-2').addClass('display-n')
+        $('#indexHeaderSliderTitle-3').addClass('display-n')
+        $('#indexHeaderSliderTitle-4').addClass('display-n')
+
+        $('#indexHeaderSliderCount-1').removeClass('display-n')
+        $('#indexHeaderSliderCount-2').addClass('display-n')
+        $('#indexHeaderSliderCount-3').addClass('display-n')
+        $('#indexHeaderSliderCount-4').addClass('display-n')
+
+        $('#indexHeaderSliderText-1').removeClass('display-n')
+        $('#indexHeaderSliderText-2').addClass('display-n')
+        $('#indexHeaderSliderText-3').addClass('display-n')
+        $('#indexHeaderSliderText-4').addClass('display-n')
     }
     if(id == 1) {
         indexHeaderActiveSlider = 1
@@ -336,8 +338,21 @@ function indexHeaderSlider(id) {
         $('#indexHeaderTabsButton-1').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-3').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-4').removeClass('ind-header__info-tabs-items-active')
-        $('.ind-header__info-description-add-banner').html(7.5)
-        $('.ind-header__info-description-add-title').html('Месячный оборот')
+        
+        $('#indexHeaderSliderTitle-2').removeClass('display-n')
+        $('#indexHeaderSliderTitle-1').addClass('display-n')
+        $('#indexHeaderSliderTitle-3').addClass('display-n')
+        $('#indexHeaderSliderTitle-4').addClass('display-n')
+
+        $('#indexHeaderSliderCount-2').removeClass('display-n')
+        $('#indexHeaderSliderCount-1').addClass('display-n')
+        $('#indexHeaderSliderCount-3').addClass('display-n')
+        $('#indexHeaderSliderCount-4').addClass('display-n')
+
+        $('#indexHeaderSliderText-2').removeClass('display-n')
+        $('#indexHeaderSliderText-1').addClass('display-n')
+        $('#indexHeaderSliderText-3').addClass('display-n')
+        $('#indexHeaderSliderText-4').addClass('display-n')
     }
     if(id == 2) {
         indexHeaderActiveSlider = 2
@@ -345,8 +360,21 @@ function indexHeaderSlider(id) {
         $('#indexHeaderTabsButton-1').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-2').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-4').removeClass('ind-header__info-tabs-items-active')
-        $('.ind-header__info-description-add-banner').html(21)
-        $('.ind-header__info-description-add-title').html('Месячный оборот')
+        
+        $('#indexHeaderSliderTitle-3').removeClass('display-n')
+        $('#indexHeaderSliderTitle-2').addClass('display-n')
+        $('#indexHeaderSliderTitle-1').addClass('display-n')
+        $('#indexHeaderSliderTitle-4').addClass('display-n')
+
+        $('#indexHeaderSliderCount-3').removeClass('display-n')
+        $('#indexHeaderSliderCount-2').addClass('display-n')
+        $('#indexHeaderSliderCount-1').addClass('display-n')
+        $('#indexHeaderSliderCount-4').addClass('display-n')
+
+        $('#indexHeaderSliderText-3').removeClass('display-n')
+        $('#indexHeaderSliderText-2').addClass('display-n')
+        $('#indexHeaderSliderText-1').addClass('display-n')
+        $('#indexHeaderSliderText-4').addClass('display-n')
     }
     if(id == 3) {
         indexHeaderActiveSlider = 3
@@ -354,8 +382,21 @@ function indexHeaderSlider(id) {
         $('#indexHeaderTabsButton-1').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-2').removeClass('ind-header__info-tabs-items-active')
         $('#indexHeaderTabsButton-3').removeClass('ind-header__info-tabs-items-active')
-        $('.ind-header__info-description-add-banner').html(33)
-        $('.ind-header__info-description-add-title').html('Месячный оборот')
+        
+        $('#indexHeaderSliderTitle-4').removeClass('display-n')
+        $('#indexHeaderSliderTitle-2').addClass('display-n')
+        $('#indexHeaderSliderTitle-3').addClass('display-n')
+        $('#indexHeaderSliderTitle-1').addClass('display-n')
+
+        $('#indexHeaderSliderCount-4').removeClass('display-n')
+        $('#indexHeaderSliderCount-2').addClass('display-n')
+        $('#indexHeaderSliderCount-3').addClass('display-n')
+        $('#indexHeaderSliderCount-1').addClass('display-n')
+
+        $('#indexHeaderSliderText-4').removeClass('display-n')
+        $('#indexHeaderSliderText-2').addClass('display-n')
+        $('#indexHeaderSliderText-3').addClass('display-n')
+        $('#indexHeaderSliderText-1').addClass('display-n')
     }
 }
 
@@ -433,12 +474,14 @@ $("#menu-open").on("click", function() {
     t1.reversed(!t1.reversed());
     $('.header__nav-logo').css('opacity', '0')
     $('body').css('overflow', 'hidden')
+    $('.header__nav-burger svg').css('opacity', '0')
 });
 
 $("#menu-close").on("click", function() {
     t1.reversed(!t1.reversed());
     $('.header__nav-logo').css('opacity', '1')
     $('body').css('overflow', 'visible')
+    $('.header__nav-burger svg').css('opacity', '1')
 });
 
 

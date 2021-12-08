@@ -33,6 +33,10 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            transition: all 0.5s ease;
+            & svg {
+                transition: all 0.5s ease;
+            }
         }
         &-language {
             display: flex;
@@ -159,7 +163,8 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-start;
-                padding: 27px 0 0 0;
+                padding: 27px 0 150px 0;
+                position: relative;
                 position: relative;
                 transition: all 0.5s ease;
                 &-title {
@@ -181,7 +186,7 @@
                     font-family: TT Norms;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 70px;
+                    font-size: 50px;
                     line-height: 83px;
                     text-transform: uppercase;
                     color: #03366E;
@@ -222,25 +227,33 @@
                 }
                 &-slider {
                     margin: 50px 0 0 0;
-                    position: relative;
+                    position: absolute;
+                    top: 62%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    &-text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 148px;
+                    }
                     &-prev {
                         position: absolute;
                         top: 0;
-                        left: -65px;
+                        left: -35px;
                         cursor: pointer;
                     }
                     &-next {
                         position: absolute;
                         top: 0;
-                        right: -65px;
+                        right: -35px;
                         cursor: pointer;
                     }
                     & h3 {
-                        margin: 10px 0 0 0;
+                        margin: 7px 0 0 0;
                         font-family: TT Norms;
                         font-style: normal;
                         font-weight: 500;
@@ -265,7 +278,7 @@
                     cursor: pointer;
                     left: 50%;
                     transform: translate(-50%, 0%);
-                    bottom: 0;
+                    bottom: -6px;
                 }
             }
         }
@@ -305,13 +318,13 @@
                 &-title {
                     margin: 23px 0 0 0;
                     font-family: TT Norms;
+                    width: 106px;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 11px;
                     line-height: 13px;
                     text-align: center;
                     color: #FFFFFF;
-                    width: 50px;
                 }
                 &-active {
                     background: #003169;
