@@ -647,7 +647,7 @@ h6
 
     width: 100%;height: 224px;cursor: pointer;background: 0 0;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
 }.ind-header__info-tabs-items-title
-{font-family: TT Norms;font-size: 11px;font-weight: 400;font-style: normal;line-height: 13px;width: 106px;
+{font-family: TT Norms;font-family: TT Norms;font-size: 11px;font-weight: 400;font-style: normal;line-height: 20px;width: 106px;
     margin: 23px 0 0 0;text-align: center;color: #fff;
 }.ind-header__info-tabs-items-active
 {

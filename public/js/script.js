@@ -96,7 +96,7 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
 var items_1 = $('.ind-header__info-description'),
     items_2 = $('.ind-header__info-tabs'),
     timeout,
-    wait = 5000;
+    wait = 10000;
 
 function alive(){ 
     if(window.innerWidth >= 1100) {
@@ -152,6 +152,7 @@ $('.ind-header__info').on({
         timeout = setTimeout(remind, wait)
     }
 });
+timeout = setTimeout(remind, wait)
 
 
 
