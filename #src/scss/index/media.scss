@@ -127,10 +127,21 @@
         height: 180px;
     }
     .ind-header__info-tabs {
-        height: 180px;
+        height: 40%;
+        &-list {
+            height: 100%;
+        }
+        &-items {
+            height: 100%;
+        }
     }
     .ind-header__info-line {
-        height: 100%;
+        height: 85px;
+    }
+}
+@media (max-height: 750px) {
+    .ind-header__info-tabs {
+        height: 32%;
     }
 }
 

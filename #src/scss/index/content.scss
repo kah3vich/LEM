@@ -420,7 +420,7 @@
         &-play {
             position: absolute;
             right: -250px;
-            bottom: 38px;
+            bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -492,7 +492,7 @@
                 border-top: 1px solid #0057B6;
             }
         }
-        &-img {
+        &-imgs {
             margin: 30px 0 0 0;
             display: grid;
             width: 100%;
@@ -500,30 +500,93 @@
             grid-template-areas: "indObject-1 indObject-2"
             "indObject-3 indObject-3";
             overflow: hidden;
-            &-1 {
+        }
+        &-img {
+            &-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: RF Dewi;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 28px;
+                line-height: 31px;
+                text-align: center;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                width: 390px;
+                z-index: 5;
+                transition: all 0.5s ease;
+            }
+            &::after {
+                transition: all 0.5s ease;
+            }
+            &:hover {
+                & .ind-object__block-img-text {
+                    opacity: 0;
+                    transition: all 0.5s ease;
+                }
+                &::after {
+                    opacity: 0;
+                    transition: all 0.5s ease;
+                }
+            }
+            &:nth-child(1) {
                 grid-area: indObject-1;
                 width: 100%;
                 height: 417px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 49, 105, 0.8);
+                }
                 & img {
                     object-fit: cover;
                     height: 100%;
                     width: 100%;
                 }
             }
-            &-2 {
+            &:nth-child(2) {
                 grid-area: indObject-2;
                 width: 100%;
                 height: 417px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 49, 105, 0.8);
+                }
                 & img {
                     object-fit: cover;
                     height: 100%;
                     width: 100%;
                 }
             }
-            &-3 {
+            &:nth-child(3) {
                 grid-area: indObject-3;
                 width: 100%;
                 height: 417px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 49, 105, 0.8);
+                }
                 & img {
                     object-fit: cover;
                     height: 100%;
@@ -650,7 +713,7 @@
                 width: 100px;
                 left: 43%;
                 content: "";
-                top: 50px;
+                top: 58px;
                 &::after {
                     content: "";
                 }
@@ -659,7 +722,7 @@
                 width: 100px;
                 right: 43%;
                 content: "";
-                top: 50px;
+                top: 58px;
                 &::after {
                     content: "";
                 }
@@ -728,7 +791,7 @@
                 line-height: 31px;
                 color: #C0C0C0;
                 &:last-child {
-                    margin: 0 0 0 85px;
+                    margin: 0 0 0 80px;
                 }
             }
         }
@@ -764,7 +827,7 @@
                     }
                 }
                 &-text {
-                    opacity: 0;
+                    opacity: 0.5;
                     position: absolute;
                     left: 0;
                     bottom: 0;
@@ -1041,6 +1104,13 @@
             align-items: flex-start;
             justify-content: flex-start;
             padding: 69px 0 0 0;
+            position: relative;
+            &::after {
+                content: url(../svg/index/slider-icons.svg);
+                position: absolute;
+                bottom: -8px;
+                left: -235px;
+            }
             &-arrow {
                 display: flex;
                 align-items: center;
