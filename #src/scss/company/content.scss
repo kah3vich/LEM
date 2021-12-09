@@ -137,7 +137,8 @@
             }
         }
         &-sliders {
-            width: 70.50%;
+            width: 70%;
+            margin: 0 0 0 35px;
             & .swiper-slide-active {
                 & .comp-slider__block-sliders-items-text {
                     opacity: 1 !important;
@@ -316,17 +317,41 @@
 
 .comp-report {
     width: 100%;
-    background: #003169;
-    padding: 90px 0 0 0;
-    & .containers {
-        padding: 0 90px;
-    }
     &__block {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        margin: 0 0 65px 0;
+        padding: 95px 0 114px 0;
+        background: transparent;
+        position: relative;
+        & .containers {
+            padding: 0 90px;
+        }
+        &:nth-child(odd) {
+            &::after {
+                content: "";
+                position: absolute;
+                background: rgba(0, 15, 32, 0.8);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -3;
+            }
+        }
+        &:nth-child(even) {
+            &::after {
+                content: "";
+                position: absolute;
+                background: rgba(0, 49, 105, 0.8);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -3;
+            }
+        }
         &-title {
             font-family: RF Dewi;
             font-style: normal;
@@ -336,12 +361,14 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #FFFFFF;
+            z-index: 5;
         }
         &-content {
             width: 100%;
             margin: 71px 0 0 0;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            z-index: 5;
         }
         &-items {
             width: 100%;
@@ -394,7 +421,21 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        margin: 65px 0 120px 0;
+        padding: 84px 0 115px 0;
+        position: relative;
+        & .containers {
+            padding: 0 90px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 15, 32, 0.8);
+            z-index: -3;
+        }
         &-title {
             font-family: RF Dewi;
             font-style: normal;
@@ -408,6 +449,7 @@
         }
         &-content {
             margin: 75px 0 0 0;
+            padding: 0 200px 0 0;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
@@ -466,6 +508,10 @@
             }
         }
     }
+}
+
+.comp-photo {
+    width: 100%;
     &__add {
         width: 100%;
         display: flex;

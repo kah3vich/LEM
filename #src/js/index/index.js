@@ -62,8 +62,8 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
         nextEl: ".ind-description__block-slider .swiper-controls .swiper-button-next",
         prevEl: ".ind-description__block-slider .swiper-controls .swiper-button-prev",
     },
-    slidesPerView: 4,
-    spaceBetween: 0,
+    // slidesPerView: 4,
+    // spaceBetween: 0,
     slidesPerGroupSkip: 1,
     grabCursor: true,
     scrollbar: {
