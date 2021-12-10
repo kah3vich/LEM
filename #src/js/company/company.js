@@ -7,14 +7,14 @@ var companySecretSlider = new Swiper(".companySecretSlider", {
         el: ".comp-secret__slider-block .swiper-controls .swiper-pagination",
     },
     keyboard: true,
-    slidesPerView: 4,
+    slidesPerView:5,
     breakpoints: {
         1: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetweenSlides: 0
         },
         0: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetweenSlides: 0
         }
     }
