@@ -1,6 +1,9 @@
-.obj-header {
-    padding: 153px 0 45px 0;
-    position: relative;
+.obj-content {
+    width: 100%;
+    &__wrapper {
+        padding: 153px 0 45px 0;
+        position: relative;
+    }
     &__banner {
         width: 100%;
         height: 100%;
@@ -46,6 +49,15 @@
                 line-height: 18px;
                 text-decoration-line: underline;
                 color: #FFFFFF;
+                & a {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-decoration-line: underline;
+                    color: #FFFFFF;
+                }
             }
             &-next {
                 font-family: TT Norms;
@@ -55,6 +67,15 @@
                 line-height: 18px;
                 text-decoration-line: underline;
                 color: #FFFFFF;
+                & a {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-decoration-line: underline;
+                    color: #FFFFFF;
+                }
             }
             &-line {
                 font-family: TT Norms;
@@ -104,9 +125,9 @@
     }
 }
 
-.obj-content {
+.obj-contents {
     width: 100%;
-    &__block {
+    &__blocks {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -225,10 +246,10 @@
     }
 }
 
-.obj-arrow {
+.obj-contenta {
     padding: 120px 0;
     background: #003169;
-    &__block {
+    &__arrow {
         display: flex;
         width: 100%;
         align-items: center;
@@ -308,10 +329,11 @@
                 transform: translate(-50%, -50%);
                 z-index: 5;
                 & svg {
-                    margin: 0 35px 0 0;
+                    margin: 0 35px;
                 }
                 & p {
                     width: 510px;
+                    text-align: center;
                     & span {
                         font-family: TT Norms;
                         font-style: normal;

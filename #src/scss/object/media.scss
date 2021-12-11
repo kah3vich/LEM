@@ -1,5 +1,5 @@
 @media (max-width: 1210px) {
-    .obj-arrow__block-prev-text p::after {
+    .obj-contenta__arrow-prev-text p::after {
         content: "Пред.";
         font-family: TT Norms;
         font-style: normal;
@@ -11,14 +11,14 @@
         text-align: center;
         width: 100%;
     }
-    .obj-arrow__block-prev-text p span {
+    .obj-contenta__arrow-prev-text p span {
         display: none;
     }
-    .obj-arrow__block-prev-text p {
+    .obj-contenta__arrow-prev-text p {
         text-align: center;
         width: 100%;
     }
-    .obj-arrow__block-next-text p::after {
+    .obj-contenta__arrow-next-text p::after {
         content: "Cлед.";
         font-family: TT Norms;
         font-style: normal;
@@ -29,17 +29,17 @@
         color: #FFFFFF;
         
     }
-    .obj-arrow__block-next-text p {
+    .obj-contenta__arrow-next-text p {
         text-align: center;
         width: 100%;
     }
-    .obj-arrow__block-next-text p span {
+    .obj-contenta__arrow-next-text p span {
         display: none;
     }
-    .obj-content__block-description-icons {
+    .obj-contenta__block-description-icons {
         display: none;
     }
-    .obj-content__block-description {
+    .obj-contenta__block-description {
         position: relative;
         &::after {
             content: url(../../img/object/homes.png);
@@ -48,13 +48,12 @@
             left: 90px;
         }
     }
-    .obj-header {
+    .obj-content {
         position: relative;
-        padding: 153px 0 75px 0;
     }
 }
 @media (max-width: 1050px) {
-    .obj-content__block-description {
+    .obj-contents__blocks-description{
         position: relative;
         &::after {
             content: url(../../img/object/homes.png);
@@ -63,36 +62,55 @@
             left: 30px;
         }
     }
-    .obj-header .containers {
+    .obj-content .containers {
         padding: 0 30px;
     }
-    .obj-content__block-description-text {
+    .obj-contenta__block-description-text {
         padding: 0 30px;
     }
-    .obj-content__block-descriptions-wrapper {
+    .obj-contenta__block-descriptions-wrapper {
+        padding: 0 30px;
+    }
+    .obj-contents__blocks-description-icons {
+        display: none;
+    }
+    .obj-content__wrapper {
+        position: relative;
+        padding: 153px 0 95px 0;
+    }
+    .obj-contents__blocks-description-items {
+        width: 100%;
+    }
+    .obj-contents__blocks-descriptions-wrapper p {
+        width: 100%;
+    }
+    .obj-contents__blocks-description-text {
+        padding: 0 30px;
+    }
+    .obj-contents__blocks-descriptions-wrapper {
         padding: 0 30px;
     }
 }
 @media (max-width: 950px) {
-    .obj-header__block-description {
+    .obj-content__block-description {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
-    .obj-header__block-description-text {
+    .obj-content__block-description-text {
         margin: 35px 0 0 0;
     }
-    .obj-header__block-description {
+    .obj-content__block-description {
         margin: 60px 0 0 0;
     }
-    .obj-content__block-description-items {
+    .obj-contenta__block-description-items {
         width: 100%;
     }
-    .obj-content__block-descriptions-wrapper p {
+    .obj-contenta__block-descriptions-wrapper p {
         width: 100%;
     }
-    .obj-content__block-photos {
+    .obj-contenta__block-photos {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
@@ -115,8 +133,17 @@
     }
 }
 @media (max-width: 700px) {
-    .obj-arrow__block-prev,
-    .obj-arrow__block-next {
+    .obj-contenta__arrow-prev,
+    .obj-contenta__arrow-next {
         height: 100%;
+    }
+    .obj-contents__blocks-photos {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+            'objectPhotos-1'
+            'objectPhotos-2'
+            'objectPhotos-3';
     }
 }
