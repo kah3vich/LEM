@@ -148,9 +148,14 @@
                     opacity: 1 !important;
                     transition: all 0.5s ease;
                 }
-                & .comp-slider__block-sliders-items::before {
-                    opacity: 0 !important;
+                & .comp-slider__block-sliders-items-bg img {
+                    opacity: 1;
+                    z-index: 5;
+                    -webkit-filter: brightness(100%) !important;
                     transition: all 0.5s ease;
+                }
+                & .comp-slider__block-sliders-items-bg {
+                    z-index: 5 !important;
                 }
             }
             & .swiper-slide {
@@ -160,8 +165,12 @@
                 & .comp-slider__block-sliders-items-circle {
                     opacity: 0;
                 }
-                & .comp-slider__block-sliders-items::before {
-                    opacity: 1;
+                & .comp-slider__block-sliders-items-bg img {
+                    z-index: 3;
+                    -webkit-filter: brightness(45%);
+                }
+                & .comp-slider__block-sliders-items-bg {
+                    z-index: 3;
                 }
             }
             & .swiper-pagination {
@@ -178,25 +187,26 @@
                 &-bg {
                     position: absolute;
                     width: 100%;
-                    z-index: 1;
+                    z-index: 5;
                     height: 100%;
                     & img {
+                        -webkit-filter: brightness(45%);
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                     }
                 }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 7;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, 0.5);
-                    transition: all 0.5s ease;
-                }
+                // &::before {
+                //     content: "";
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     z-index: 7;
+                //     width: 100%;
+                //     height: 100%;
+                //     background: rgba(0, 0, 0, 0.5);
+                //     transition: all 0.5s ease;
+                // }
                 &-text {
                     z-index: 5;
                     padding: 23px 0;
@@ -1132,6 +1142,9 @@
             &:nth-child(12) {
                 grid-area: companyCareer-12;
             }
+        }
+        &-slider {
+            display: none;
         }
     }
     &__line {

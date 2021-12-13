@@ -46,8 +46,8 @@
 @media (max-width: 1350px) {
     .def-delivery__block-list {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 35px 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
     .def-service__block-line::after {
         width: 90%;
@@ -77,6 +77,37 @@
 @media (max-width: 1200px) {
     .def-content__block-description {
         width: 100%;
+    }
+    .def-service__block-wrapper:nth-child(odd),
+    .def-service__block-wrapper:nth-child(even) {
+        flex-direction: column;
+    }
+    .def-service__block-wrapper-photo {
+        width: 100%;
+        z-index: 5;
+    }
+    .def-service__block-wrapper-text {
+        font-family: TT Norms;
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 50px;
+        width: 572px;
+        margin: 35px 90px 55px 90px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .def-service__block-wrapper:nth-child(odd) .def-service__block-wrapper-icons,
+    .def-service__block-wrapper:nth-child(even) .def-service__block-wrapper-icons {
+        position: absolute;
+        right: 50px;
+        bottom: auto;
+        top: 5%;
+        left: auto;
+        z-index: 1;
+        & svg {
+            width: 300px;
+        }
     }
 }
 @media (max-width: 1050px) {
@@ -134,6 +165,64 @@
     }
     .def-header__block-items-text p {
         width: 90%;
+    }
+    .def-delivery__block-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .def-delivery__block-banners {
+        display: none;
+    }
+    .def-content__block-table-banner {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .def-content__block-table {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 30px;
+    }
+    .def-service__block-wrapper-text {
+        font-family: TT Norms;
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 50px;
+        width: 572px;
+        margin: 35px 30px 55px 30px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .def-service__block-line::after {
+        width: 100%;
+    }
+}
+@media (max-width: 750px) {
+    .def-service__block-wrapper-text {
+        font-family: TT Norms;
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 50px;
+        width: 100%;
+        padding: 35px 30px 100px 30px;
+        margin: 0;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .def-service__block-wrapper:nth-child(even) .def-service__block-wrapper-icons, .def-service__block-wrapper:nth-child(odd) .def-service__block-wrapper-icons {
+        position: absolute;
+        z-index: 1;
+        top: -5%;
+        right: 50px;
+        bottom: auto;
+        left: auto;
+    }
+    .def-content__block-table-banner {
+        & svg {
+            width: 200px;
+        }
     }
 }
 @media (max-width: 500px) {
