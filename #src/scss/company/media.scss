@@ -409,4 +409,7 @@
     .comp-add__company-table-items img {
         width: 80%;
     }
+    .comp-photo__add-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

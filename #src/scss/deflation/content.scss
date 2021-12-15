@@ -259,7 +259,7 @@
             z-index: 5;
         }
         &-items {
-            height: 100%;
+            height: max-content;
             width: 100%;
             background: #004A9F;
             &-photo {
