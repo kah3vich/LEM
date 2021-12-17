@@ -1397,7 +1397,7 @@ h6
 }.def-header__block-text
 {font-family: RF Dewi;font-size: 28px;font-weight: 700;font-style: normal;line-height: 50px;
 
-    margin: 151px 0 0 0;text-transform: uppercase;color: #fff;
+    margin: 151px 0 0 0;text-align: center;text-transform: uppercase;color: #fff;
 }.def-header__block-add
 {font-family: RF Dewi;font-size: 28px;font-weight: 700;font-style: normal;line-height: 43px;
 
@@ -1423,13 +1423,21 @@ h6
 }.def-delivery__block .containers
 {position: relative;
     z-index: 5;
+}.def-delivery__block .containers::after
+{position: absolute;z-index: -2;top: 0;left: 0;width: 100%;height: 41%;
+
+    content: '';background: url(../img/deflation/banner-4.png) no-repeat;background-size: cover;
+}.def-delivery__block .containers::before
+{position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 41%;
+
+    content: '';background: rgba(0,49,105,.7);
 }.def-delivery__block-banner
 {position: relative;
 
     width: 100%;height: 505px;background: url(../img/deflation/banner-3.png) no-repeat;background-size: cover;
 }.def-delivery__block-title
 {
-    font-family: RF Dewi;font-size: 28px;font-weight: 700;font-style: normal;line-height: 43px;margin: 0 auto;letter-spacing: .1em;text-transform: uppercase;color: #fff;
+    font-family: RF Dewi;font-size: 28px;font-weight: 700;font-style: normal;line-height: 43px;width: 70%;margin: 0 auto;text-align: center;letter-spacing: .1em;text-transform: uppercase;color: #fff;
 }.def-delivery__block-line
 {position: relative;width: 100%;height: 0;
     margin: 46px 0 67px 0;
@@ -1469,14 +1477,6 @@ h6
 }.def-delivery__block-add
 {font-family: TT Norms;font-size: 18px;font-weight: 400;font-style: normal;line-height: 31px;width: 606px;
     margin: 111px 0 0 0;text-transform: uppercase;color: #fff;
-}.def-delivery__block::after
-{position: absolute;z-index: -2;top: 155px;left: 0;width: 100%;height: 41%;
-
-    content: '';background: url(../img/deflation/banner-4.png) no-repeat;background-size: cover;
-}.def-delivery__block::before
-{position: absolute;z-index: -1;top: 155px;left: 0;width: 100%;height: 41%;
-
-    content: '';background: rgba(0,49,105,.7);
 }.def-service
 {position: relative;padding: 177px 0 170px 0;
 
@@ -1543,6 +1543,35 @@ h6
 }.def-service__block-wrapper-text
 {font-family: TT Norms;font-size: 18px;font-weight: 700;font-style: normal;line-height: 50px;width: 572px;
     margin: 35px 90px 0 90px;text-transform: uppercase;color: #fff;
+}.def-service__block-list
+{
+    display: -webkit-box                                                                                                                ;display: -ms-flexbox;display: flex;flex-direction: column;width: 100%;padding: 150px 0 55px 0;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;
+}.def-service__block-list-title
+{font-family: RF Dewi;font-size: 28px;font-weight: 800;font-style: normal;line-height: 42px;
+
+    width: 90%;text-align: center;letter-spacing: .1em;text-transform: uppercase;color: #fff;
+}.def-service__block-list-line
+{
+    width: 90%;height: 0;margin: 80px 0 60px 0;border-top: 1px solid #0057b6;
+}.def-service__block-list-wrapper
+{display: -ms-grid;display:     grid;
+
+    width: 100%;-ms-grid-columns: (1fr)[3];grid-template-columns: repeat(3,1fr);
+}.def-service__block-list-items
+{position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;overflow: hidden;
+
+    width: 100%;height: 100%;min-height: 377px;padding: 40px 62px 40px 62px;-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;
+}.def-service__block-list-items img
+{
+    position: absolute;z-index: 1;top: 0;left: 0;width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;
+}.def-service__block-list-items::before
+{position: absolute;z-index: 3;top: 0;left: 0;width: 100%;height: 100%;
+
+    content: '';background: rgba(0,49,105,.8);
+}.def-service__block-list-items p
+{font-family: TT Norms;font-size: 18px;font-weight: 700;font-style: normal;line-height: 32px;
+
+    z-index: 6;text-transform: uppercase;color: #fff;
 }.def-content
 {padding: 120px 0;
 
@@ -1556,7 +1585,10 @@ h6
 }.def-content__block-text
 {font-family: RF Dewi;font-size: 28px;font-weight: 700;font-style: normal;line-height: 43px;
 
-    width: 800px;text-transform: uppercase;color: #fff;
+    width: 100%;text-align: center;text-transform: uppercase;color: #fff;
+}.def-content__block-text p
+{
+    text-align: left;
 }.def-content__block-banner
 {overflow: hidden;width: 100%;
     height: 377px;margin: 56px 0 59px 0;
