@@ -55,19 +55,19 @@ var indexSliderReward = new Swiper(".indexSliderReward", {
 
 var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
     pagination: {
-        el: ".ind-description__block-slider .swiper-controls .swiper-pagination",
+        el: ".sliders__block-slider .swiper-controls .swiper-pagination",
         clickable: true
     },
     navigation: {
-        nextEl: ".ind-description__block-slider .swiper-controls .swiper-button-next",
-        prevEl: ".ind-description__block-slider .swiper-controls .swiper-button-prev",
+        nextEl: ".sliders__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".sliders__block-slider .swiper-controls .swiper-button-prev",
     },
     // slidesPerView: 4,
     // spaceBetween: 0,
     slidesPerGroupSkip: 1,
     grabCursor: true,
     scrollbar: {
-        el: ".ind-description__block-slider .swiper-scrollbar"
+        el: ".sliders__block-slider .swiper-controls .swiper-scrollbar"
     },
     breakpoints: {
         1380: {
@@ -186,19 +186,47 @@ function sliderIndexSlider(id) {
     }
     if(sliderIndexActiveContent == 0) {
         $('.ind-slider__wrapper-slide-count p').html('01')
-        $('.ind-slider__wrapper-info-text').html('«Модернизация электросетевого хозяйства страны – стратегическое направление деятельности нашей компании.»')
+        $('#indexSliderTitle-1').removeClass('display-n')
+        $('#indexSliderTitle-2').addClass('display-n')
+        $('#indexSliderTitle-3').addClass('display-n')
+        $('#indexSliderTitle-4').addClass('display-n')
+        $('#indexSliderText-1').removeClass('display-n')
+        $('#indexSliderText-2').addClass('display-n')
+        $('#indexSliderText-3').addClass('display-n')
+        $('#indexSliderText-4').addClass('display-n')
     }
     if(sliderIndexActiveContent == 1) {
         $('.ind-slider__wrapper-slide-count p').html('02')
-        $('.ind-slider__wrapper-info-text').html('«2 Модернизация электросетевого хозяйства страны – стратегическое направление деятельности нашей компании.»')
+        $('#indexSliderTitle-2').removeClass('display-n')
+        $('#indexSliderTitle-1').addClass('display-n')
+        $('#indexSliderTitle-3').addClass('display-n')
+        $('#indexSliderTitle-4').addClass('display-n')
+        $('#indexSliderText-2').removeClass('display-n')
+        $('#indexSliderText-1').addClass('display-n')
+        $('#indexSliderText-3').addClass('display-n')
+        $('#indexSliderText-4').addClass('display-n')
     }
     if(sliderIndexActiveContent == 2) {
         $('.ind-slider__wrapper-slide-count p').html('03')
-        $('.ind-slider__wrapper-info-text').html('«3 Модернизация электросетевого хозяйства страны – стратегическое направление деятельности нашей компании.»')
+        $('#indexSliderTitle-3').removeClass('display-n')
+        $('#indexSliderTitle-2').addClass('display-n')
+        $('#indexSliderTitle-1').addClass('display-n')
+        $('#indexSliderTitle-4').addClass('display-n')
+        $('#indexSliderText-3').removeClass('display-n')
+        $('#indexSliderText-2').addClass('display-n')
+        $('#indexSliderText-1').addClass('display-n')
+        $('#indexSliderText-4').addClass('display-n')
     }
     if(sliderIndexActiveContent == 3) {
         $('.ind-slider__wrapper-slide-count p').html('04')
-        $('.ind-slider__wrapper-info-text').html('«4 Модернизация электросетевого хозяйства страны – стратегическое направление деятельности нашей компании.»')
+        $('#indexSliderTitle-4').removeClass('display-n')
+        $('#indexSliderTitle-2').addClass('display-n')
+        $('#indexSliderTitle-3').addClass('display-n')
+        $('#indexSliderTitle-1').addClass('display-n')
+        $('#indexSliderText-4').removeClass('display-n')
+        $('#indexSliderText-2').addClass('display-n')
+        $('#indexSliderText-3').addClass('display-n')
+        $('#indexSliderText-1').addClass('display-n')
     }
 }
 
@@ -481,13 +509,6 @@ $('.ind-header__info-media-wrapper').on('click', function() {
 
 var t1 = new TimelineMax({paused: true});
 
-// t1.to(".menu", 0.9, {
-//         autoAlpha: 1
-// });
-
-// $('.main-menu-item:nth-child(1)').on('click', function() {
-//         alert(1)
-// });
 
 t1.from(".menu", 0.9, {
     autoAlpha: 0
@@ -498,14 +519,12 @@ t1.reverse();
 
 $("#menu-open").on("click", function() {
     t1.reversed(!t1.reversed());
-    $('.header__nav-logo').css('opacity', '0')
     $('body').css('overflow', 'hidden')
     $('.header__nav-burger svg').css('opacity', '0')
 });
 
 $("#menu-close").on("click", function() {
     t1.reversed(!t1.reversed());
-    $('.header__nav-logo').css('opacity', '1')
     $('body').css('overflow', 'visible')
     $('.header__nav-burger svg').css('opacity', '1')
 });
@@ -545,7 +564,7 @@ var menuSliders = new Swiper(".menuSliders", {
             slidesPerView: 3,
             spaceBetweenSlides: 20
         },
-        800: {
+        799: {
             slidesPerView: 2,
             spaceBetweenSlides: 60,
             spaceBetween: 60,
@@ -577,4 +596,21 @@ var indexObjectsSlider = new Swiper(".indexObjectsSlider", {
 
 
 
+$('.ind-header__info-play').on('click', () => {
+    $('.modelVideo').removeClass('display-n')
+    $('body').css('overflow', 'hidden')
+});
+$('.modelVideo__close').on('click', () => {
+    $('.modelVideo').addClass('display-n')
+    $('body').css('overflow', 'visible')
+    document.getElementById('modelVideo').pause();
+});
 
+
+
+
+
+
+$('.ind-object__block-btn').on('click', () => {
+    $('#indexObjectAdd').removeClass('display-n')
+});
