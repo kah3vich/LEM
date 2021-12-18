@@ -9745,6 +9745,15 @@ h6 {
     width: 80%;
   }
 
+  .def-service__block-list-wrapper {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .def-delivery__block-title {
+    width: 100%;
+  }
+
   .comp-report__wrapper-content {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -9931,7 +9940,7 @@ h6 {
 
 @media (max-width: 1280px) {
   .objs-content__description-list {
-    padding: 0 30px;
+    padding: 55px 30px;
   }
 
   .objs-content__block-line::after {
@@ -9956,6 +9965,10 @@ h6 {
 
   .objs-header__block {
     margin: 0 0 88px 0;
+  }
+
+  .objs-content__description-line::after {
+    width: 100%;
   }
 }
 
@@ -10234,6 +10247,10 @@ h6 {
   }
 
   .objs-content__description-customer {
+    width: 100%;
+  }
+
+  .objs-content__description-line::after {
     width: 100%;
   }
 
@@ -10557,6 +10574,10 @@ h6 {
   }
 
   .def-service__block-title {
+    padding: 0 30px;
+  }
+
+  .def-content__block-table {
     padding: 0 30px;
   }
 
@@ -11097,12 +11118,21 @@ h6 {
     width: 90%;
   }
 
+  .def-service__block-list-wrapper {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .def-delivery__block-list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
+  }
+
+  .def-service__block-list-items {
+    padding: 40px 25px 40px 25px;
   }
 
   .def-delivery__block-banners {
@@ -12191,6 +12221,11 @@ h6 {
     width: 100%;
   }
 
+  .details-content__block-banners p {
+    font-size: 19px;
+    padding: 35px 0;
+  }
+
   .menu__block-list-items-text p {
     font-size: 17px;
   }
@@ -12215,6 +12250,30 @@ h6 {
 
   .def-delivery__block-items-text p {
     font-size: 16px;
+  }
+
+  .def-service__block-list-title {
+    font-size: 20px;
+  }
+
+  .def-service__block-list {
+    padding: 55px 0;
+  }
+
+  .def-delivery__block-title {
+    font-size: 21px;
+  }
+
+  .def-content__block-table {
+    padding: 0 15px;
+  }
+
+  .def-content__block-text {
+    text-align: left;
+  }
+
+  .def-header__block-text {
+    text-align: left;
   }
 
   .det-content__banner {
