@@ -139,17 +139,17 @@ function remind(){
 //     }
 // });
 
-// $('.ind-header__info').on({
-//     mouseenter: function () {
-//         clearTimeout(timeout)
-//         timeout = null;
-//         alive()
-//     }, 
-//     mouseleave: function () {
-//         timeout = setTimeout(remind, wait)
-//     }
-// });
-// timeout = setTimeout(remind, wait)
+$('.ind-header__info').on({
+    mouseenter: function () {
+        clearTimeout(timeout)
+        timeout = null;
+        alive()
+    }, 
+    mouseleave: function () {
+        timeout = setTimeout(remind, wait)
+    }
+});
+timeout = setTimeout(remind, wait)
 
 
 
