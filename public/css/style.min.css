@@ -5068,6 +5068,9 @@ h6
     }.menu__block-list-items-sliders-element
     {
         width: 300px;
+    }.sliders__block-slider-items-text
+    {
+        opacity: 1;
     }
 }@media (max-width:450px)
 {
