@@ -786,7 +786,7 @@ h6
 }.ind-header__info-line-text marquee
 {
     font-family: TT Norms;font-size: 18px;font-weight: 600;font-style: normal;line-height: 26px;display: -webkit-box;display: -ms-flexbox;display: flex;width: 100%;letter-spacing: -.5px;color: #fff;
-}.ind-header__info-line-text marquee span
+}.ind-header__info-line-text marquee p
 {font-family: TT Norms;font-size: 14px;font-weight: 400;font-style: normal;line-height: 19px;
 
     width: 100%;color: #fff;

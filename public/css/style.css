@@ -2411,7 +2411,7 @@ h6 {
   display: flex;
 }
 
-.ind-header__info-line-text marquee span {
+.ind-header__info-line-text marquee p {
   width: 100%;
   font-family: TT Norms;
   font-style: normal;
