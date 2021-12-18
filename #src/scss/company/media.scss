@@ -30,12 +30,27 @@
         z-index: 6;
     }
 }
+@media (max-width: 1410px) {
+    .comp-report__block-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .comp-report__block-items p {
+        width: 85%;
+    }
+}
 @media (max-width: 1400px) {
     .comp-career__content {
         display: none;
     }
     .comp-secret__gos-text {
         z-index: 5;
+    }
+    .comp-career__content-items {
+        min-height: 290px;
+        height: 100%;
+    }
+    .comp-career__line {
+        width: 100%;
     }
     .comp-secret__gos .containers {
         z-index: 5;
@@ -105,10 +120,49 @@
         padding: 85px 0 110px 0;
     }
 }
+@media (max-width: 1350px) {
+    .process__block-list {
+        padding: 0;
+    }
+    .comp-own__block-items-text {
+        width: 450px;
+    }
+    .comp-career__block-text-address {
+        margin: 55px 0 0 0;
+    }
+}
 @media (max-width: 1300px) {
     .comp-report__wrapper-content {
         grid-template-columns: repeat(2, 1fr);
         gap: 55px;
+    }
+    .comp-support__block {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 45px;
+    }
+    .comp-scheme__block-list {
+        height: 100%;
+    }
+    .comp-scheme__block-list {
+        min-height: 251px;
+        height: 100%;
+    }
+    .comp-scheme__block-text {
+        width: 100%;
+    }
+    .comp-support {
+        position: relative;
+        &::after {
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #003169;
+            z-index: -10;
+        }
     }
     .comp-partners__block-content {
         grid-template-columns: repeat(5, 1fr);
@@ -185,15 +239,74 @@
         }
     }
 }
+@media (max-width: 1200px) {
+    .comp-own__block-items-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .comp-own__block-items-img {
+        width: 100%;
+        height: 350px;
+    }
+    .comp-own__block-items-text p {
+        margin: 35px 0 0 0;
+        width: 100%;
+    }
+    .comp-own__block-items-text {
+        width: 100%;
+    }
+}
 @media (max-width: 1050px) {
     .comp-header__block .containers {
         padding: 0 30px;
     }
+    .comp-secret__one .containers {
+        padding: 170px 0;
+    }
     .comp-header__block-banner {
         width: 100%;
     }
+    .comp-photo__add {
+        display: grid;
+        width: 100%;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+            'companyPhoto-1'
+            'companyPhoto-2' 
+            'companyPhoto-3';
+    }
     .comp-slider .containers {
         padding: 0 30px;
+    }
+    .comp-own .containers {
+        padding: 0;
+    }
+    .comp-own__block-items-line {
+        display: none;
+    }
+    .comp-own__block-items-text p {
+        padding: 0 30px;
+    }
+    .comp-own__block-items-title {
+        text-align: left;
+        padding: 0 30px;
+        margin: 35px 0;
+    }
+    .comp-skills .containers {
+        padding: 0 30px;
+    }
+    .comp-skills__block-title {
+        width: 90%;
+    }
+    .comp-secret__one-text {
+        padding: 0 30px;
+        width: 100%;
+    }
+    .comp-add__block-text {
+        width: 90%;
     }
     .comp-banner__block {
         width: 100%;
@@ -239,11 +352,23 @@
     .comp-partners__block-content-items img {
         width: 80%;
     }
+    .comp-header__block-text {
+        width: 100%;
+    }
 }
 @media (max-width: 850px) {
     .comp-partners__block-content-items {
         width: 100%;
         height: 150px;
+    }
+    .comp-own__block-items-title {
+        width: 100%;
+    }
+    .comp-report__wrapper-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
     .comp-add__company-table {
         grid-template-columns: repeat(1, 1fr);
@@ -251,6 +376,9 @@
         "companyAddBlock-3"
         "companyAddBlock-2"
         "companyAddBlock-4";
+    }
+    .comp-secret__one-text {
+        font-size: 17px;
     }
     .comp-add__company-table-items {
         &:nth-child(1) {
@@ -276,10 +404,10 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .comp-report__block-items:nth-child(3) {
-        padding: 32px;
+        padding: 32px 32px 32px 0;
     }
     .comp-report__block-items:nth-child(6) {
-        padding: 32px;
+        padding: 32px 32px 32px 0;
     }
     .comp-add__block-text {
         font-family: RF Dewi;
@@ -340,13 +468,42 @@
     .comp-add__company-table-items img {
         width: 90%;
     }
+    .comp-files__block-content-text {
+        padding: 0 30px;
+        text-align: left;
+        width: 80%;
+    }
+    .comp-skills__block-list-items p {
+        font-family: RF Dewi;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 51px;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .comp-files__block-content-items {
+        display: flex;
+        justify-content: flex-start;
+    }
     .comp-slider__block-controls-title,
     .comp-report__block-title,
     .comp-support__text-title {
         font-size: 23px;
     }
     .comp-report__block-items {
-        width: 90%;
+        width: 100%;
+    }
+    .comp-secret__slider-items-text {
+        display: none;
+    }
+    .comp-secret__slider-items-photo {
+        width: 170px;
+        height: 250px;
+        & img {
+            width: 70%;
+        }
     }
     .comp-report__block-items-icons img {
         width: 80%;
@@ -408,5 +565,43 @@
     }
     .comp-photo__add-content {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .comp-report__block-items p {
+        width: 100%;
+    }
+    .comp-report__block-items-icons {
+        margin: auto 20px;
+    }
+    .comp-report__block-items h3 {
+        margin: 0;
+    }
+    .comp-report__block-items p {
+        margin: 12px 0 0 0;
+    }
+    .comp-own__block-items-title {
+        font-size: 20px;
+    }
+    .comp-skills__block-list-items p {
+        font-size: 17px;
+    }
+    .comp-report__block-items h3 {
+        width: 100%;
+    }
+    .comp-report__block-items-icons img {
+        width: 55px;
+    }
+}
+@media (max-width: 550px) {
+    .comp-secret__slider .containers {
+        padding: 0 15px;
+    }
+    .comp-report__wrapper-items-text p {
+        margin: 0 0 0 15px;
+    }
+    .comp-report__block-title {
+        font-size: 20px;
+    }
+    .comp-report__wrapper-title {
+        font-size: 20px;
     }
 }

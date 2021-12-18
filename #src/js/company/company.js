@@ -26,8 +26,8 @@ var companySecretSlider = new Swiper(".companySecretSlider", {
             spaceBetweenSlides: 0
         },
         0: {
-            slidesPerView: 1,
-            spaceBetweenSlides: 0
+            slidesPerView: 2,
+            spaceBetweenSlides: 26
         }
     }
 });

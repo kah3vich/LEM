@@ -108,7 +108,6 @@ function alive(){
 
 function remind(){
     if(window.innerWidth >= 1100) {
-        console.log('wow')
         items_1.css('opacity', '0')
         items_2.css('opacity', '0')
     }
@@ -140,19 +139,17 @@ function remind(){
 //     }
 // });
 
-$('.ind-header__info').on({
-    mouseenter: function () {
-        console.log(1)
-        clearTimeout(timeout)
-        timeout = null;
-        alive()
-    }, 
-    mouseleave: function () {
-        console.log(2)
-        timeout = setTimeout(remind, wait)
-    }
-});
-timeout = setTimeout(remind, wait)
+// $('.ind-header__info').on({
+//     mouseenter: function () {
+//         clearTimeout(timeout)
+//         timeout = null;
+//         alive()
+//     }, 
+//     mouseleave: function () {
+//         timeout = setTimeout(remind, wait)
+//     }
+// });
+// timeout = setTimeout(remind, wait)
 
 
 
@@ -683,8 +680,8 @@ var companySecretSlider = new Swiper(".companySecretSlider", {
             spaceBetweenSlides: 0
         },
         0: {
-            slidesPerView: 1,
-            spaceBetweenSlides: 0
+            slidesPerView: 2,
+            spaceBetweenSlides: 26
         }
     }
 });
@@ -786,3 +783,6 @@ function changeSlide(id) {
         }
     }
 }
+$('.objs-content__btns-items').on('click', () => {
+    $('.objs-content__wrappers').removeClass('display-n')
+});
