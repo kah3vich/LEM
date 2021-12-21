@@ -1,16 +1,16 @@
 
 let activeContentObject = 0
-let elementContentCountObject = 15
+let elementContentCountObject = 18
 
 $('#objectsBlock-1').removeClass('display-n')
 
-for ( let i = 1; i <= 15; i++ ) {
+for ( let i = 1; i <= elementContentCountObject; i++ ) {
     $(`#objectButtonPrev-${i}`).on('click', function() {
         changeSlide('prev')
     })
 }
 
-for ( let i = 1; i <= 15; i++ ) {
+for ( let i = 1; i <= elementContentCountObject; i++ ) {
     $(`#objectButtonNext-${i}`).on('click', function() {
         changeSlide('next')
     })
