@@ -798,6 +798,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     &__close {
         position: absolute;
         top: 32px;
@@ -848,12 +849,11 @@ p {
                     display: grid;
                     margin: 5px 0 0 0;
                     grid-template-columns: repeat(1, 1fr);
-                    display: none;
                     &-element {
                         & a {
                             font-family: TT Norms;
                             font-style: normal;
-                            font-weight: normal;
+                            font-weight: 400 !important;
                             font-size: 13px !important;
                             line-height: 28px !important;
                             color: #003169 !important;
@@ -867,7 +867,6 @@ p {
                 }
                 &-sliders {
                     width: 100%;
-                    display: none;
                     padding: 10px 0 0 0;
                     & .swiper-controls {
                         position: relative;
@@ -967,11 +966,9 @@ p {
         }
     }
     &__contact {
-        position: absolute;
-        bottom: 15%;
-        left: 50%;
-        transform: translate(-50%, 0%);
+        margin: 15px 0 0 0;
         display: flex;
+        width: 700px;
         align-items: center;
         justify-content: flex-start;
         &-title {
@@ -985,7 +982,7 @@ p {
         }
         &-items {
             cursor: pointer;
-            margin: 0 30px;
+            margin: 0 25px;
             & a {
                 font-family: TT Norms;
                 font-style: normal;

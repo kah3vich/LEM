@@ -406,6 +406,19 @@
                         color: #FFFFFF;
                     }
                 }
+                &-wrapper {
+                    display: flex;
+                    align-items: center;
+                    & p {
+                        width: 100%;
+                        font-family: TT Norms;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #FFFFFF;
+                    }
+                }
             }
         }
         &-media {

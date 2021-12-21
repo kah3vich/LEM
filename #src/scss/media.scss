@@ -50,7 +50,7 @@
         margin: 0 0 15px 0;
     }
     .menu__block {
-        margin: 85px 0 0 0;
+        margin: 15px 0 0 0;
     }
 }
 @media (max-width: 950px) and (max-height: 620px) {
@@ -97,6 +97,22 @@
 //         height: 100%;
 //     }
 // }
+@media (max-width: 600px) {
+    .menu__contact {
+        margin: 0;
+    }
+    .menu__block-list-items-sliders {
+        display: none;
+    }
+    .menu__block-list-items-content-element a {
+        font-size: 10px !important;
+    }
+}
+@media (max-width: 600px) and (max-height: 750px) {
+    .menu__block-list {
+        margin: 55px 0 0 0;
+    }
+}
 @media (max-width: 500px) {
     .menu__block-list-items-text p {
         font-size: 17px;
