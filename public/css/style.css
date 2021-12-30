@@ -598,23 +598,30 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 550px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin: 0 auto 0 0;
   z-index: 5;
 }
 
 .header__nav-list-items {
   cursor: pointer;
+  margin: 0 23px 0 0;
+}
+
+.header__nav-list-items:last-child {
+  margin: 0;
 }
 
 .header__nav-list-items a {
   font-family: TT Norms;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 12px;
   text-transform: uppercase;
   color: #fff;
@@ -3612,6 +3619,14 @@ h6 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 150px 0 55px 90px;
+  position: relative;
+}
+
+.ind-slider__wrapper-info::after {
+  content: url(../img/index/adds.png);
+  position: absolute;
+  bottom: -25%;
+  right: -20%;
 }
 
 .ind-slider__wrapper-info-title {
@@ -3725,13 +3740,6 @@ h6 {
   padding: 69px 0 0 0;
   position: relative;
   margin: auto 0 0 0;
-}
-
-.ind-slider__wrapper-slide::after {
-  content: url(../svg/index/slider-icons.svg);
-  position: absolute;
-  bottom: -8px;
-  left: -235px;
 }
 
 .ind-slider__wrapper-slide-arrow {
@@ -9274,6 +9282,17 @@ h6 {
   .comp-slider__block-sliders .swiper-slide-active .comp-slider__block-sliders-items-bg {
     z-index: 6;
   }
+
+  .header__nav-logo {
+    margin: 0;
+    position: absolute;
+    top: 12px;
+    left: 32px;
+  }
+
+  .header__nav-list {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1600px)and (min-height: 850px) {
@@ -9737,6 +9756,10 @@ h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+
+  .ind-slider__wrapper-info::after {
+    display: none;
   }
 
   .ind-slider__wrapper-slide {
@@ -10556,7 +10579,7 @@ h6 {
   }
 
   .ind-description__block-title {
-    margin: 35px 0 0 0;
+    margin: 55px 0 0 0;
     padding: 0 68px;
     position: relative;
   }

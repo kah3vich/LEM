@@ -247,6 +247,9 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
+    .ind-slider__wrapper-info::after {
+        display: none;
+    }
     .ind-slider__wrapper-slide {
         width: 100%;
     }
@@ -459,7 +462,7 @@
         padding: 0 30px;
     }
     .ind-description__block-title {
-        margin: 35px 0 0 0;
+        margin: 55px 0 0 0;
         padding: 0 68px;
         position: relative;
     }

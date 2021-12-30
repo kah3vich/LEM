@@ -1,3 +1,14 @@
+@media (min-width: 1440px) {
+    .header__nav-logo {
+        margin: 0;
+        position: absolute;
+        top: 12px;
+        left: 32px;
+    }
+    .header__nav-list {
+        margin: 0 auto;
+    }
+}
 @media (max-width: 1420px) {
     .menu__contact {
         flex-direction: column;
