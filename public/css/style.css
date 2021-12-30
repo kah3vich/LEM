@@ -526,11 +526,16 @@ h6 {
   transition: all .5s ease;
 }
 
+.header {
+  z-index: 1;
+}
+
 .header__nav {
   width: 100%;
   height: 90px;
   position: absolute;
   top: 0;
+  z-index: 30;
   left: 0;
 }
 
@@ -562,7 +567,7 @@ h6 {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 15;
+  z-index: 100;
   background: #fff;
 }
 
@@ -642,6 +647,7 @@ h6 {
 
 .footer {
   width: 100%;
+  overflow: hidden;
   background: #fff;
 }
 
@@ -974,6 +980,7 @@ h6 {
 .process {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   background: #002045;
 }
 
@@ -992,6 +999,7 @@ h6 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow: hidden;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -1335,6 +1343,7 @@ h6 {
 .sliders {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   background: #003169;
 }
 
@@ -2559,6 +2568,7 @@ h6 {
   width: 100%;
   background: #003169;
   height: 100%;
+  overflow: hidden;
   padding: 110px 0 0 0;
 }
 
@@ -2813,6 +2823,7 @@ h6 {
 
 .ind-reward {
   width: 100%;
+  overflow: hidden;
 }
 
 .ind-reward__block {
@@ -3009,6 +3020,7 @@ h6 {
 
 .ind-description {
   width: 100%;
+  overflow: hidden;
   height: 100%;
   background: #003169;
 }
@@ -3450,6 +3462,7 @@ h6 {
 
 .ind-maps {
   width: 100%;
+  overflow: hidden;
 }
 
 .ind-maps__block {
@@ -3509,6 +3522,8 @@ h6 {
 
 .ind-objects {
   width: 100%;
+  overflow: hidden;
+  background: #003169;
 }
 
 .ind-objects__slider {
@@ -3593,6 +3608,7 @@ h6 {
 
 .ind-slider {
   width: 100%;
+  overflow: hidden;
 }
 
 .ind-slider .containers {
@@ -3819,6 +3835,8 @@ h6 {
 
 .ind-career {
   width: 100%;
+  overflow: hidden;
+  background: #003169;
   height: 417px;
 }
 
@@ -3876,6 +3894,7 @@ h6 {
 .def-header {
   position: relative;
   width: 100%;
+  overflow: hidden;
   padding: 0 0 85px 0;
 }
 
@@ -4116,6 +4135,7 @@ h6 {
 
 .def-delivery {
   padding: 177px 0 0 0;
+  overflow: hidden;
   position: relative;
 }
 
@@ -4325,6 +4345,7 @@ h6 {
   background: #002045;
   padding: 177px 0 170px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .def-service .containers {
@@ -4600,6 +4621,7 @@ h6 {
 .def-content {
   background: #002045;
   padding: 120px 0;
+  overflow: hidden;
 }
 
 .def-content .containers {
@@ -4879,6 +4901,7 @@ h6 {
 .new-process {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   padding: 240px 0 0 0;
   background: #003169;
 }
@@ -5158,6 +5181,7 @@ h6 {
 
 .det-content {
   width: 100%;
+  overflow: hidden;
   height: 100%;
   position: relative;
   padding: 153px 0 90px 0;
@@ -5372,6 +5396,7 @@ h6 {
 
 .contact-content {
   width: 100%;
+  overflow: hidden;
   height: 100%;
   position: relative;
   padding: 242px 0 115px 0;
@@ -5548,8 +5573,8 @@ h6 {
 
 .objs-header {
   width: 100%;
-  padding: 213px 0 0 0;
-  height: 625px;
+  padding: 213px 0 105px 0;
+  overflow: hidden;
   position: relative;
 }
 
@@ -5637,6 +5662,7 @@ h6 {
 
 .objs-map {
   width: 100%;
+  overflow: hidden;
 }
 
 .objs-map__text {
@@ -5698,6 +5724,7 @@ h6 {
 
 .objs-content {
   position: relative;
+  overflow: hidden;
   background: #003169;
   padding: 0 0 150px 0;
 }
@@ -5934,6 +5961,7 @@ h6 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -5;
 }
 
 .objs-content__video::after {
@@ -5941,6 +5969,7 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -3;
   width: 100%;
   height: 100%;
   background: rgba(0,49,105,.7);
@@ -5963,10 +5992,14 @@ h6 {
   cursor: pointer;
   top: 50%;
   left: 50%;
-  z-index: 5;
+  z-index: 10;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.objs-content__video-btn svg {
+  z-index: 11;
 }
 
 .objs-content__btns {
@@ -6179,6 +6212,7 @@ h6 {
 
 .obj-contents {
   width: 100%;
+  overflow: hidden;
 }
 
 .obj-contents__blocks {
@@ -6232,6 +6266,7 @@ h6 {
 }
 
 .obj-contents__blocks-photo {
+  background: #003169;
   width: 100%;
   height: 730px;
   overflow: hidden;
@@ -6268,8 +6303,14 @@ h6 {
   color: #fff;
 }
 
-.obj-contents__blocks-video {
+.obj-contents__blocks-videos {
   height: 427px;
+  width: 100%;
+  background: #003169;
+}
+
+.obj-contents__blocks-video {
+  height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -6305,6 +6346,7 @@ h6 {
 
 .obj-contents__blocks-photos {
   width: 100%;
+  background: #003169;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -6347,6 +6389,7 @@ h6 {
 
 .obj-contenta {
   padding: 120px 0;
+  overflow: hidden;
   background: #003169;
 }
 
@@ -6915,6 +6958,7 @@ h6 {
 .comp-report {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .comp-report__banner {
@@ -7200,6 +7244,8 @@ h6 {
 
 .comp-photo {
   width: 100%;
+  overflow: hidden;
+  background: #002045;
 }
 
 .comp-photo__add {
@@ -7303,6 +7349,7 @@ h6 {
 .comp-own {
   background: #002045;
   width: 100%;
+  overflow: hidden;
 }
 
 .comp-own .containers {
@@ -7408,6 +7455,7 @@ h6 {
 .comp-skills {
   background: #003169;
   width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
@@ -7496,6 +7544,7 @@ h6 {
 
 .comp-partners {
   width: 100%;
+  overflow: hidden;
   background: #003169;
   padding: 87px 0 158px 0;
 }
@@ -7664,6 +7713,7 @@ h6 {
 
 .comp-files {
   width: 100%;
+  overflow: hidden;
   position: relative;
   background: #002045;
   padding: 113px 0 139px 0;
@@ -7753,6 +7803,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8165,6 +8216,7 @@ h6 {
 
 .comp-career {
   width: 100%;
+  overflow: hidden;
   background: #fff;
   padding: 170px 0 0 0;
   position: relative;
@@ -8482,6 +8534,7 @@ h6 {
 
 .comp-support {
   width: 100%;
+  overflow: hidden;
 }
 
 .comp-support__text {
@@ -8523,6 +8576,7 @@ h6 {
   height: 100%;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
+  background: #003169;
 }
 
 .comp-support__block-items {
@@ -8626,6 +8680,7 @@ h6 {
 .comp-scheme {
   width: 100%;
   background: #003169;
+  overflow: hidden;
 }
 
 .comp-scheme .containers {
@@ -8744,6 +8799,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8879,6 +8935,7 @@ h6 {
 
 .details-header {
   width: 100%;
+  overflow: hidden;
   position: relative;
   padding: 153px 0 170px 0;
 }
@@ -9007,6 +9064,7 @@ h6 {
 .details-content {
   background: #003169;
   padding: 120px 0;
+  overflow: hidden;
 }
 
 .details-content .containers {
@@ -12447,7 +12505,7 @@ h6 {
   }
 
   .ind-header__info-tabs {
-    height: 75%;
+    height: 100%;
   }
 
   .ind-header__info-tabs-list {
@@ -12493,7 +12551,7 @@ h6 {
   }
 
   .ind-header__info-tabs {
-    height: 32%;
+    height: 100%;
   }
 }
 

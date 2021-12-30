@@ -491,6 +491,7 @@
     width: 100%;
     background: #003169;
     height: 100%;
+    overflow: hidden;
     padding: 110px 0 0 0;
     &__block {
         display: flex;
@@ -679,6 +680,7 @@
 
 .ind-reward {
     width: 100%;
+    overflow: hidden;
     &__block {
         display: flex;
         flex-direction: column;
@@ -816,6 +818,7 @@
 
 .ind-description {
     width: 100%;
+    overflow: hidden;
     height: 100%;
     background: #003169;
     & .containers {
@@ -1162,6 +1165,7 @@
 
 .ind-maps {
     width: 100%;
+    overflow: hidden;
     &__block {
         padding: 69px 0 0 0;
         display: flex;
@@ -1205,6 +1209,8 @@
 
 .ind-objects {
     width: 100%;
+    overflow: hidden;
+    background: #003169;
     &__slider {
         width: 100%;
         position: relative;
@@ -1273,6 +1279,7 @@
 
 .ind-slider {
     width: 100%;
+    overflow: hidden;
     & .containers {
         padding: 0;
         max-width: unset;
@@ -1427,6 +1434,8 @@
 
 .ind-career {
     width: 100%;
+    overflow: hidden;
+    background: #003169;
     height: 417px;
     &__block {
         width: 100%;

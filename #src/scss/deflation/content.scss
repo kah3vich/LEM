@@ -1,7 +1,7 @@
 .def-header {
     position: relative;
     width: 100%;
-    // background: #002045;
+    overflow: hidden;
     padding: 0 0 85px 0;
     &::after {
         content: "";
@@ -188,6 +188,7 @@
 
 .def-delivery {
     padding: 177px 0 0 0;
+    overflow: hidden;
     position: relative;
     &::after {
         content: "";
@@ -355,6 +356,7 @@
     background: #002045;
     padding: 177px 0 170px 0;
     position: relative;
+    overflow: hidden;
     & .containers {
         padding: 0 90px;
     }
@@ -560,6 +562,7 @@
 .def-content {
     background: #002045;
     padding: 120px 0;
+    overflow: hidden;
     & .containers {
         padding: 0 90px;
     }

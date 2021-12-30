@@ -102,12 +102,14 @@ p {
 
 
 .header {
+    z-index: 1;
     &__nav {
         width: 100%;
         height: 90px;
         // background: #003169;
         position: absolute;
         top: 0;
+        z-index: 30;
         left: 0;
         &::after {
             content: "";
@@ -130,7 +132,7 @@ p {
             position: fixed;
             top: 0;
             right: 0;
-            z-index: 15;
+            z-index: 100;
             background: #fff;
         }
         &-wrapper {
@@ -186,6 +188,7 @@ p {
 
 .footer {
     width: 100%;
+    overflow: hidden;
     background: #FFFFFF;
     & .containers {
         padding: 0 90px;
@@ -415,6 +418,7 @@ p {
 .process {
     width: 100%;
     height: 100%;
+    overflow: hidden;
     background: #002045;
     & .containers {
         padding: 0 90px;
@@ -423,6 +427,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        overflow: hidden;
         justify-content: flex-start;
         padding: 73px 0 130px 0;
         &-title {
@@ -671,6 +676,7 @@ p {
 .sliders {
     width: 100%;
     height: 100%;
+    overflow: hidden;
     background: #003169;
     & .containers {
         padding: 0 90px;

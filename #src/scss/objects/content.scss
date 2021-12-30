@@ -1,7 +1,7 @@
 .objs-header {
     width: 100%;
-    padding: 213px 0 0 0;
-    height: 625px;
+    padding: 213px 0 105px 0;
+    overflow: hidden;
     position: relative;
     &::after {
         content: "";
@@ -70,6 +70,7 @@
 }
 .objs-map {
     width: 100%;
+    overflow: hidden;
     &__text {
         display: flex;
         flex-direction: column;
@@ -114,6 +115,7 @@
 }
 .objs-content {
     position: relative;
+    overflow: hidden;
     background: #003169;
     padding: 0 0 150px 0;
     &__block {
@@ -278,12 +280,14 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            z-index: -5;
         }
         &::after {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
+            z-index: -3;
             width: 100%;
             height: 100%;
             background: rgba(0, 49, 105, 0.7);
@@ -299,8 +303,11 @@
             cursor: pointer;
             top: 50%;
             left: 50%;
-            z-index: 5;
+            z-index: 10;
             transform: translate(-50%, -50%);
+            & svg {
+                z-index: 11;
+            }
         }
     }
     &__btns {

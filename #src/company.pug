@@ -8,70 +8,12 @@ block variables
     section.comp-header 
         .comp-header__block 
             .containers 
-                .comp-header__block-title О компании: 
-                .comp-header__block-text За более чем 10 лет работы в отрасли строительства инфраструктуры энергосетевого комплекса Российской Федерации, ООО «ЛЭМ» стало одним из ее лидеров. Зная сферу электроэнергетики изнутри не один десяток лет, менеджмент и персонал компании успешно выполнили множество задач высочайшего уровня сложности и ответственности.
+                .comp-header__block-title.wow.fadeInUp.animated(data-wow-delay="0.8s") О компании: 
+                .comp-header__block-text.wow.fadeInUp.animated(data-wow-delay="1.2s") За более чем 10 лет работы в отрасли строительства инфраструктуры энергосетевого комплекса Российской Федерации, ООО «ЛЭМ» стало одним из ее лидеров. Зная сферу электроэнергетики изнутри не один десяток лет, менеджмент и персонал компании успешно выполнили множество задач высочайшего уровня сложности и ответственности.
             .comp-header__block-banner 
                 img(src="./img/company/banners-1.png", alt="img")
 
     @@include('components/_sliders.pug')
-
-    //- section.comp-slider
-    //-     .containers 
-    //-         .comp-slider__block 
-    //-             .comp-slider__block-controls 
-    //-                 .comp-slider__block-controls-add О компании
-    //-                 .comp-slider__block-controls-title Текст о достоинствах и цифрах компании 3 строка
-    //-                 .comp-slider__block-controls-arrow 
-    //-                     .comp-slider__block-controls-arrow-next
-    //-                         <svg width="58" height="16" viewBox="0 0 58 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //-                             <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM57.7071 8.70711C58.0976 8.31659 58.0976 7.68342 57.7071 7.2929L51.3431 0.928937C50.9526 0.538412 50.3195 0.538412 49.9289 0.928936C49.5384 1.31946 49.5384 1.95263 49.9289 2.34315L55.5858 8L49.9289 13.6569C49.5384 14.0474 49.5384 14.6805 49.9289 15.0711C50.3195 15.4616 50.9526 15.4616 51.3431 15.0711L57.7071 8.70711ZM1 9L57 9L57 7L1 7L1 9Z" fill="white"/>
-    //-                         </svg>
-    //-                     .comp-slider__block-controls-arrow-prev
-    //-                         <svg width="58" height="16" viewBox="0 0 58 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    //-                             <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM57 9C57.5523 9 58 8.55229 58 8C58 7.44772 57.5523 7 57 7L57 9ZM1 9L57 9L57 7L1 7L1 9Z" fill="white"/>
-    //-                         </svg>
-    //-                 button.comp-slider__block-controls-btn Написать нам
-    //-             .comp-slider__block-sliders 
-    //-                 .swiper.companySliders
-    //-                     .swiper-wrapper
-    //-                         .swiper-slide
-    //-                             .comp-slider__block-sliders-items 
-    //-                                 .comp-slider__block-sliders-items-bg 
-    //-                                     img(src="./img/company/slider-1.png", alt="img")
-    //-                                 .comp-slider__block-sliders-items-circle 
-    //-                                     p 15
-    //-                                 .comp-slider__block-sliders-items-text 
-    //-                                     h3 Годовой оборот
-    //-                                     p свыше млрд ₽
-    //-                         .swiper-slide
-    //-                             .comp-slider__block-sliders-items 
-    //-                                 .comp-slider__block-sliders-items-bg 
-    //-                                     img(src="./img/company/slider-1.png", alt="img")
-    //-                                 .comp-slider__block-sliders-items-circle 
-    //-                                     p 300
-    //-                                 .comp-slider__block-sliders-items-text 
-    //-                                     h3 Годовой оборот
-    //-                                     p свыше млрд ₽
-    //-                         .swiper-slide
-    //-                             .comp-slider__block-sliders-items 
-    //-                                 .comp-slider__block-sliders-items-bg 
-    //-                                     img(src="./img/company/slider-1.png", alt="img")
-    //-                                 .comp-slider__block-sliders-items-circle 
-    //-                                     p 1300
-    //-                                 .comp-slider__block-sliders-items-text 
-    //-                                     h3 Годовой оборот
-    //-                                     p свыше млрд ₽
-    //-                         .swiper-slide
-    //-                             .comp-slider__block-sliders-items 
-    //-                                 .comp-slider__block-sliders-items-bg 
-    //-                                     img(src="./img/company/slider-1.png", alt="img")
-    //-                                 .comp-slider__block-sliders-items-circle 
-    //-                                     p 30
-    //-                                 .comp-slider__block-sliders-items-text 
-    //-                                     h3 Годовой оборот
-    //-                                     p свыше млрд ₽
-    //-                 .swiper-controls 
-    //-                     .swiper-pagination
 
     section.comp-photo 
         .comp-photo__block 
@@ -82,8 +24,8 @@ block variables
             img(src="./img/company/report.png", alt="img")
         .comp-report__block 
             .containers
-                .comp-report__block-title ГОЛОВНОЕ ПОДРАЗДЕЛЕНИЕ (г. МОСКВА)
-                .comp-report__block-content 
+                .comp-report__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") ГОЛОВНОЕ ПОДРАЗДЕЛЕНИЕ (г. МОСКВА)
+                .comp-report__block-content.wow.fadeIn.animated(data-wow-delay="1s")
                     .comp-report__block-items 
                         .comp-report__block-items-icons
                         
@@ -130,8 +72,8 @@ block variables
                             p единиц спецтехники
         .comp-report__block 
             .containers
-                .comp-report__block-title ГОЛОВНОЕ ПОДРАЗДЕЛЕНИЕ (г. Санкт-Петербург)
-                .comp-report__block-content 
+                .comp-report__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") ГОЛОВНОЕ ПОДРАЗДЕЛЕНИЕ (г. Санкт-Петербург)
+                .comp-report__block-content.wow.fadeIn.animated(data-wow-delay="1s") 
                     .comp-report__block-items 
                         .comp-report__block-items-icons
                         
@@ -178,8 +120,8 @@ block variables
                             p единиц спецтехники
         .comp-report__wrapper 
             .containers
-                .comp-report__wrapper-title ПРОКТНОЕ ПОДРАЗДЕЛЕНИЕ ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ РАБОТЫ
-                .comp-report__wrapper-content 
+                .comp-report__wrapper-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") ПРОКТНОЕ ПОДРАЗДЕЛЕНИЕ ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ РАБОТЫ
+                .comp-report__wrapper-content.wow.fadeIn.animated(data-wow-delay="1s")
                     .comp-report__wrapper-items 
                         .comp-report__wrapper-items-titles ФИЛИАЛ (г. ЧЕБОКСАРЫ)
                         .comp-report__wrapper-items-circle 
@@ -205,10 +147,10 @@ block variables
     section.comp-support 
         .comp-support__text 
             .containers 
-                .comp-support__text-title Опора на собственные силы - фактор, который позволяет нам реализовывать проекты любой сложности в кратчайшие сроки:
-                .comp-support__text-description Все профильные виды работ ООО «ЛЭМ» выполняет собственными силами, без привлечения субподрядных организаций, что позволяет значительно сократить время на мобилизацию персонала, спецтехники и повышает качество выполняемых работ. Для этого у компании есть все необходимое – от штата квалифицированных специалистов до парка современной спецтехники.
+                .comp-support__text-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") Опора на собственные силы - фактор, который позволяет нам реализовывать проекты любой сложности в кратчайшие сроки:
+                .comp-support__text-description.wow.fadeInLeft.animated(data-wow-delay="0.8s") Все профильные виды работ ООО «ЛЭМ» выполняет собственными силами, без привлечения субподрядных организаций, что позволяет значительно сократить время на мобилизацию персонала, спецтехники и повышает качество выполняемых работ. Для этого у компании есть все необходимое – от штата квалифицированных специалистов до парка современной спецтехники.
         .comp-support__block 
-            .comp-support__block-items 
+            .comp-support__block-items.wow.fadeInLeft.animated(data-wow-delay="0.8s")
                 .comp-support__block-items-banner 
                     img(src="./img/company/support-1.png", alt="img")
                 .containers 
@@ -226,7 +168,7 @@ block variables
                         h3 Срок строительства:
                         p 11 
                             span месяцев
-            .comp-support__block-items 
+            .comp-support__block-items.wow.fadeInRight.animated(data-wow-delay="0.8s")
                 .comp-support__block-items-banner 
                     img(src="./img/company/support-2.png", alt="img")
                 .containers 
@@ -248,38 +190,38 @@ block variables
     section.comp-scheme
         .containers 
             .comp-scheme__block 
-                .comp-scheme__block-title СХЕМА НАШЕЙ РАБОТЫ
-                .comp-scheme__block-text ООО «ЛЭМ» также выполняет инжиниринговую работу, осуществляя управление строительством как одиночных, так и комплексных объектов с различным инфраструктурным составом.
+                .comp-scheme__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") СХЕМА НАШЕЙ РАБОТЫ
+                .comp-scheme__block-text.wow.fadeInLeft.animated(data-wow-delay="0.8s") ООО «ЛЭМ» также выполняет инжиниринговую работу, осуществляя управление строительством как одиночных, так и комплексных объектов с различным инфраструктурным составом.
                 ul.comp-scheme__block-list
-                    li.comp-scheme__block-items  
+                    li.comp-scheme__block-items.wow.fadeInUp.animated(data-wow-delay="1s")  
                         .comp-scheme__block-items-count 1
                         .comp-scheme__block-items-text Проектирование объектов и согласование документации в надзорных органах
-                    li.comp-scheme__block-items 
+                    li.comp-scheme__block-items.wow.fadeInUp.animated(data-wow-delay="1.3s")
                         .comp-scheme__block-items-count 2
                         .comp-scheme__block-items-text Поставка необходимого оборудования и материалов
-                    li.comp-scheme__block-items 
+                    li.comp-scheme__block-items.wow.fadeInUp.animated(data-wow-delay="1.6s")
                         .comp-scheme__block-items-count 3
                         .comp-scheme__block-items-text Строительство объектов электроэнергетики и инфраструктуры, их наладка и запуск
 
     section.comp-add 
         .comp-add__block 
-            .comp-add__block-banner 
+            .comp-add__block-banner.wow.fadeInRight.animated(data-wow-delay="0.8s")
                 <svg width="464" height="393" viewBox="0 0 464 393" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M33.8636 392.999H113.564L117.368 364.481L0 348.951L33.8636 392.999ZM179.116 392.999H267.95L269.085 384.537L181.785 372.996L179.116 392.999V392.999ZM324.426 392.999H400.533L408.623 332.409L333.818 322.509L324.426 392.999ZM464 344.924V340.613L463.431 344.849L464 344.924ZM464 249.338V195.028L422.467 189.535L410.864 276.466L425.819 278.447L464 249.338ZM464 129.763V31.1667L446.596 8.53036L431.009 125.402L464.001 129.763H464ZM277.658 320.278L279.643 305.387L203.927 206.918L190.35 308.724L277.658 320.278ZM8.56761 284.699L125.941 300.219L141.524 183.346L8.56761 284.699ZM249.109 101.346L366.471 116.867L382.068 0.00012207L249.109 101.346ZM255.678 167.478L331.388 265.947L346.329 267.935L357.92 181.009L255.679 167.478H255.678Z" fill="#193967"/>
                 </svg>
             .containers 
-                .comp-add__block-icons 
+                .comp-add__block-icons.wow.fadeInDown.animated(data-wow-delay="0.8s")
                     img(src="./img/company/icon-1.png", alt="img")
-                .comp-add__block-text ОПЫТ И РЕПУТАЦИЯ, ПОДТВЕРЖДЕННЫЕ УЧАСТИЕМ В ПРОЕКТАХ ФЕДЕРАЛЬНОГО ЗНАЧЕНИЯ
-                .comp-add__block-icons 
+                .comp-add__block-text.wow.fadeInDown.animated(data-wow-delay="1s") ОПЫТ И РЕПУТАЦИЯ, ПОДТВЕРЖДЕННЫЕ УЧАСТИЕМ В ПРОЕКТАХ ФЕДЕРАЛЬНОГО ЗНАЧЕНИЯ
+                .comp-add__block-icons.wow.fadeInDown.animated(data-wow-delay="0.8s")
                     img(src="./img/company/icon-2.png", alt="img")
-                .comp-add__block-text КОМПЛЕКС УСЛУГ «ПОД КЛЮЧ»: ОТ ПРОЕКТИРОВАНИЯ ДО ИНЖИНИРИНГА И ЗАПУСКА ИНФРАСТРУКТУРЫ
-                .comp-add__block-icons 
+                .comp-add__block-text.wow.fadeInDown.animated(data-wow-delay="1s") КОМПЛЕКС УСЛУГ «ПОД КЛЮЧ»: ОТ ПРОЕКТИРОВАНИЯ ДО ИНЖИНИРИНГА И ЗАПУСКА ИНФРАСТРУКТУРЫ
+                .comp-add__block-icons.wow.fadeInDown.animated(data-wow-delay="0.8s")
                     img(src="./img/company/icon-3.png", alt="img")
-                .comp-add__block-text НАЛИЧИЕ ДЕЙСТВУЮЩИХ ДОПУСКОВ СРО НА СТРОИТЕЛЬСТВО, ПРОЕКТИРОВАНИЕ И ИЗЫСКАТЕЛЬСКИЕ РАБОТЫ, ЛИЦЕНЗИИ МЧС
+                .comp-add__block-text.wow.fadeInDown.animated(data-wow-delay="1s") НАЛИЧИЕ ДЕЙСТВУЮЩИХ ДОПУСКОВ СРО НА СТРОИТЕЛЬСТВО, ПРОЕКТИРОВАНИЕ И ИЗЫСКАТЕЛЬСКИЕ РАБОТЫ, ЛИЦЕНЗИИ МЧС
         .comp-add__company 
             .containers 
-                ul.comp-add__company-table
+                ul.comp-add__company-table.wow.fadeInDown.animated(data-wow-delay="0.8s")
                     li.comp-add__company-table-items 
                         img(src="./img/company/add-company-1.png", alt="img")
                     li.comp-add__company-table-items 
@@ -291,30 +233,30 @@ block variables
                         h3 Сертификация по
                         p ISO 14001 И OHSAS 18001
         .comp-add__block 
-            .comp-add__block-banner 
+            .comp-add__block-banner.wow.fadeInRight.animated(data-wow-delay="0.8s")
                 <svg width="464" height="393" viewBox="0 0 464 393" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M33.8636 392.999H113.564L117.368 364.481L0 348.951L33.8636 392.999ZM179.116 392.999H267.95L269.085 384.537L181.785 372.996L179.116 392.999V392.999ZM324.426 392.999H400.533L408.623 332.409L333.818 322.509L324.426 392.999ZM464 344.924V340.613L463.431 344.849L464 344.924ZM464 249.338V195.028L422.467 189.535L410.864 276.466L425.819 278.447L464 249.338ZM464 129.763V31.1667L446.596 8.53036L431.009 125.402L464.001 129.763H464ZM277.658 320.278L279.643 305.387L203.927 206.918L190.35 308.724L277.658 320.278ZM8.56761 284.699L125.941 300.219L141.524 183.346L8.56761 284.699ZM249.109 101.346L366.471 116.867L382.068 0.00012207L249.109 101.346ZM255.678 167.478L331.388 265.947L346.329 267.935L357.92 181.009L255.679 167.478H255.678Z" fill="#193967"/>
                 </svg>
             .containers 
-                .comp-add__block-icons 
+                .comp-add__block-icons.wow.fadeInDown.animated(data-wow-delay="0.8s")
                     img(src="./img/company/icon-4.png", alt="img")
-                .comp-add__block-text РАБОТАЕМ В ЛЮБОМ РЕГИОНЕ РОССИИ
-                .comp-add__block-icons 
+                .comp-add__block-text.wow.fadeInDown.animated(data-wow-delay="1s") РАБОТАЕМ В ЛЮБОМ РЕГИОНЕ РОССИИ
+                .comp-add__block-icons.wow.fadeInDown.animated(data-wow-delay="0.8s") 
                     img(src="./img/company/icon-5.png", alt="img")
-                .comp-add__block-text ПАРТНЕРСКИЕ ОТНОШЕНИЯ С КЛЮЧЕВЫМИ ПОСТАВЩИКАМИ ОБОРУДОВАНИЯ И МАТЕРИАЛОВ
-                .comp-add__block-icons 
+                .comp-add__block-text.wow.fadeInDown.animated(data-wow-delay="1s") ПАРТНЕРСКИЕ ОТНОШЕНИЯ С КЛЮЧЕВЫМИ ПОСТАВЩИКАМИ ОБОРУДОВАНИЯ И МАТЕРИАЛОВ
+                .comp-add__block-icons.wow.fadeInDown.animated(data-wow-delay="0.8s") 
                     img(src="./img/company/icon-6.png", alt="img")
-                .comp-add__block-text ПРОФЕССИОНАЛЬНЫЙ КАДРОВЫЙ СОСТАВ ЛУЧШИЕ СПЕЦИАЛИСТЫ ОТРАСЛИ
+                .comp-add__block-text.wow.fadeInDown.animated(data-wow-delay="1s") ПРОФЕССИОНАЛЬНЫЙ КАДРОВЫЙ СОСТАВ ЛУЧШИЕ СПЕЦИАЛИСТЫ ОТРАСЛИ
 
     section.comp-photo
         .comp-photo__add 
-            a.comp-photo__add-text(href="object.html") 
+            a.comp-photo__add-text(href="object.html").wow.fadeInLeft.animated(data-wow-delay="0.8s")
                 img(src="./img/company/banner-4.png", alt="img")
                 p ВЛ 220 кВ Шахты-Донецкая
-            a.comp-photo__add-text(href="object.html") 
+            a.comp-photo__add-text(href="object.html").wow.fadeInRight.animated(data-wow-delay="0.8s")
                 img(src="./img/company/banner-5.png", alt="img")
                 p ВЛ 220 кВ Шахты-Донецкая
-            a.comp-photo__add-text(href="object.html") 
+            a.comp-photo__add-text(href="object.html").wow.fadeInDown.animated(data-wow-delay="0.8s")
                 img(src="./img/company/banner-6.png", alt="img")
                 p ВЛ 220 кВ Шахты-Донецкая
 
@@ -322,63 +264,61 @@ block variables
         .containers 
             .comp-own__block    
                 .comp-own__block-items 
-                    .comp-own__block-items-title Собственный парк техники:
-                    .comp-own__block-items-line 
+                    .comp-own__block-items-title.wow.fadeInDown.animated(data-wow-delay="0.8s") Собственный парк техники:
+                    .comp-own__block-items-line.wow.fadeInDown.animated(data-wow-delay="1s")
                     .comp-own__block-items-wrapper 
-                        .comp-own__block-items-img 
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
                             img(src="./img/company/own.png", alt="img")
-                        .comp-own__block-items-text 
+                        .comp-own__block-items-text.wow.fadeInRight.animated(data-wow-delay="0.8s")
                             p ООО «ЛЭМ» располагает более 450 единицами специализированной техники (краны, экскаваторы, бульдозеры, грузовые автомобили и тп.).
                 .comp-own__block-items 
-                    .comp-own__block-items-title Квалифицированный кадровый состав: 
-                    .comp-own__block-items-line 
+                    .comp-own__block-items-title.wow.fadeInDown.animated(data-wow-delay="0.8s") Квалифицированный кадровый состав: 
+                    .comp-own__block-items-line.wow.fadeInDown.animated(data-wow-delay="1s") 
                     .comp-own__block-items-wrapper 
-                        .comp-own__block-items-img 
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
                             img(src="./img/company/own.png", alt="img")
-                        .comp-own__block-items-text 
+                        .comp-own__block-items-text.wow.fadeInRight.animated(data-wow-delay="0.8s")
                             p Среднесписочная численность сотрудников 1655 человек производственного и инженерно-технического персонала.
 
     section.comp-skills 
-        .comp-skills__icons 
+        .comp-skills__icons.wow.fadeInRight.animated(data-wow-delay="0.8s")
             <svg width="464" height="393" viewBox="0 0 464 393" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M33.8636 392.999H113.564L117.368 364.481L0 348.951L33.8636 392.999ZM179.116 392.999H267.95L269.085 384.537L181.785 372.996L179.116 392.998V392.999ZM324.426 392.999H400.533L408.623 332.408L333.818 322.509L324.426 392.999ZM464 344.924V340.613L463.431 344.849L464 344.924ZM464 249.338V195.028L422.467 189.535L410.864 276.466L425.819 278.447L464 249.338ZM464 129.763V31.1665L446.596 8.53024L431.009 125.402L464.001 129.763H464ZM277.658 320.278L279.643 305.387L203.927 206.917L190.35 308.724L277.658 320.278ZM8.56761 284.699L125.941 300.219L141.524 183.346L8.56761 284.699ZM249.109 101.346L366.471 116.867L382.068 0L249.109 101.346ZM255.678 167.478L331.388 265.947L346.329 267.935L357.92 181.008L255.679 167.478H255.678Z" fill="#004A9F"/>
             </svg>
         .containers
             .comp-skills__block 
-                .comp-skills__block-title Особые навыки компании:
+                .comp-skills__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") Особые навыки компании:
                 ul.comp-skills__block-list
-                    li.comp-skills__block-list-items 
+                    li.comp-skills__block-list-items.wow.fadeInLeft.animated(data-wow-delay="1s") 
                         p •	 Правительство Российской Федерации
-                    li.comp-skills__block-list-items 
+                    li.comp-skills__block-list-items.wow.fadeInLeft.animated(data-wow-delay="1.2s") 
                         p •	 Министерство Энергетики Российской Федерации
-                    li.comp-skills__block-list-items 
+                    li.comp-skills__block-list-items.wow.fadeInLeft.animated(data-wow-delay="1.4s") 
                         p •	 Министерство строительства Российской Федерации
-                    li.comp-skills__block-list-items 
+                    li.comp-skills__block-list-items.wow.fadeInLeft.animated(data-wow-delay="1.6s") 
                         p •	 Федеральные энергетические компании
-                .comp-skills__block-title А также богатый положительный опыт работы с профильными контролирующими и надзорными органами власти такими как:
+                .comp-skills__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") А также богатый положительный опыт работы с профильными контролирующими и надзорными органами власти такими как:
                 ul.comp-skills__block-list
-                    li.comp-skills__block-list-items 
+                    li.comp-skills__block-list-items.wow.fadeInLeft.animated(data-wow-delay="1s") 
                         p •	 ФАУ «Главгосэкспертиза России»;
-                    li.comp-skills__block-list-items 
+                    li.comp-skills__block-list-items.wow.fadeInLeft.animated(data-wow-delay="1.2s") 
                         p •	 Федеральная служба по экологическому, технологическому и атомному надзору (Ростехнадзор);
-                    li.comp-skills__block-list-items 
+                    li.comp-skills__block-list-items.wow.fadeInLeft.animated(data-wow-delay="1.4s") 
                         p •	 Федеральная служба по надзору в сфере природопользования и другие организации.
-
-
 
     section.comp-secret 
         .comp-secret__title 
             .containers 
-                .comp-secret__title-add Награды и грамоты
-                .comp-secret__title-items СЕКРЕТ УСПЕХА ЛЭМ
-                .comp-secret__title-text целеустремленность, грамотность и самоотдача дружного коллектива компании, что подтверждается отраслевыми наградами.
+                .comp-secret__title-add.wow.fadeInLeft.animated(data-wow-delay="0.8s") Награды и грамоты
+                .comp-secret__title-items.wow.fadeInLeft.animated(data-wow-delay="1s") СЕКРЕТ УСПЕХА ЛЭМ
+                .comp-secret__title-text.wow.fadeInLeft.animated(data-wow-delay="1.3s") целеустремленность, грамотность и самоотдача дружного коллектива компании, что подтверждается отраслевыми наградами.
         .comp-secret__slider 
             .containers 
                 .comp-secret__slider-block 
                     .swiper.companySecretSlider
                         .swiper-wrapper
                             .swiper-slide 
-                                .comp-secret__slider-item
+                                .comp-secret__slider-item.wow.fadeInUp.animated(data-wow-delay="0.8s")
                                     .comp-secret__slider-items 
                                         .comp-secret__slider-items-photo 
                                             img(src="./img/company/blag-1.png", alt="img")
@@ -392,7 +332,7 @@ block variables
                                             .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
                                             .comp-secret__slider-items-text-description Правительство Российской Федерации
                             .swiper-slide 
-                                .comp-secret__slider-item
+                                .comp-secret__slider-item.wow.fadeInUp.animated(data-wow-delay="1s")
                                     .comp-secret__slider-items 
                                         .comp-secret__slider-items-photo 
                                             img(src="./img/company/blag-3.png", alt="img")
@@ -406,7 +346,7 @@ block variables
                                             .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
                                             .comp-secret__slider-items-text-description Правительство Российской Федерации
                             .swiper-slide 
-                                .comp-secret__slider-item
+                                .comp-secret__slider-item.wow.fadeInUp.animated(data-wow-delay="1.2s")
                                     .comp-secret__slider-items 
                                         .comp-secret__slider-items-photo 
                                             img(src="./img/company/blag-5.png", alt="img")
@@ -420,7 +360,7 @@ block variables
                                             .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
                                             .comp-secret__slider-items-text-description Правительство Российской Федерации
                             .swiper-slide 
-                                .comp-secret__slider-item
+                                .comp-secret__slider-item.wow.fadeInUp.animated(data-wow-delay="1.4s")
                                     .comp-secret__slider-items 
                                         .comp-secret__slider-items-photo 
                                             img(src="./img/company/blag-7.png", alt="img")
@@ -434,7 +374,7 @@ block variables
                                             .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
                                             .comp-secret__slider-items-text-description Правительство Российской Федерации
                             .swiper-slide 
-                                .comp-secret__slider-item
+                                .comp-secret__slider-item.wow.fadeInUp.animated(data-wow-delay="1.6s")
                                     .comp-secret__slider-items 
                                         .comp-secret__slider-items-photo 
                                             img(src="./img/company/blag-9.png", alt="img")
@@ -448,7 +388,7 @@ block variables
                                             .comp-secret__slider-items-text-title БЛАГОДАРНОСТЬ
                                             .comp-secret__slider-items-text-description Правительство Российской Федерации
                             
-                    .swiper-controls 
+                    .swiper-controls.wow.fadeInUp.animated(data-wow-delay="1.8s")
                         .swiper-button-next.display-n
                         .swiper-button-prev.display-n
                         .swiper-pagination
@@ -457,33 +397,32 @@ block variables
             .containers 
                 .comp-secret__one-banner 
                     img(src="./img/company/one.png", alt="img")
-                .comp-secret__one-count 
+                .comp-secret__one-count.wow.fadeIn.animated(data-wow-delay="0.8s") 
                     p 1
-                .comp-secret__one-text 
+                .comp-secret__one-text.wow.fadeInUp.animated(data-wow-delay="0.8s")
                     p ООО «ЛЭМ» занимает первое место в отрасли электросетевого строительства (Строительство, ремонт и обслуживание объектов энергетики, электрических сетей, линий связи) по объемам выручки и стоимости компании.
         .comp-secret__gos 
-            .comp-secret__gos-icons 
+            .comp-secret__gos-icons.wow.fadeInRight.animated(data-wow-delay="0.8s")
                 <svg width="464" height="393" viewBox="0 0 464 393" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M33.8636 392.999H113.564L117.368 364.481L0 348.951L33.8636 392.999ZM179.116 392.999H267.95L269.085 384.537L181.785 372.996L179.116 392.998V392.999ZM324.426 392.999H400.533L408.623 332.408L333.818 322.509L324.426 392.999ZM464 344.924V340.613L463.431 344.849L464 344.924ZM464 249.338V195.028L422.467 189.535L410.864 276.466L425.819 278.447L464 249.338ZM464 129.763V31.1665L446.596 8.53024L431.009 125.402L464.001 129.763H464ZM277.658 320.278L279.643 305.387L203.927 206.917L190.35 308.724L277.658 320.278ZM8.56761 284.699L125.941 300.219L141.524 183.346L8.56761 284.699ZM249.109 101.346L366.471 116.867L382.068 0L249.109 101.346ZM255.678 167.478L331.388 265.947L346.329 267.935L357.92 181.008L255.679 167.478H255.678Z" fill="#004A9F"/>
                 </svg>
             .containers 
-                .comp-secret__gos-title В нашем послужном списке
-                .comp-secret__gos-gerb 
+                .comp-secret__gos-title.wow.fadeInUp.animated(data-wow-delay="0.8s") В нашем послужном списке
+                .comp-secret__gos-gerb.wow.fadeInUp.animated(data-wow-delay="0.8s")
                     img(src="./img/company/gerb.png", alt="img")
-                .comp-secret__gos-titles БЛАГОДАРНОСТЬ ОТ ПРАВИТЕЛЬСТВА РОССИЙСКОЙ ФЕДЕРАЦИИ
-                .comp-secret__gos-text за активное участие в проекте присоединения энергосистемы Крымского полуострова к Единой энергетической системе нашей страный
-                .comp-secret__gos-titles НАДЕЖНОСТЬ
-                .comp-secret__gos-text подтвержденная на федеральном уровне, и участие в проектах национального масштаба по всей России - причины, по которым нам доверяют крупнейшие заказчики, работающие в энергетическом комплексе
-
+                .comp-secret__gos-titles.wow.fadeInUp.animated(data-wow-delay="0.8s") БЛАГОДАРНОСТЬ ОТ ПРАВИТЕЛЬСТВА РОССИЙСКОЙ ФЕДЕРАЦИИ
+                .comp-secret__gos-text.wow.fadeInUp.animated(data-wow-delay="0.8s") за активное участие в проекте присоединения энергосистемы Крымского полуострова к Единой энергетической системе нашей страный
+                .comp-secret__gos-titles.wow.fadeInUp.animated(data-wow-delay="0.8s") НАДЕЖНОСТЬ
+                .comp-secret__gos-text.wow.fadeInUp.animated(data-wow-delay="0.8s") подтвержденная на федеральном уровне, и участие в проектах национального масштаба по всей России - причины, по которым нам доверяют крупнейшие заказчики, работающие в энергетическом комплексе
 
     @@include('components/_process.pug')
 
     section.comp-partners
         .containers 
             .comp-partners__block 
-                .comp-partners__block-title ПАРТНЕРЫ ЛЭМ
-                .comp-partners__block-text лидеры отрасли, давно зарекомендовавшие себя на Российском и мировых рынках!
-                .comp-partners__block-content
+                .comp-partners__block-title.wow.fadeInUp.animated(data-wow-delay="0.8s") ПАРТНЕРЫ ЛЭМ
+                .comp-partners__block-text.wow.fadeInUp.animated(data-wow-delay="0.8s") лидеры отрасли, давно зарекомендовавшие себя на Российском и мировых рынках!
+                .comp-partners__block-content.wow.fadeInUp.animated(data-wow-delay="0.8s")
                     .comp-partners__block-content-items
                         img(src="./img/company/part-1.png", alt="img")
                     .comp-partners__block-content-items
@@ -516,8 +455,8 @@ block variables
     section.comp-files 
         .containers 
             .comp-files__block 
-                .comp-files__block-title Результаты спецоценки условий труда
-                .comp-files__block-content 
+                .comp-files__block-title.wow.fadeInUp.animated(data-wow-delay="0.8s") Результаты спецоценки условий труда
+                .comp-files__block-content.wow.fadeInUp.animated(data-wow-delay="1s")
                     .comp-files__block-content-items 
                         .comp-files__block-content-text 
                             a(href="#") Сводная ведомость 1
@@ -577,16 +516,16 @@ block variables
     section.comp-career
         .containers 
             .comp-career__block 
-                .comp-career__block-add О компании
-                .comp-career__block-title КАрьера в ЛЭМ
-                .comp-career__block-description Коллектив ООО «ЛЭМ» всегда рад приветствовать в свой состав трудолюбивых и ответственных работников перечисленных ниже специальностей.
+                .comp-career__block-add.wow.fadeInUp.animated(data-wow-delay="0.8s") О компании
+                .comp-career__block-title.wow.fadeInUp.animated(data-wow-delay="0.8s") КАрьера в ЛЭМ
+                .comp-career__block-description.wow.fadeInUp.animated(data-wow-delay="0.8s") Коллектив ООО «ЛЭМ» всегда рад приветствовать в свой состав трудолюбивых и ответственных работников перечисленных ниже специальностей.
                 .comp-career__block-text
-                    .comp-career__block-text-add Сегодня в компании трудятся 
+                    .comp-career__block-text-add.wow.fadeInUp.animated(data-wow-delay="0.8s") Сегодня в компании трудятся 
                         span 4000 
                         | человек и более 
                         span 1500 
                         | – офисных сотрудников. Все они – грамотные специалисты и профессионалы своего дела.
-                    .comp-career__block-text-address Контактное лицо в Москве (Московская дирекция по строительству) 
+                    .comp-career__block-text-address.wow.fadeInUp.animated(data-wow-delay="0.8s") Контактное лицо в Москве (Московская дирекция по строительству) 
                         br
                         | Зотов Сергей Сергеевич, 
                         br
@@ -595,7 +534,7 @@ block variables
                         a(href="tel:+79032579255")  +7 (903) 257-92-55, 
                         br
                         a(href="mailto:ssz@lem-ltd.ru")  ssz@lem-ltd.ru
-                    .comp-career__block-text-info Контактное лицо в Санкт-Петербурге (Санкт-Петербургский филиал) 
+                    .comp-career__block-text-info.wow.fadeInUp.animated(data-wow-delay="0.8s") Контактное лицо в Санкт-Петербурге (Санкт-Петербургский филиал) 
                         br
                         | Ишутин Михаил Юрьевич, 
                         br
@@ -608,29 +547,29 @@ block variables
                         br
                         span Работа вахтовым методом. Конкурентная заработная плата. Социальный пакет. Оплата проезда и проживания.
             .comp-career__content 
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="0.8s")
                     p Электромонтер-линейщик по монтажу воздушных линий с опытом работы не менее 2-х лет
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="1s")
                     p Монтажник стальных и железобетонных конструкций с опытом работы не менее 2-х лет
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="0.8s")
                     p Водитель вахтового автомобиля (категория D)
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="1s")
                     p Водитель вездехода 6 разряда
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="1.2s")
                     p Водитель тягача с полуприцепом (категория Е)
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="1.4s")
                     p Машинист автокрана 6 разряда
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="0.8s")
                     p Машинист бульдозера 5-6 разряда
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="1s")
                     p Машинист тракторного крана 6 разряда
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="1.2s")
                     p Машинист трелевочной машины 5-6 разряда
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="1.4s")
                     p Машинист экскаватора 5-6 разряда
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="0.8s")
                     p Инженер по охране труда
-                a.comp-career__content-items(href="mailto:info@lem-ltd.ru") 
+                a.comp-career__content-items(href="mailto:info@lem-ltd.ru").wow.fadeInUp.animated(data-wow-delay="1s")
                     p Инженер-геодезист
             .comp-career__content-slider 
                 .swiper.companyCareerSlider
@@ -682,7 +621,7 @@ block variables
                 .swiper-controls
                     .swiper-pagination
                 
-            .comp-career__line
+            .comp-career__line.wow.fadeInUp.animated(data-wow-delay="0.8s")
 
     @@include('components/_footer.pug')
 

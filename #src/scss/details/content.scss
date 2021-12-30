@@ -1,5 +1,6 @@
 .details-header {
     width: 100%;
+    overflow: hidden;
     position: relative;
     padding: 153px 0 170px 0;
     &::before {
@@ -98,6 +99,7 @@
 .details-content {
     background: #003169;
     padding: 120px 0;
+    overflow: hidden;
     & .containers {
         padding: 0 90px;
     }

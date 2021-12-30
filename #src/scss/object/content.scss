@@ -127,6 +127,7 @@
 
 .obj-contents {
     width: 100%;
+    overflow: hidden;
     &__blocks {
         display: flex;
         flex-direction: column;
@@ -158,6 +159,7 @@
             }
         }
         &-photo {
+            background: #003169;
             width: 100%;
             height: 730px;
             overflow: hidden;
@@ -188,8 +190,13 @@
                 }
             }
         }
-        &-video {
+        &-videos {
             height: 427px;
+            width: 100%;
+            background: #003169;
+        }
+        &-video {
+            height: 100%;
             width: 100%;
             position: relative;
             overflow: hidden;
@@ -218,6 +225,7 @@
         }
         &-photos {
             width: 100%;
+            background: #003169;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: "objectPhotos-1 objectPhotos-2"
@@ -248,6 +256,7 @@
 
 .obj-contenta {
     padding: 120px 0;
+    overflow: hidden;
     background: #003169;
     &__arrow {
         display: flex;
