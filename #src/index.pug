@@ -9,13 +9,13 @@ block variables
         .ind-header__banner 
             video( poster="./img/index/banner.png" autoplay muted loop src="v3.mp4")
         .containers 
-            .ind-header__menu
+            .ind-header__menu.wow.fadeIn.animated(data-wow-delay="1.4s")
                 .ind-header__menu-language 
                     .ind-header__menu-language-ru#indexHeaderLanguageRU RU
                     .ind-header__menu-language-en#indexHeaderLanguageEN.ind-header__menu-language-active EN
-            .ind-header__info 
+            .ind-header__info
                 .ind-header__info-description 
-                    .ind-header__info-description-block 
+                    .ind-header__info-description-block.wow.fadeInLeft.animated(data-wow-delay="1.4s")
                         .ind-header__info-description-block-wrapper
                             .ind-header__info-description-block-title Общество с ограниченной ответственностью «Ленэлектромонтаж»
                             button.ind-header__info-description-block-btn
@@ -23,7 +23,7 @@ block variables
                                 <svg width="79" height="16" viewBox="0 0 79 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M78.7071 8.70711C79.0976 8.31659 79.0976 7.68342 78.7071 7.2929L72.3431 0.928939C71.9526 0.538414 71.3195 0.538414 70.9289 0.928938C70.5384 1.31946 70.5384 1.95263 70.9289 2.34315L76.5858 8.00001L70.9289 13.6569C70.5384 14.0474 70.5384 14.6805 70.9289 15.0711C71.3195 15.4616 71.9526 15.4616 72.3431 15.0711L78.7071 8.70711ZM-8.74228e-08 9L78 9.00001L78 7.00001L8.74228e-08 7L-8.74228e-08 9Z" fill="white"/>
                                 </svg>
-                    .ind-header__info-description-add
+                    .ind-header__info-description-add.wow.fadeIn.animated(data-wow-delay="1.6s")
                         .ind-header__info-description-add-title#indexHeaderSliderTitle-1 Годовой оборот
                         .ind-header__info-description-add-title.display-n#indexHeaderSliderTitle-2 Техническая оснащенность
                         .ind-header__info-description-add-title.display-n#indexHeaderSliderTitle-3 Штаб специалистов
@@ -57,24 +57,25 @@ block variables
                             <svg width="20" height="9" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.0014 0L19.9909 9L0.0119295 9L10.0014 0Z" fill="#002C5B"/>
                             </svg>
-                .ind-header__info-tabs 
-                    ul.ind-header__info-tabs-list
-                        li.ind-header__info-tabs-items#indexHeaderTabsButton-1.ind-header__info-tabs-items-active
-                            .ind-header__info-tabs-items-icons 
-                                img(src="./img/index/icons-1.png", alt="img")
-                            .ind-header__info-tabs-items-title Годовой оборот
-                        li.ind-header__info-tabs-items#indexHeaderTabsButton-2
-                            .ind-header__info-tabs-items-icons 
-                                img(src="./img/index/icons-2.png", alt="img")
-                            .ind-header__info-tabs-items-title Техническая оснащенность
-                        li.ind-header__info-tabs-items#indexHeaderTabsButton-3
-                            .ind-header__info-tabs-items-icons 
-                                img(src="./img/index/icons-3.png", alt="img")
-                            .ind-header__info-tabs-items-title Штаб специалистов
-                        li.ind-header__info-tabs-items#indexHeaderTabsButton-4
-                            .ind-header__info-tabs-items-icons 
-                                img(src="./img/index/icons-4.png", alt="img")
-                            .ind-header__info-tabs-items-title Инфраструктурных проектов
+                .ind-header__info-wrappers.wow.fadeInUp.animated(data-wow-delay="1.7s")
+                    .ind-header__info-tabs#indexHeaderTabs
+                        ul.ind-header__info-tabs-list
+                            li.ind-header__info-tabs-items#indexHeaderTabsButton-1.ind-header__info-tabs-items-active
+                                .ind-header__info-tabs-items-icons 
+                                    img(src="./img/index/icons-1.png", alt="img")
+                                .ind-header__info-tabs-items-title Годовой оборот
+                            li.ind-header__info-tabs-items#indexHeaderTabsButton-2
+                                .ind-header__info-tabs-items-icons 
+                                    img(src="./img/index/icons-2.png", alt="img")
+                                .ind-header__info-tabs-items-title Техническая оснащенность
+                            li.ind-header__info-tabs-items#indexHeaderTabsButton-3
+                                .ind-header__info-tabs-items-icons 
+                                    img(src="./img/index/icons-3.png", alt="img")
+                                .ind-header__info-tabs-items-title Штаб специалистов
+                            li.ind-header__info-tabs-items#indexHeaderTabsButton-4
+                                .ind-header__info-tabs-items-icons 
+                                    img(src="./img/index/icons-4.png", alt="img")
+                                .ind-header__info-tabs-items-title Инфраструктурных проектов
                 .ind-header__info-media 
                     .ind-header__info-media-wrapper 
                         .ind-header__info-media-arrow 
@@ -86,12 +87,12 @@ block variables
                             <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 1L7.35355 0.646446L7 0.292893L6.64645 0.646446L7 1ZM13.3536 6.64645L7.35355 0.646446L6.64645 1.35355L12.6464 7.35355L13.3536 6.64645ZM6.64645 0.646446L0.646446 6.64645L1.35355 7.35355L7.35355 1.35355L6.64645 0.646446Z" fill="white"/>
                             </svg>
-                .ind-header__info-line
+                .ind-header__info-line.wow.fadeInUp.animated(data-wow-delay="1.7s")
                     .ind-header__info-line-wrapper
                         .ind-header__info-line-text 
                             marquee(behavior="scroll", direction="left") 
                                 .ind-header__info-line-text-wrapper &nbsp;&nbsp; Портал Vesti.ru &nbsp;&nbsp; <p> "Светнаш": энергомост через Керченский пролив прорвал энергоблокаду Крыма </p> &nbsp;&nbsp; Портал Vesti.ru &nbsp;&nbsp; &nbsp;&nbsp; Портал Vesti.ru &nbsp;&nbsp; <p> "Светнаш": энергомост через Керченский пролив прорвал энергоблокаду Крыма </p> &nbsp;&nbsp; Портал Vesti.ru &nbsp;&nbsp;
-                .ind-header__info-play 
+                .ind-header__info-play.wow.fadeInUp.animated(data-wow-delay="2s")
                     .ind-header__info-play-icons 
                         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.6428C0 7.45124 7.46204 0 16.6667 0C25.8713 0 33.3333 7.45124 33.3333 16.6428C33.3333 25.8344 25.8713 33.2856 16.6667 33.2856C7.46204 33.2856 0 25.8344 0 16.6428ZM14.0938 22.7259L22.4271 17.525C22.7315 17.3346 22.9167 17.0014 22.9167 16.6428C22.9167 16.2843 22.7315 15.9511 22.4271 15.7606L14.0938 10.5598C13.7726 10.3591 13.3677 10.3479 13.0366 10.5323C12.7055 10.7157 12.5 11.0636 12.5 11.442V21.8437C12.5 22.2221 12.7055 22.57 13.0366 22.7534C13.194 22.8407 13.368 22.8839 13.5417 22.8839C13.7334 22.8839 13.9251 22.831 14.0938 22.7259Z" fill="white"/>

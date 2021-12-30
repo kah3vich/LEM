@@ -21,17 +21,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header"> 
+  <header class="header wow fadeIn animated" data-wow-delay="0.8s">
     <div class="header__nav">
       <div class="header__nav-wrapper"> 
-        <div class="header__nav-burger" id="menu-open"><svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line y1="17" x2="15" y2="17" stroke="#002C5B" stroke-width="2"/>
-<line y1="9" x2="15" y2="9" stroke="#002C5B" stroke-width="2"/>
-<line x1="7" y1="1" x2="15" y2="1" stroke="#002C5B" stroke-width="2"/>
-</svg>
-        </div>
-        <div class="header__nav-logo"> <a href="index.html"><img src="./svg/index/lg.svg" alt="logo"></a></div>
-        <ul class="header__nav-list">
+        <div class="header__nav-logo wow fadeInDown animated" data-wow-delay="1.0s"><a href="index.html"><img src="./svg/index/lg.svg" alt="logo"></a></div>
+        <ul class="header__nav-list wow fadeInDown animated" data-wow-delay="1.4s">
           <li class="header__nav-list-items"> <a href="company.html">О компании</a></li>
           <li class="header__nav-list-items"> <a href="deflation.html">Направление  деятельности</a></li>
           <li class="header__nav-list-items"> <a href="objects.html">Наши объекты</a></li>
@@ -41,20 +35,26 @@
       </div>
     </div>
   </header>
+  <div class="header__nav-burger wow fadeInDown animated" id="menu-open" data-wow-delay="1.8s"><svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="17" x2="15" y2="17" stroke="#002C5B" stroke-width="2"/>
+<line y1="9" x2="15" y2="9" stroke="#002C5B" stroke-width="2"/>
+<line x1="7" y1="1" x2="15" y2="1" stroke="#002C5B" stroke-width="2"/>
+</svg>
+  </div>
   <section class="ind-header"> 
     <div class="ind-header__banner"> 
       <video poster="./img/index/banner.png" autoplay muted loop src="v3.mp4"></video>
     </div>
     <div class="containers"> 
-      <div class="ind-header__menu">
+      <div class="ind-header__menu wow fadeIn animated" data-wow-delay="1.4s">
         <div class="ind-header__menu-language"> 
           <div class="ind-header__menu-language-ru" id="indexHeaderLanguageRU">RU</div>
           <div class="ind-header__menu-language-en ind-header__menu-language-active" id="indexHeaderLanguageEN">EN</div>
         </div>
       </div>
-      <div class="ind-header__info"> 
+      <div class="ind-header__info">
         <div class="ind-header__info-description"> 
-          <div class="ind-header__info-description-block"> 
+          <div class="ind-header__info-description-block wow fadeInLeft animated" data-wow-delay="1.4s">
             <div class="ind-header__info-description-block-wrapper">
               <div class="ind-header__info-description-block-title">Общество с ограниченной ответственностью «Ленэлектромонтаж»</div>
               <button class="ind-header__info-description-block-btn"><a href="#">Компания в цифрах</a><svg width="79" height="16" viewBox="0 0 79 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@
               </button>
             </div>
           </div>
-          <div class="ind-header__info-description-add">
+          <div class="ind-header__info-description-add wow fadeIn animated" data-wow-delay="1.6s">
             <div class="ind-header__info-description-add-title" id="indexHeaderSliderTitle-1">Годовой оборот</div>
             <div class="ind-header__info-description-add-title display-n" id="indexHeaderSliderTitle-2">Техническая оснащенность</div>
             <div class="ind-header__info-description-add-title display-n" id="indexHeaderSliderTitle-3">Штаб специалистов</div>
@@ -104,25 +104,27 @@
             </div>
           </div>
         </div>
-        <div class="ind-header__info-tabs"> 
-          <ul class="ind-header__info-tabs-list">
-            <li class="ind-header__info-tabs-items ind-header__info-tabs-items-active" id="indexHeaderTabsButton-1">
-              <div class="ind-header__info-tabs-items-icons"> <img src="./img/index/icons-1.png" alt="img"></div>
-              <div class="ind-header__info-tabs-items-title">Годовой оборот</div>
-            </li>
-            <li class="ind-header__info-tabs-items" id="indexHeaderTabsButton-2">
-              <div class="ind-header__info-tabs-items-icons"> <img src="./img/index/icons-2.png" alt="img"></div>
-              <div class="ind-header__info-tabs-items-title">Техническая оснащенность</div>
-            </li>
-            <li class="ind-header__info-tabs-items" id="indexHeaderTabsButton-3">
-              <div class="ind-header__info-tabs-items-icons"> <img src="./img/index/icons-3.png" alt="img"></div>
-              <div class="ind-header__info-tabs-items-title">Штаб специалистов</div>
-            </li>
-            <li class="ind-header__info-tabs-items" id="indexHeaderTabsButton-4">
-              <div class="ind-header__info-tabs-items-icons"> <img src="./img/index/icons-4.png" alt="img"></div>
-              <div class="ind-header__info-tabs-items-title">Инфраструктурных проектов</div>
-            </li>
-          </ul>
+        <div class="ind-header__info-wrappers wow fadeInUp animated" data-wow-delay="1.7s">
+          <div class="ind-header__info-tabs" id="indexHeaderTabs">
+            <ul class="ind-header__info-tabs-list">
+              <li class="ind-header__info-tabs-items ind-header__info-tabs-items-active" id="indexHeaderTabsButton-1">
+                <div class="ind-header__info-tabs-items-icons"> <img src="./img/index/icons-1.png" alt="img"></div>
+                <div class="ind-header__info-tabs-items-title">Годовой оборот</div>
+              </li>
+              <li class="ind-header__info-tabs-items" id="indexHeaderTabsButton-2">
+                <div class="ind-header__info-tabs-items-icons"> <img src="./img/index/icons-2.png" alt="img"></div>
+                <div class="ind-header__info-tabs-items-title">Техническая оснащенность</div>
+              </li>
+              <li class="ind-header__info-tabs-items" id="indexHeaderTabsButton-3">
+                <div class="ind-header__info-tabs-items-icons"> <img src="./img/index/icons-3.png" alt="img"></div>
+                <div class="ind-header__info-tabs-items-title">Штаб специалистов</div>
+              </li>
+              <li class="ind-header__info-tabs-items" id="indexHeaderTabsButton-4">
+                <div class="ind-header__info-tabs-items-icons"> <img src="./img/index/icons-4.png" alt="img"></div>
+                <div class="ind-header__info-tabs-items-title">Инфраструктурных проектов</div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="ind-header__info-media"> 
           <div class="ind-header__info-media-wrapper"> 
@@ -139,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="ind-header__info-line">
+        <div class="ind-header__info-line wow fadeInUp animated" data-wow-delay="1.7s">
           <div class="ind-header__info-line-wrapper">
             <div class="ind-header__info-line-text"> 
               <marquee behavior="scroll" direction="left"> 
@@ -148,7 +150,7 @@
             </div>
           </div>
         </div>
-        <div class="ind-header__info-play"> 
+        <div class="ind-header__info-play wow fadeInUp animated" data-wow-delay="2s">
           <div class="ind-header__info-play-icons">
              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.6428C0 7.45124 7.46204 0 16.6667 0C25.8713 0 33.3333 7.45124 33.3333 16.6428C33.3333 25.8344 25.8713 33.2856 16.6667 33.2856C7.46204 33.2856 0 25.8344 0 16.6428ZM14.0938 22.7259L22.4271 17.525C22.7315 17.3346 22.9167 17.0014 22.9167 16.6428C22.9167 16.2843 22.7315 15.9511 22.4271 15.7606L14.0938 10.5598C13.7726 10.3591 13.3677 10.3479 13.0366 10.5323C12.7055 10.7157 12.5 11.0636 12.5 11.442V21.8437C12.5 22.2221 12.7055 22.57 13.0366 22.7534C13.194 22.8407 13.368 22.8839 13.5417 22.8839C13.7334 22.8839 13.9251 22.831 14.0938 22.7259Z" fill="white"/>

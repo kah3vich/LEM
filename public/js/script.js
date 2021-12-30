@@ -1,8 +1,16 @@
+let wow = new WOW({
+    mobile: true, 
+})
+wow.init();
+
 $(function() {
     if(window.innerWidth <= 1100) {
         $('.ind-header__info-description-add').addClass('opacity')
     }
 })
+
+
+
 
 
 
@@ -94,7 +102,7 @@ var indexDescriptionSlider = new Swiper(".indexDescriptionSlider", {
 
 
 var items_1 = $('.ind-header__info-description'),
-    items_2 = $('.ind-header__info-tabs'),
+    items_2 = $('#indexHeaderTabs'),
     timeout,
     wait = 10000;
 
