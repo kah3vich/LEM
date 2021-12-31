@@ -1360,7 +1360,7 @@ h6
 {
     position: absolute;overflow: hidden;
 }.def-header__banners-items:nth-child(1)
-{z-index: 3;top: 90px;right: 0;
+{z-index: 3;top: 90px;right: 22%;
 
     width: 808px;height: 714px;
 }.def-header__banners-items:nth-child(1)::after
