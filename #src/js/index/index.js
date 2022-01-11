@@ -11,7 +11,6 @@ wow.init()
 
 $(window).width(() => {
 	if ($(window).width() < 992) {
-		console.log($(window).width())
 		$('.animated').removeClass('animated')
 	}
 })
