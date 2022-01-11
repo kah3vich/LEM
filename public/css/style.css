@@ -10267,6 +10267,10 @@ h6 {
 }
 
 @media (max-width: 1200px) {
+  .header__nav-list-items a {
+    font-size: 11px;
+  }
+
   .def-content__block-description {
     width: 100%;
   }
@@ -10486,6 +10490,10 @@ h6 {
   }
 
   .header__nav-list {
+    display: none;
+  }
+
+  .ind-header__info-wrappers {
     display: none;
   }
 

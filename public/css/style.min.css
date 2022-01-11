@@ -3821,7 +3821,10 @@ h6
     }
 }@media (max-width:1200px)
 {
-    .def-content__block-description
+    .header__nav-list-items a
+    {
+        font-size: 11px;
+    }.def-content__block-description
     {
         width: 100%;
     }.def-service__block-wrapper:nth-child(even),
@@ -3940,6 +3943,9 @@ h6
     {
         position: absolute;right: auto;bottom: 20%;left: 30px;
     }.header__nav-list
+    {
+        display: none;
+    }.ind-header__info-wrappers
     {
         display: none;
     }.ind-header__menu
