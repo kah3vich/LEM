@@ -15,6 +15,10 @@ $(window).width(() => {
 	}
 })
 
+jQuery(function ($) {
+	$('video').lazy()
+})
+
 //! Смена языка в header
 
 $('#indexHeaderLanguageRU').on('click', function () {
@@ -647,3 +651,33 @@ $('.modelVideo__close').on('click', () => {
 $('.ind-object__block-btn').on('click', () => {
 	$('#indexObjectAdd').removeClass('display-n')
 })
+
+let indexCountReward = $('.indexSliderReward .swiper-slide').length
+
+for (let i = 1; i <= indexCountReward; i++) {
+	$(`.ind-reward__block-slider .swiper-slide:nth-child(${i})`).on(
+		'click',
+		() => {
+			var indexModalReward = new Swiper('.indexModalReward', {
+				navigation: {
+					nextEl: '.modelReward__wrapper  .swiper-controls .swiper-button-next',
+					prevEl: '.modelReward__wrapper  .swiper-controls .swiper-button-prev',
+				},
+				keyboard: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true,
+				},
+				initialSlide: i - 1,
+			})
+			$('.modelReward').removeClass('display-n')
+			$('body').css('overflow', 'hidden')
+		}
+	)
+}
+$('.modelReward__close').on('click', () => {
+	$('.modelReward').addClass('display-n')
+	$('body').css('overflow', 'visible')
+});
+
+

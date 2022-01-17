@@ -28,6 +28,28 @@
         width: 700px;
     }
 }
+@media (max-width: 900px) {
+    .modelReward__wrapper-items {
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .modelReward__wrapper .swiper-button-next {
+        right: 0%;
+    }
+    .modelReward__wrapper .swiper-button-prev {
+        left: 0%;
+    }
+    .modelReward__wrapper .swiper-button-next svg {
+        width: 40px;
+    }
+    .modelReward__wrapper .swiper-button-prev svg {
+        width: 40px;
+    }
+    .modelReward__wrapper-items {
+        width: 60%;
+    }
+}
 @media (max-width: 950px) {
     .menu__block-list-items-sliders .swiper-button-next,
     .menu__block-list-items-sliders .swiper-button-prev {

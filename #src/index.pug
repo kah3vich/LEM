@@ -7,7 +7,10 @@ block variables
 
     section.ind-header 
         .ind-header__banner 
-            video( poster="./img/index/banner.png" autoplay muted loop src="v3.mp4")
+            //- video( poster="./img/index/banner.png" autoplay muted loop src="v3.mp4")
+            <video autoplay muted loop>
+                <data-src src="v3.mp4" type="video/mp4"></data-src>
+            </video>
         .containers 
             .ind-header__menu.wow.fadeIn.animated(data-wow-delay="1.4s")
                 .ind-header__menu-language 
@@ -362,5 +365,7 @@ block variables
     @@include('components/_menu.pug')
 
     @@include('components/_modelVideo.pug')
+
+    @@include('components/_modelReward.pug')
 
 @@include('components/_script.pug')

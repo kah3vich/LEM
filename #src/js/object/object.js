@@ -1,6 +1,6 @@
 
 let activeContentObject = 0
-let elementContentCountObject = 18
+let elementContentCountObject = $('.obj-content').length;
 
 $('#objectsBlock-1').removeClass('display-n')
 
