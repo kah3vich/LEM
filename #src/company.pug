@@ -13,7 +13,10 @@ block variables
             .comp-header__block-banner 
                 img(src="./img/company/banner.png", alt="img")
 
-    @@include('components/_sliders.pug')
+    section.comp-text
+            .containers 
+                p.comp-text__wrapper Все профильные виды работ ООО «ЛЭМ» выполняет собственными силами, без привлечения субподрядных организаций, что позволяет значительно сократить время на мобилизацию персонала, спецтехники и повышает качество выполняемых работ. Для этого у компании есть все необходимое – от штата квалифицированных специалистов до парка современной спецтехники.
+
 
     section.comp-photo 
         .comp-photo__block.wow.fadeInDown.animated(data-wow-delay="0.8s") 
@@ -24,7 +27,7 @@ block variables
             img(src="./img/company/report.png", alt="img")
         .comp-report__block 
             .containers
-                .comp-report__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") ГОЛОВНОЕ ПОДРАЗДЕЛЕНИЕ (г. МОСКВА)
+                .comp-report__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") Основное ПОДРАЗДЕЛЕНИЕ (г. МОСКВА)
                 .comp-report__block-content.wow.fadeIn.animated(data-wow-delay="1s")
                     .comp-report__block-items 
                         .comp-report__block-items-icons
@@ -53,7 +56,7 @@ block variables
                             img(src="./img/company/icons-1.png", alt="img")
                         .comp-report__block-items-text
                             h3
-                            p Монтаж и наладка высоковольтного оборудования, РЗА, ПА, систем 
+                            p Монтаж и наладка высоковольтного оборудования, РЗА, ПА, систем связи 
                     .comp-report__block-items 
                         .comp-report__block-items-icons
                         
@@ -72,7 +75,7 @@ block variables
                             p единиц спецтехники
         .comp-report__block 
             .containers
-                .comp-report__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") ГОЛОВНОЕ ПОДРАЗДЕЛЕНИЕ (г. Санкт-Петербург)
+                .comp-report__block-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") Филиал (г. Санкт-Петербург)
                 .comp-report__block-content.wow.fadeIn.animated(data-wow-delay="1s") 
                     .comp-report__block-items 
                         .comp-report__block-items-icons
@@ -120,35 +123,42 @@ block variables
                             p единиц спецтехники
         .comp-report__wrapper 
             .containers
-                .comp-report__wrapper-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") ПРОКТНОЕ ПОДРАЗДЕЛЕНИЕ ПРОЕКТНО-ИЗЫСКАТЕЛЬСКИЕ РАБОТЫ
+                .comp-report__wrapper-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") ПРОеКТНЫЕ ПОДРАЗДЕЛЕНИЯ
                 .comp-report__wrapper-content.wow.fadeIn.animated(data-wow-delay="1s")
                     .comp-report__wrapper-items 
-                        .comp-report__wrapper-items-titles ФИЛИАЛ (г. ЧЕБОКСАРЫ)
+                        .comp-report__wrapper-items-titles Дирекция по проектированию (г. ЧЕБОКСАРЫ)
                         .comp-report__wrapper-items-circle 
-                            p 60
+                            p 71
                         .comp-report__wrapper-items-text 
                             img(src="./img/company/icons-2.png", alt="img")
                             p человек инженерно-технический персонал
                     .comp-report__wrapper-items 
-                        .comp-report__wrapper-items-titles ФИЛИАЛ (г. ЧЕБОКСАРЫ)
+                        .comp-report__wrapper-items-titles Дирекция по проектированию (г. Ростов-на-Дону)
                         .comp-report__wrapper-items-circle 
-                            p 35
+                            p 67
                         .comp-report__wrapper-items-text 
                             img(src="./img/company/icons-2.png", alt="img")
                             p человек инженерно-технический персонал
                     .comp-report__wrapper-items 
-                        .comp-report__wrapper-items-titles ФИЛИАЛ (г. ЧЕБОКСАРЫ)
+                        .comp-report__wrapper-items-titles Дирекция по проектированию (г. Санкт-Петербург)
                         .comp-report__wrapper-items-circle 
-                            p 30
+                            p 33
                         .comp-report__wrapper-items-text 
                             img(src="./img/company/icons-2.png", alt="img")
                             p человек инженерно-технический персонал
+                    .comp-report__wrapper-items 
+                        .comp-report__wrapper-items-titles Дирекция по проектированию (г. Тула)
+                        .comp-report__wrapper-items-circle 
+                            p 32
+                        .comp-report__wrapper-items-text 
+                            img(src="./img/company/icons-2.png", alt="img")
+                            p человек инженерно-технический персонал
+                .comp-report__wrapper-add.wow.fadeInLeft.animated(data-wow-delay="0.8s") Подразделение по производству НТУ и оборудования вторичной коммутации в г. Чебоксары – 27 человек.  
 
     section.comp-support 
         .comp-support__text 
             .containers 
-                .comp-support__text-title.wow.fadeInLeft.animated(data-wow-delay="0.8s") Опора на собственные силы - фактор, который позволяет нам реализовывать проекты любой сложности в кратчайшие сроки:
-                .comp-support__text-description.wow.fadeInLeft.animated(data-wow-delay="0.8s") Все профильные виды работ ООО «ЛЭМ» выполняет собственными силами, без привлечения субподрядных организаций, что позволяет значительно сократить время на мобилизацию персонала, спецтехники и повышает качество выполняемых работ. Для этого у компании есть все необходимое – от штата квалифицированных специалистов до парка современной спецтехники.
+                .comp-support__text-title.wow.fadeInLeft.animated(data-wow-delay="0.8s" ) Опора на собственные силы - фактор, который позволяет нам реализовывать проекты любой сложности в кратчайшие сроки:
         .comp-support__block 
             .comp-support__block-items.wow.fadeInLeft.animated(data-wow-delay="0.8s")
                 .comp-support__block-items-banner 
@@ -264,21 +274,45 @@ block variables
         .containers 
             .comp-own__block    
                 .comp-own__block-items 
-                    .comp-own__block-items-title.wow.fadeInDown.animated(data-wow-delay="0.8s") Собственный парк техники:
+                    .comp-own__block-items-title.wow.fadeInDown.animated(data-wow-delay="0.8s") Наш коллектив
                     .comp-own__block-items-line.wow.fadeInDown.animated(data-wow-delay="1s")
                     .comp-own__block-items-wrapper 
                         .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
-                            img(src="./img/own/image-1.png", alt="img")
-                        .comp-own__block-items-text.wow.fadeInRight.animated(data-wow-delay="0.8s")
-                            p ООО «ЛЭМ» располагает более 450 единицами специализированной техники (краны, экскаваторы, бульдозеры, грузовые автомобили и тп.).
+                            img(src="./img/index/col-1.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/col-2.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/col-3.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/col-4.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/col-5.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/col-6.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/col-7.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/col-8.png", alt="img")
                 .comp-own__block-items 
-                    .comp-own__block-items-title.wow.fadeInDown.animated(data-wow-delay="0.8s") Квалифицированный кадровый состав: 
+                    .comp-own__block-items-title.wow.fadeInDown.animated(data-wow-delay="0.8s") Наша техника
                     .comp-own__block-items-line.wow.fadeInDown.animated(data-wow-delay="1s") 
                     .comp-own__block-items-wrapper 
                         .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
-                            img(src="./img/own/image-2.png", alt="img")
-                        .comp-own__block-items-text.wow.fadeInRight.animated(data-wow-delay="0.8s")
-                            p Среднесписочная численность сотрудников 1655 человек производственного и инженерно-технического персонала.
+                            img(src="./img/index/tex-1.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/tex-2.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/tex-3.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/tex-4.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/tex-5.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/tex-6.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/tex-7.png", alt="img")
+                        .comp-own__block-items-img.wow.fadeInLeft.animated(data-wow-delay="0.8s")
+                            img(src="./img/index/tex-8.png", alt="img")
 
     section.comp-skills 
         .comp-skills__icons.wow.fadeInRight.animated(data-wow-delay="0.8s")

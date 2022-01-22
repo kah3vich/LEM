@@ -678,6 +678,4 @@ for (let i = 1; i <= indexCountReward; i++) {
 $('.modelReward__close').on('click', () => {
 	$('.modelReward').addClass('display-n')
 	$('body').css('overflow', 'visible')
-});
-
-
+})

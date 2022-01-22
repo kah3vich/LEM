@@ -2372,6 +2372,13 @@ h6
 }.comp-header__block-banner img
 {
     width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;
+}.comp-text
+{display: -webkit-box;display: -ms-flexbox;display: flex;width: 100%;padding: 115px 0;
+
+    background: #003169;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+}.comp-text__wrapper
+{
+    font-family: RF Dewi;font-size: 28px;font-weight: 800;font-style: normal;line-height: 50px;padding: 0 127px;text-align: center;text-transform: uppercase;color: #fff;
 }.comp-slider
 {overflow: hidden;width: 100%;
     padding: 55px 0;background: #002045;
@@ -2563,13 +2570,17 @@ h6
     font-family: RF Dewi;font-size: 28px;font-weight: 700;font-style: normal;line-height: 44px;width: 660px;letter-spacing: .1em;text-transform: uppercase;color: #fff;
 }.comp-report__wrapper-content
 {display: -ms-grid;display:     grid;width: 100%;
-    margin: 75px 0 0 0;-ms-grid-columns: (1fr)[3];grid-template-columns: repeat(3,1fr);gap: 40px;
+    margin: 75px 0 0 0;grid-template-columns: repeat(auto-fill,minmax(300px,1fr));gap: 40px 10px;
+}.comp-report__wrapper-add
+{font-family: RF Dewi;font-size: 28px;font-weight: 700;font-style: normal;line-height: 44px;
+
+    margin: 80px 0 0 0;text-align: left;letter-spacing: .1em;text-transform: uppercase;color: #fff;
 }.comp-report__wrapper-items
 {
     display: -webkit-box                                                                                                ;display: -ms-flexbox;display: flex;flex-direction: column;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;
 }.comp-report__wrapper-items-titles
 {
-    font-family: RF Dewi;font-size: 16px;font-weight: 700;font-style: normal;line-height: 44px;letter-spacing: .04em;text-transform: uppercase;color: #fff;
+    font-family: RF Dewi;font-size: 15px;font-weight: 700;font-style: normal;line-height: 44px;width: 95%;text-align: center;letter-spacing: .04em;text-transform: uppercase;color: #fff;
 }.comp-report__wrapper-items-circle
 {display: -webkit-box;display: -ms-flexbox;display: flex;width: 262px;height: 262px;
     margin: 25px 0 50px 0;border: 6px solid #004a9f;border-radius: 50%;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
@@ -2581,7 +2592,7 @@ h6
     display: -webkit-box                                                                ;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
 }.comp-report__wrapper-items-text p
 {
-    font-family: TT Norms;font-size: 16px;font-weight: 400;font-style: normal;line-height: 28px;width: 240px;margin: 0 0 0 35px;text-transform: uppercase;color: #fff;
+    font-family: TT Norms;font-size: 16px;font-weight: 400;font-style: normal;line-height: 28px;width: 170px;margin: 0 0 0 35px;text-transform: uppercase;color: #fff;
 }.comp-photo
 {overflow: hidden;
 
@@ -2642,11 +2653,11 @@ h6
     width: 100%;height: 0;margin: 50px 0;border-top: 1px solid #0057b6;
 }.comp-own__block-items-wrapper
 {
-    display: -webkit-box                                                                        ;display: -ms-flexbox;display: flex;width: 100%;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
+    display: -ms-grid                                ;display:     grid;width: 100%;grid-template-columns: repeat(auto-fill,minmax(300px,1fr));gap: 20px 0;
 }.comp-own__block-items-img
 {overflow: hidden;
 
-    width: 539px;height: 298px;
+    width: 300px;height: 160px;
 }.comp-own__block-items-img img
 {
     width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;
@@ -4445,6 +4456,12 @@ h6
     }.comp-header__block-text
     {
         width: 100%;
+    }.comp-text .containers
+    {
+        padding: 0 30px;
+    }.comp-text__wrapper
+    {
+        padding: 0;
     }.menu__block-list-items-sliders .swiper-button-next,
     .menu__block-list-items-sliders .swiper-button-prev
     {
@@ -5108,6 +5125,9 @@ h6
     }.comp-report__wrapper-title
     {
         font-size: 20px;
+    }.comp-text__wrapper
+    {
+        font-family: RF Dewi;font-size: 19px;font-weight: 800;font-style: normal;line-height: 34px;text-align: center;text-transform: uppercase;color: #fff;
     }
 }@media (max-width:500px)
 {

@@ -361,6 +361,12 @@
     .comp-header__block-text {
         width: 100%;
     }
+    .comp-text .containers {
+        padding: 0 30px;
+    }
+    .comp-text__wrapper {
+        padding: 0;
+    }
 }
 @media (max-width: 850px) {
     .comp-partners__block-content-items {
@@ -609,5 +615,15 @@
     }
     .comp-report__wrapper-title {
         font-size: 20px;
+    }
+    .comp-text__wrapper {
+        font-family: RF Dewi;
+        font-size: 19px;
+        font-weight: 800;
+        font-style: normal;
+        line-height: 34px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
     }
 }
