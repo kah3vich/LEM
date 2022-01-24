@@ -571,12 +571,16 @@ $('#menu-open').on('click', function () {
 	t1.reversed(!t1.reversed())
 	$('body').css('overflow', 'hidden')
 	$('.header__nav-burger svg').css('opacity', '0')
+	// $('.menu').removeClass('display-n')
 })
 
 $('#menu-close').on('click', function () {
 	t1.reversed(!t1.reversed())
 	$('body').css('overflow', 'visible')
 	$('.header__nav-burger svg').css('opacity', '1')
+	// setTimeout(() => {
+	// 	$('.menu').addClass('display-n')
+	// }, 2000);
 })
 
 // $('#menuItems-1').on('click', function() {
