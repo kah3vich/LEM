@@ -683,3 +683,22 @@ $('.modelReward__close').on('click', () => {
 	$('.modelReward').addClass('display-n')
 	$('body').css('overflow', 'visible')
 })
+
+
+
+$(() => {
+	var selected = $('.indexSliderReward img').map(function(){
+		if ($(this).attr('src'))
+			return $(this).attr('src');
+	}).get();
+	$.each(selected, function(index, value){
+	let newElementBlock = document.createElement("div");
+		newElementBlock.classList.add("swiper-slide")
+        newElementBlock.innerHTML = `
+		<div class="modelReward__wrapper-items">
+			<img src="${value}" alt="img" />
+		</div>
+		`
+		document.getElementById("indexModalReward").appendChild(newElementBlock);
+	});
+})

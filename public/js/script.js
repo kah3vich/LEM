@@ -684,6 +684,25 @@ $('.modelReward__close').on('click', () => {
 	$('body').css('overflow', 'visible')
 })
 
+
+
+$(() => {
+	var selected = $('.indexSliderReward img').map(function(){
+		if ($(this).attr('src'))
+			return $(this).attr('src');
+	}).get();
+	$.each(selected, function(index, value){
+	let newElementBlock = document.createElement("div");
+		newElementBlock.classList.add("swiper-slide")
+        newElementBlock.innerHTML = `
+		<div class="modelReward__wrapper-items">
+			<img src="${value}" alt="img" />
+		</div>
+		`
+		document.getElementById("indexModalReward").appendChild(newElementBlock);
+	});
+})
+
 $('#newProcessTabs-1').on('click', function() {
     $(this).addClass('new-process__block-tabs-active')
     $('#newProcessTabs-2').removeClass('new-process__block-tabs-active')
