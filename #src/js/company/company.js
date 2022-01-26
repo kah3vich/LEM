@@ -90,3 +90,101 @@ var companyCareerSlider = new Swiper(".companyCareerSlider", {
         }
     }
 });
+
+
+
+
+let companyCountCollection = $('.comp-own__block-items-img').length
+
+for (let i = 1; i <= companyCountCollection; i++) {
+	$(`.comp-own__block-items-img:nth-child(${i})`).on(
+		'click',
+		() => {
+			var companyCollection = new Swiper('.companyCollection', {
+				navigation: {
+					nextEl: '.modelCompanyCollection__wrapper   .swiper-controls .swiper-button-next',
+					prevEl: '.modelCompanyCollection__wrapper   .swiper-controls .swiper-button-prev',
+				},
+				keyboard: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true,
+				},
+				initialSlide: i - 1,
+			})
+			$('.modelCompanyCollection').removeClass('display-n')
+			$('body').css('overflow', 'hidden')
+		}
+	)
+}
+$('.modelCompanyCollection__close').on('click', () => {
+	$('.modelCompanyCollection').addClass('display-n')
+	$('body').css('overflow', 'visible')
+})
+
+$(() => {
+	var selected = $('.comp-own__block-items-wrapper img')
+		.map(function () {
+			if ($(this).attr('src')) return $(this).attr('src')
+		})
+		.get()
+	$.each(selected, function (index, value) {
+		let newElementBlock = document.createElement('div')
+		newElementBlock.classList.add('swiper-slide')
+		newElementBlock.innerHTML = `
+		<div class="modelCompanyCollection__wrapper-items">
+			<img src="${value}" alt="img" />
+		</div>
+		`
+		document.getElementById('companyCollection').appendChild(newElementBlock)
+	})
+})
+
+
+
+
+let companyCountTex = $('.comp-own__blocks-items-img').length
+
+for (let i = 1; i <= companyCountTex; i++) {
+	$(`.comp-own__blocks-items-img:nth-child(${i})`).on(
+		'click',
+		() => {
+			var companyTex = new Swiper('.companyTex', {
+				navigation: {
+					nextEl: '.modelCompanyTex__wrapper   .swiper-controls .swiper-button-next',
+					prevEl: '.modelCompanyTex__wrapper   .swiper-controls .swiper-button-prev',
+				},
+				keyboard: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true,
+				},
+				initialSlide: i - 1,
+			})
+			$('.modelCompanyTex').removeClass('display-n')
+			$('body').css('overflow', 'hidden')
+		}
+	)
+}
+$('.modelCompanyTex__close').on('click', () => {
+	$('.modelCompanyTex').addClass('display-n')
+	$('body').css('overflow', 'visible')
+})
+
+$(() => {
+	var selected = $('.comp-own__blocks-items-wrapper img')
+		.map(function () {
+			if ($(this).attr('src')) return $(this).attr('src')
+		})
+		.get()
+	$.each(selected, function (index, value) {
+		let newElementBlock = document.createElement('div')
+		newElementBlock.classList.add('swiper-slide')
+		newElementBlock.innerHTML = `
+		<div class="modelCompanyTex__wrapper-items">
+			<img src="${value}" alt="img" />
+		</div>
+		`
+		document.getElementById('companyTex').appendChild(newElementBlock)
+	})
+})

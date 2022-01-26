@@ -94,6 +94,14 @@
         margin: 85px 0 0 0;
     }
 }
+@media (max-width: 850px) {
+    .modelCompanyCollection__wrapper-items {
+        width: 100%;
+    }
+    .modelCompanyTex__wrapper-items {
+        width: 100%;
+    }
+}
 @media (max-width: 800px) {
     .menu__block {
         width: 100%;

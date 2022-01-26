@@ -501,6 +501,72 @@ h6
 }.modelReward__wrapper-items img
 {
     width: 100%;height: 100%;-o-object-fit: contain;object-fit: contain;
+}.modelCompanyCollection
+{
+    position: fixed;z-index: 1000000;top: 0;left: 0;display: -webkit-box;display: -ms-flexbox;display: flex;overflow-x: hidden;overflow-y: auto;width: 100%;height: 100vh;outline: 0;background: rgba(0,21,75,.4);-webkit-backdrop-filter: blur(80px);backdrop-filter: blur(80px);-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+}.modelCompanyCollection__close
+{
+    position: absolute;z-index: 100000000000;top: 35px;right: 35px;cursor: pointer;
+}.modelCompanyCollection__wrapper
+{display: -webkit-box;display: -ms-flexbox;display: flex;
+
+    width: 100%;height: 100%;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+}.modelCompanyCollection__wrapper .swiper-button-prev
+{top: 58px;left: 3%;
+
+    width: 100px;content: '';
+}.modelCompanyCollection__wrapper .swiper-button-prev::after
+{
+    content: '';
+}.modelCompanyCollection__wrapper .swiper-button-next
+{top: 58px;right: 3%;
+
+    width: 100px;content: '';
+}.modelCompanyCollection__wrapper .swiper-button-next::after
+{
+    content: '';
+}.modelCompanyCollection__wrapper .swiper-controls
+{
+    position: absolute;width: 100%;height: 100px;
+}.modelCompanyCollection__wrapper-items
+{
+    display: -webkit-box                                                                                        ;display: -ms-flexbox;display: flex;overflow: hidden;width: 75%;height: 90vh;margin: 0 auto;-ms-flex-line-pack: center;align-content: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+}.modelCompanyCollection__wrapper-items img
+{
+    width: 100%;height: 100%;-o-object-fit: contain;object-fit: contain;
+}.modelCompanyTex
+{
+    position: fixed;z-index: 1000000;top: 0;left: 0;display: -webkit-box;display: -ms-flexbox;display: flex;overflow-x: hidden;overflow-y: auto;width: 100%;height: 100vh;outline: 0;background: rgba(0,21,75,.4);-webkit-backdrop-filter: blur(80px);backdrop-filter: blur(80px);-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+}.modelCompanyTex__close
+{
+    position: absolute;z-index: 100000000000;top: 35px;right: 35px;cursor: pointer;
+}.modelCompanyTex__wrapper
+{display: -webkit-box;display: -ms-flexbox;display: flex;
+
+    width: 100%;height: 100%;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+}.modelCompanyTex__wrapper .swiper-button-prev
+{top: 58px;left: 3%;
+
+    width: 100px;content: '';
+}.modelCompanyTex__wrapper .swiper-button-prev::after
+{
+    content: '';
+}.modelCompanyTex__wrapper .swiper-button-next
+{top: 58px;right: 3%;
+
+    width: 100px;content: '';
+}.modelCompanyTex__wrapper .swiper-button-next::after
+{
+    content: '';
+}.modelCompanyTex__wrapper .swiper-controls
+{
+    position: absolute;width: 100%;height: 100px;
+}.modelCompanyTex__wrapper-items
+{
+    display: -webkit-box                                                                                        ;display: -ms-flexbox;display: flex;overflow: hidden;width: 75%;height: 90vh;margin: 0 auto;-ms-flex-line-pack: center;align-content: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+}.modelCompanyTex__wrapper-items img
+{
+    width: 100%;height: 100%;-o-object-fit: contain;object-fit: contain;
 }.sliders
 {overflow: hidden;
 
@@ -2677,6 +2743,35 @@ h6
 }.comp-own__block-items-text p
 {
     font-family: TT Norms;font-size: 18px;font-weight: 700;font-style: normal;line-height: 50px;text-transform: uppercase;color: #fff;
+}.comp-own__blocks
+{
+    display: -webkit-box                                                                                                        ;display: -ms-flexbox;display: flex;flex-direction: column;padding: 0 0 150px 0;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;
+}.comp-own__blocks-items
+{
+    display: -webkit-box                                                                                                                ;display: -ms-flexbox;display: flex;flex-direction: column;width: 100%;margin: 100px 0 0 0;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;
+}.comp-own__blocks-items-title
+{font-family: RF Dewi;font-size: 28px;font-weight: 700;font-style: normal;line-height: 43px;
+
+    width: 90%;margin: 0 auto;text-align: center;letter-spacing: .1em;text-transform: uppercase;color: #fff;
+}.comp-own__blocks-items-line
+{
+    width: 100%;height: 0;margin: 50px 0;border-top: 1px solid #0057b6;
+}.comp-own__blocks-items-wrapper
+{
+    display: -ms-grid                                ;display:     grid;width: 100%;grid-template-columns: repeat(auto-fill,minmax(300px,1fr));gap: 20px 0;
+}.comp-own__blocks-items-img
+{overflow: hidden;
+
+    width: 300px;height: 160px;
+}.comp-own__blocks-items-img img
+{
+    width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;
+}.comp-own__blocks-items-text
+{
+    width: 609px;
+}.comp-own__blocks-items-text p
+{
+    font-family: TT Norms;font-size: 18px;font-weight: 700;font-style: normal;line-height: 50px;text-transform: uppercase;color: #fff;
 }.comp-skills
 {position: relative;overflow: hidden;width: 100%;
 
@@ -4651,6 +4746,12 @@ h6
     }.comp-career__block-text-add
     {
         width: 100%;
+    }.modelCompanyCollection__wrapper-items
+    {
+        width: 100%;
+    }.modelCompanyTex__wrapper-items
+    {
+        width: 100%;
     }.comp-partners__block-content-items:nth-child(1)
     {
         -ms-grid-row: 1;-ms-grid-column: 1;
@@ -4913,6 +5014,10 @@ h6
     .ind-description__block-slider .swiper-button-prev
     {
         display: none;
+    }.ind-object__block-nav,
+    .ind-object__block-table
+    {
+        width: 270vw;
     }.ind-description__block-slider .swiper-scrollbar
     {
         width: 100%;
