@@ -1,0 +1,47 @@
+@media (max-height: 800px) {
+	.error__text {
+		padding: 5vh 0 0 0;
+	}
+}
+@media (max-width: 1100px) {
+	.error__banner {
+		display: none;
+	}
+	.error__text {
+		width: 100%;
+	}
+}
+@media (max-width: 550px) {
+	.error__text-add {
+		font-family: RF Dewi;
+		font-size: 20px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: 30px;
+		text-align: center;
+		color: #fff;
+	}
+	.error__text-title {
+		font-family: TT Norms;
+		font-size: 120px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: 20px;
+		margin: 80px 0 110px 0;
+		color: #fff;
+	}
+	.error__text-text {
+		font-family: TT Norms;
+		font-size: 20px;
+		font-weight: 500;
+		font-style: normal;
+		line-height: 35px;
+		color: #fff;
+	}
+	.error__text-btn {
+		margin: 35px 0 0 0;
+	}
+	.error__text-wrapper {
+		width: 380px;
+	}
+}
