@@ -711,3 +711,11 @@ $(() => {
 		})
 	}
 })
+
+
+var indexYoutube = new Swiper(".indexYoutube", {
+	navigation: {
+		nextEl: ".ind-youtube__video .swiper-controls .swiper-button-next",
+		prevEl: ".ind-youtube__video .swiper-controls .swiper-button-prev",
+	},
+});

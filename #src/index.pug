@@ -546,6 +546,27 @@ block variables
 
     @@include('components/_process.pug')
 
+    section.ind-youtube 
+        .containers 
+            .ind-youtube__title ООО ЛЭМ / Ленэлектромонтаж на Youtube
+            .ind-youtube__line 
+            .ind-youtube__video 
+                .swiper.indexYoutube
+                    .swiper-wrapper
+                        .swiper-slide 
+                            iframe(src="https://www.youtube.com/embed/4lK5H-btvcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        .swiper-slide 
+                            iframe(src="https://www.youtube.com/embed/4lK5H-btvcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        .swiper-slide 
+                            iframe(src="https://www.youtube.com/embed/4lK5H-btvcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        .swiper-slide 
+                            iframe(src="https://www.youtube.com/embed/4lK5H-btvcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                .swiper-controls
+                    .swiper-button-next
+                        img(src="./svg/index/arrow-next-y.svg" alt="")
+                    .swiper-button-prev
+                        img(src="./svg/index/arrow-prev-y.svg" alt="")
+
     section.ind-career
         .ind-career__block.wow.fadeInDown.animated(data-wow-delay="0.8s")
             a(href="company.html") 

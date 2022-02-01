@@ -712,6 +712,13 @@ $(() => {
 	}
 })
 
+
+var indexYoutube = new Swiper(".indexYoutube", {
+	navigation: {
+		nextEl: ".ind-youtube__video .swiper-controls .swiper-button-next",
+		prevEl: ".ind-youtube__video .swiper-controls .swiper-button-prev",
+	},
+});
 $('#newProcessTabs-1').on('click', function() {
     $(this).addClass('new-process__block-tabs-active')
     $('#newProcessTabs-2').removeClass('new-process__block-tabs-active')
