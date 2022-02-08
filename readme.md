@@ -1,21 +1,25 @@
-# <h2 style="color: red;">Index : [click me](https://kah3vich.github.io/LEM/public/index.html)</h2>
+# Project ЛЭМ
 
-<br>
+### by kah3vich x bpump
 
-## Deflation : [click me](https://kah3vich.github.io/LEM/public/deflation.html)
+<hr />
 
-## New : [click me](https://kah3vich.github.io/LEM/public/new.html)
+# Index : [click me](https://kah3vich.github.io/LEM/public/index.html)
 
-## Detail : [click me](https://kah3vich.github.io/LEM/public/detail.html)
+# Deflation : [click me](https://kah3vich.github.io/LEM/public/deflation.html)
 
-## Contact : [click me](https://kah3vich.github.io/LEM/public/contact.html)
+# New : [click me](https://kah3vich.github.io/LEM/public/new.html)
 
-## Objects : [click me](https://kah3vich.github.io/LEM/public/objects.html)
+# Detail : [click me](https://kah3vich.github.io/LEM/public/detail.html)
 
-## Object : [click me](https://kah3vich.github.io/LEM/public/object.html)
+# Contact : [click me](https://kah3vich.github.io/LEM/public/contact.html)
 
-## Company : [click me](https://kah3vich.github.io/LEM/public/company.html)
+# Objects : [click me](https://kah3vich.github.io/LEM/public/objects.html)
 
-## Details : [click me](https://kah3vich.github.io/LEM/public/details.html)
+# Object : [click me](https://kah3vich.github.io/LEM/public/object.html)
 
-## 404 : [click me](https://kah3vich.github.io/LEM/public/404.html)
+# Company : [click me](https://kah3vich.github.io/LEM/public/company.html)
+
+# Details : [click me](https://kah3vich.github.io/LEM/public/details.html)
+
+# 404 : [click me](https://kah3vich.github.io/LEM/public/404.html)
