@@ -9120,6 +9120,7 @@ h6 {
 }
 
 .comp-career__block-text-add {
+  display: none;
   width: 412px;
   font-family: TT Norms;
   font-style: normal;
@@ -9153,6 +9154,15 @@ h6 {
   color: #3c3c3c;
 }
 
+.comp-career__block-text-address span {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 31px;
+  color: #3c3c3c;
+}
+
 .comp-career__block-text-address a:last-child {
   margin: 5px 0 0 0;
   font-family: TT Norms;
@@ -9164,9 +9174,6 @@ h6 {
 }
 
 .comp-career__block-text-info {
-  position: absolute;
-  top: calc(100% + 51px);
-  right: 0;
   width: 503px;
   font-family: TT Norms;
   font-style: normal;
@@ -9222,8 +9229,8 @@ h6 {
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   gap: 43px 32px;
-  -ms-grid-rows: auto 43px auto 43px auto 43px auto;
-      grid-template-areas: "companyCareer-1 companyCareer-2 . ." "companyCareer-3 companyCareer-4 companyCareer-5 companyCareer-6" "companyCareer-7 companyCareer-8 companyCareer-9 companyCareer-10" "companyCareer-11 companyCareer-12 . .";
+  -ms-grid-rows: auto 43px auto 43px auto;
+      grid-template-areas: "companyCareer-1 companyCareer-2 companyCareer-3 companyCareer-4" "companyCareer-5 companyCareer-6 companyCareer-7 companyCareer-8" "companyCareer-9 companyCareer-10 companyCareer-11 companyCareer-12";
 }
 
 .comp-career__content-items {
@@ -9277,62 +9284,62 @@ h6 {
 }
 
 .comp-career__content-items:nth-child(3) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   grid-area: companyCareer-3;
 }
 
 .comp-career__content-items:nth-child(4) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
   grid-area: companyCareer-4;
 }
 
 .comp-career__content-items:nth-child(5) {
   -ms-grid-row: 3;
-  -ms-grid-column: 5;
+  -ms-grid-column: 1;
   grid-area: companyCareer-5;
 }
 
 .comp-career__content-items:nth-child(6) {
   -ms-grid-row: 3;
-  -ms-grid-column: 7;
+  -ms-grid-column: 3;
   grid-area: companyCareer-6;
 }
 
 .comp-career__content-items:nth-child(7) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   grid-area: companyCareer-7;
 }
 
 .comp-career__content-items:nth-child(8) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
   grid-area: companyCareer-8;
 }
 
 .comp-career__content-items:nth-child(9) {
   -ms-grid-row: 5;
-  -ms-grid-column: 5;
+  -ms-grid-column: 1;
   grid-area: companyCareer-9;
 }
 
 .comp-career__content-items:nth-child(10) {
   -ms-grid-row: 5;
-  -ms-grid-column: 7;
+  -ms-grid-column: 3;
   grid-area: companyCareer-10;
 }
 
 .comp-career__content-items:nth-child(11) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
   grid-area: companyCareer-11;
 }
 
 .comp-career__content-items:nth-child(12) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
   grid-area: companyCareer-12;
 }
 

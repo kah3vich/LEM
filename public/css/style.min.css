@@ -3126,7 +3126,7 @@ h6
 }.comp-career__block-text-add
 {font-family: TT Norms;font-size: 18px;font-weight: 400;font-style: normal;line-height: 31px;
 
-    width: 412px;margin: 0 0 0 190px;color: #3c3c3c;
+    display: none;width: 412px;margin: 0 0 0 190px;color: #3c3c3c;
 }.comp-career__block-text-add span
 {
     font-weight: 600;
@@ -3137,6 +3137,9 @@ h6
 }.comp-career__block-text-address a
 {
     font-family: TT Norms;font-size: 18px;font-weight: 400;font-style: normal;line-height: 31px;color: #3c3c3c;
+}.comp-career__block-text-address span
+{
+    font-family: TT Norms;font-size: 18px;font-weight: 700;font-style: normal;line-height: 31px;color: #3c3c3c;
 }.comp-career__block-text-address a:last-child
 {font-family: TT Norms;font-size: 18px;font-weight: 500;font-style: normal;line-height: 31px;
 
@@ -3144,7 +3147,7 @@ h6
 }.comp-career__block-text-info
 {font-family: TT Norms;font-size: 18px;font-weight: 400;font-style: normal;line-height: 31px;
 
-    position: absolute;top: calc(100% + 51px);right: 0;width: 503px;color: #3c3c3c;
+    width: 503px;color: #3c3c3c;
 }.comp-career__block-text-info span
 {
     font-family: TT Norms;font-size: 18px;font-weight: 700;font-style: normal;line-height: 31px;color: #3c3c3c;
@@ -3161,7 +3164,7 @@ h6
     margin: 5px 0 0 0;color: #3c3c3c;
 }.comp-career__content
 {display: -ms-grid;display:     grid;width: 100%;
-    margin: 55px 0 0 0;-ms-grid-columns: 1fr 32px 1fr 32px 1fr 32px 1fr;grid-template-columns: repeat(4,1fr);gap: 43px 32px;-ms-grid-rows: auto 43px auto 43px auto 43px auto;grid-template-areas: 'companyCareer-1 companyCareer-2 . .' 'companyCareer-3 companyCareer-4 companyCareer-5 companyCareer-6' 'companyCareer-7 companyCareer-8 companyCareer-9 companyCareer-10' 'companyCareer-11 companyCareer-12 . .';
+    margin: 55px 0 0 0;-ms-grid-columns: 1fr 32px 1fr 32px 1fr 32px 1fr;grid-template-columns: repeat(4,1fr);gap: 43px 32px;-ms-grid-rows: auto 43px auto 43px auto;grid-template-areas: 'companyCareer-1 companyCareer-2 companyCareer-3 companyCareer-4' 'companyCareer-5 companyCareer-6 companyCareer-7 companyCareer-8' 'companyCareer-9 companyCareer-10 companyCareer-11 companyCareer-12';
 }.comp-career__content-items
 {display: -webkit-box;display: -ms-flexbox;display: flex;
 
@@ -3182,34 +3185,34 @@ h6
     -ms-grid-row: 1;-ms-grid-column: 3;grid-area: companyCareer-2;
 }.comp-career__content-items:nth-child(3)
 {
-    -ms-grid-row: 3;-ms-grid-column: 1;grid-area: companyCareer-3;
+    -ms-grid-row: 1;-ms-grid-column: 5;grid-area: companyCareer-3;
 }.comp-career__content-items:nth-child(4)
 {
-    -ms-grid-row: 3;-ms-grid-column: 3;grid-area: companyCareer-4;
+    -ms-grid-row: 1;-ms-grid-column: 7;grid-area: companyCareer-4;
 }.comp-career__content-items:nth-child(5)
 {
-    -ms-grid-row: 3;-ms-grid-column: 5;grid-area: companyCareer-5;
+    -ms-grid-row: 3;-ms-grid-column: 1;grid-area: companyCareer-5;
 }.comp-career__content-items:nth-child(6)
 {
-    -ms-grid-row: 3;-ms-grid-column: 7;grid-area: companyCareer-6;
+    -ms-grid-row: 3;-ms-grid-column: 3;grid-area: companyCareer-6;
 }.comp-career__content-items:nth-child(7)
 {
-    -ms-grid-row: 5;-ms-grid-column: 1;grid-area: companyCareer-7;
+    -ms-grid-row: 3;-ms-grid-column: 5;grid-area: companyCareer-7;
 }.comp-career__content-items:nth-child(8)
 {
-    -ms-grid-row: 5;-ms-grid-column: 3;grid-area: companyCareer-8;
+    -ms-grid-row: 3;-ms-grid-column: 7;grid-area: companyCareer-8;
 }.comp-career__content-items:nth-child(9)
 {
-    -ms-grid-row: 5;-ms-grid-column: 5;grid-area: companyCareer-9;
+    -ms-grid-row: 5;-ms-grid-column: 1;grid-area: companyCareer-9;
 }.comp-career__content-items:nth-child(10)
 {
-    -ms-grid-row: 5;-ms-grid-column: 7;grid-area: companyCareer-10;
+    -ms-grid-row: 5;-ms-grid-column: 3;grid-area: companyCareer-10;
 }.comp-career__content-items:nth-child(11)
 {
-    -ms-grid-row: 7;-ms-grid-column: 1;grid-area: companyCareer-11;
+    -ms-grid-row: 5;-ms-grid-column: 5;grid-area: companyCareer-11;
 }.comp-career__content-items:nth-child(12)
 {
-    -ms-grid-row: 7;-ms-grid-column: 3;grid-area: companyCareer-12;
+    -ms-grid-row: 5;-ms-grid-column: 7;grid-area: companyCareer-12;
 }.comp-career__content-slider
 {
     display: none;

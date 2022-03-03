@@ -1420,6 +1420,7 @@
 			position: relative;
 			width: 100%;
 			&-add {
+				display: none;
 				width: 412px;
 				font-family: TT Norms;
 				font-style: normal;
@@ -1448,6 +1449,14 @@
 					line-height: 31px;
 					color: #3c3c3c;
 				}
+				& span {
+					font-family: TT Norms;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 31px;
+					color: #3c3c3c;
+				}
 				& a:last-child {
 					margin: 5px 0 0 0;
 					font-family: TT Norms;
@@ -1459,9 +1468,6 @@
 				}
 			}
 			&-info {
-				position: absolute;
-				top: calc(100% + 51px);
-				right: 0;
 				width: 503px;
 				font-family: TT Norms;
 				font-style: normal;
@@ -1513,10 +1519,9 @@
 		width: 100%;
 		gap: 43px 32px;
 		grid-template-areas:
-			'companyCareer-1 companyCareer-2 . .'
-			'companyCareer-3 companyCareer-4 companyCareer-5 companyCareer-6'
-			'companyCareer-7 companyCareer-8 companyCareer-9 companyCareer-10'
-			'companyCareer-11 companyCareer-12 . .';
+			'companyCareer-1 companyCareer-2 companyCareer-3 companyCareer-4'
+			'companyCareer-5 companyCareer-6 companyCareer-7 companyCareer-8'
+			'companyCareer-9 companyCareer-10 companyCareer-11 companyCareer-12';
 		&-items {
 			width: 100%;
 			background: #003169;

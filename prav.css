@@ -1,0 +1,128 @@
+@media (max-width: 450px) {
+	.ind-object__block-titles {
+		font-family: RF Dewi;
+		font-size: 18px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: 31px;
+		margin: 40px 0 25px 0;
+		text-align: center;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #fff;
+	}
+}
+@media (max-width: 500px) {
+	.ind-youtube__video .swiper-button-next,
+	.ind-youtube__video .swiper-button-prev {
+		display: flex;
+		bottom: -70px;
+		top: auto;
+	}
+	.ind-youtube__video iframe {
+		width: 100%;
+		max-width: 95%;
+		height: 310px;
+	}
+	.ind-youtube {
+		padding: 67px 0 120px 0;
+		background: #001935;
+	}
+	.comp-photo__block img {
+		width: 160%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.comp-photo__block {
+		overflow: hidden;
+		width: 100%;
+		height: 350px;
+	}
+}
+@media (max-width: 600px) {
+	.comp-support__block-items {
+		position: relative;
+		width: 100%;
+		z-index: 5;
+		padding: 100px 0 50px 0;
+	}
+	.comp-own__block-items-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		padding: 0 30px;
+	}
+	.comp-own__blocks-items-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		padding: 0 30px;
+	}
+	.comp-own__block-items-img {
+		width: 100%;
+		height: 100px;
+	}
+	.comp-own__block-items-title {
+		margin: 0;
+		text-align: center;
+		font-family: RF Dewi;
+		font-size: 28px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: 43px;
+		width: 90%;
+		margin: 0 auto;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	.comp-own__block-items-line {
+		display: flex;
+		width: calc(100% - 60px);
+		margin: 50px auto;
+	}
+	.comp-partners__block-content-items {
+		height: 110px;
+	}
+	.comp-files__block-content-text a {
+		font-family: TT Norms;
+		font-size: 14px;
+	}
+	.comp-career__block-text-add {
+		display: none;
+	}
+	.comp-career__line {
+		.comp-career__line {
+			width: 90%;
+			height: 0;
+			margin: 54px auto 50px auto;
+			border-top: 1px solid transparent;
+		}
+	}
+	.def-header__banners-items:nth-child(2) {
+		z-index: 5;
+		top: 90px;
+		right: 0px;
+		width: 918px;
+		height: 895px;
+	}
+	.def-header__banners-items:nth-child(1) {
+		z-index: 3;
+		top: 90px;
+		right: 22%;
+		width: 808px;
+		height: 714px;
+		display: none;
+	}
+	.def-header__banners-items:nth-child(2) {
+		z-index: 5;
+		left: 0;
+		top: 530px;
+		right: auto;
+		width: 100%;
+		height: 481px;
+	}
+	.def-header__block-list {
+		margin: 750px 0 0 0 !important;
+	}
+}
