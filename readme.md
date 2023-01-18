@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/LEM/330d249f964b69aed54a867a3fc7402cbcf01735/%23src/svg/index/logos.svg">
+  <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/LEM/master/%23src/svg/index/logos.svg">
   <br/>
   <h1>LEM</h1>
   <p>
