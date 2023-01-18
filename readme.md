@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
-    <img width="200" height="200" src="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
-  </a>
+  <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/LEM/330d249f964b69aed54a867a3fc7402cbcf01735/%23src/svg/index/logos.svg">
   <br/>
   <h1>LEM</h1>
   <p>
@@ -14,11 +12,13 @@
 
 <div align="center">
     <br/>
-    <h2>🌏 Table of Contents 🌏</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/tableOfContents.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
-### 1. <a href="#install">Install</a>
+### 1. <a href="#script">Script</a>
 
 ### 2. <a href="#description">Description</a>
 
@@ -32,9 +32,11 @@
 
 <!-- ||| -->
 
-<div id="install" align="center">
+<div align="center" id="script">
     <br/>
-    <h2>🤔 Install 🤔</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/script.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -44,7 +46,7 @@
 npm install
 ```
 
-### Start project:
+### Start dev mode:
 
 ```bash
 npm run gulp
@@ -52,21 +54,24 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="description" align="center">
+<div align="center" id="description">
     <br/>
-    <h2>🌟 Description 🌟</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/description.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
-
 <div align="center">
     <p>Energy company for the development of power plants and infrastructure. He is also the head of the "Network of Energy Companies" and "Energy Network".</p>
 </div>
 
 <!-- ||| -->
 
-<div id="link" align="center">
+<div align="center" id="link">
     <br/>
-    <h2>🔒 Link 🔒</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/link.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -92,9 +97,11 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="stack" align="center">
+<div align="center" id="stack">
     <br/>
-    <h2>🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/stack.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -140,9 +147,11 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="team" align="center">
+<div align="center" id="team">
     <br/>
-    <h2>🧠 Core Team 🧠</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/team.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -165,12 +174,18 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="license" align="center">
+<div align="center" id="license">
     <br/>
-    <h2>✅ License ✅</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/license.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
-## [GNU - free software license.](LICENSE)
+<a href="https://github.com/kah3vich/LEM/blob/master/LICENSE">
+  <br/>
+  <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/licenseContent.svg" alt="" width="100%" height="29px">
+  <br/>
+</a>
 
-<!-- ! by kah3vich -->
+<!--| 🔥 by kah3vich 🔥 -->
